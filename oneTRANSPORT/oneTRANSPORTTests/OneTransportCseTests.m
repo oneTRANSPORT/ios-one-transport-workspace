@@ -17,11 +17,12 @@
 - (void)setUp {
     [super setUp];
 
-    NSString *APP_ID       = @"DominicsApp";
-    NSString *ACCCESS_KEY  = @"01kpKFrJWBaEdKCE";
-    NSString *ORIGIN       = @"C-Y249RG9taW5pY3NBcHAsb3U9cm9vdA";
+    NSString *APP_ID       = @"HackathonApp";
+    NSString *ACCCESS_KEY  = @"01jcTWX6Ecu5TnpJ";
+    NSString *ORIGIN       = @"C-Y249SGFja2F0aG9uQXBwLG91PXJvb3Q";
     
-    [[NSUserDefaults standardUserDefaults] setBool:true forKey:kUserDefaultsDev];
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:kUserDefaultsDev];
+
     [self.singleton deleteCse];
     [self.singleton configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
 

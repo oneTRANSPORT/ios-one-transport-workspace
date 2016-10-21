@@ -40,8 +40,7 @@ class PotHoleListViewController: BaseViewController {
         
         let ae = OTSingleton.sharedInstance().cse?.createAe(withId: kPotHoleAE, name: kPotHoleAE)
         let cnt = ae?.createContainer(withName: kPotHoleCNT)
-        cnt!.remoteRequest(.create, subMethod: .none, session: OTSingleton.sharedInstance().sessionTask) {response, error in
-//        cnt!.remoteRequest(.discoverViaRcn, subMethod: .none, session: OTSingleton.sharedInstance().sessionTask) {response, error in
+        cnt!.remoteRequest(.discoverViaRcn, subMethod: .none, session: OTSingleton.sharedInstance().sessionTask) {response, error in
             if error == nil {
                 self.textView.text = "\(response)"
                 if let dictCh = response?[kKey_Response_Cnt] as? [String : AnyObject] {

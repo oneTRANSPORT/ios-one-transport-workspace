@@ -69,7 +69,7 @@
     };
     
     self.activityIndicator.hidden = false;
-    [[OTSingleton sharedInstance] requestData:LocalAuthorityBucks container:ContainerTypeCarParks completion:completionBlock];
+    [[OTSingleton sharedInstance] requestData:LocalAuthorityBirmingham container:ContainerTypeCarParks completion:completionBlock];
 }
 
 @end

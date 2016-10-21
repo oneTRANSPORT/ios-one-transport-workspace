@@ -29,11 +29,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    NSString *APP_ID       = @"HackerthonApp"
-    NSString *ACCCESS_KEY  = @"01qeHOh3UdzGnqyU"
-    NSString *ORIGIN       = @"C-Y249SGFja2VydGhvbkFwcCxvdT1yb290"
+    NSString *APP_ID       = @"HackathonApp";
+    NSString *ACCCESS_KEY  = @"01jcTWX6Ecu5TnpJ";
+    NSString *ORIGIN       = @"C-Y249SGFja2F0aG9uQXBwLG91PXJvb3Q";
     
-    [[OTSingleton sharedInstance] configureOneTransport:APP_ID auth:APP_TOKEN origin:APP_ORIGIN];
+    [[OTSingleton sharedInstance] configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
+    [[OTSingleton sharedInstance] setTrace:true];
     return YES;
 }
 
