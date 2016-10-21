@@ -29,9 +29,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    NSString *APP_ID       = @"HackathonApp";
-    NSString *ACCCESS_KEY  = @"01jcTWX6Ecu5TnpJ";
-    NSString *ORIGIN       = @"C-Y249SGFja2F0aG9uQXBwLG91PXJvb3Q";
+    NSString *APP_ID       = @"<Your App Name>";
+    NSString *ACCCESS_KEY  = @"<Your Access Key>";
+    NSString *ORIGIN       = @"<Your AEID>";
     
     [[OTSingleton sharedInstance] configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
     [[OTSingleton sharedInstance] setTrace:true];

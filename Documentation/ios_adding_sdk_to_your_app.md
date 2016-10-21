@@ -9,6 +9,10 @@ Add both of the following to your XCode project:
 
 2. oneTRANSPORT.framework
 
+## New Projects
+
+For new projects you need to include both frameworks.
+
 For Swift:
 
 Add the following to AppDelegate.swift

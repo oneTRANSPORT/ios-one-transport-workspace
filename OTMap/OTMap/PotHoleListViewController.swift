@@ -20,9 +20,6 @@
 import UIKit
 import oneTRANSPORT
 
-let kPotHoleAE = "C-IOS-AE-USER-DATA"
-let kPotHoleCNT = "POT-HOLES"
-
 class PotHoleListViewController: BaseViewController {
 
     @IBOutlet weak var activityIndicator: ActivityView!
@@ -38,11 +35,11 @@ class PotHoleListViewController: BaseViewController {
         
         self.activityIndicator.start()
         
-        let ae = OTSingleton.sharedInstance().cse?.createAe(withId: kPotHoleAE, name: kPotHoleAE)
+        let ae = OTSingleton.sharedInstance().cse?.createAe(withId: APP_ID, name: APP_ID)
         let cnt = ae?.createContainer(withName: kPotHoleCNT)
         cnt!.remoteRequest(.discoverViaRcn, subMethod: .none, session: OTSingleton.sharedInstance().sessionTask) {response, error in
             if error == nil {
-                self.textView.text = "\(response)"
+                self.textView.text = String.init(format:"%@", response!)
                 if let dictCh = response?[kKey_Response_Cnt] as? [String : AnyObject] {
                     if let arrayCnt = dictCh["ch"] as? [[String : AnyObject]] {
                         for dictCnt in arrayCnt {

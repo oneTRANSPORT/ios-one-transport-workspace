@@ -146,7 +146,6 @@
 				TargetAttributes = {
 					F86AAA2B1D9C215800D6F330 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZLHX6UPC53;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -307,10 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OTObjCExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.uk.onetransport.objCExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourbundleidentifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -319,10 +318,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OTObjCExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.uk.onetransport.objCExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourbundleidentifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

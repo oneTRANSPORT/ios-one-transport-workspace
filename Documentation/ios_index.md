@@ -11,6 +11,9 @@ This SDK gives your app access to:
 3. Historical data sets from race weekends at Silverstone
 circuit during the Formula One Grand Prix and Moto GP races in 2016.
 
+## [Using the OneTransportMaps workspace](ios_maps_workspace.html)
+Our demo workspace contains Objective-C and Swift examples of the oneM2M and oneTRANSPORT frameworks.
+
 ## [Adding the SDK to your app](ios_adding_sdk_to_your_app.html)
 There are two frameworks to add to your project and some configuration work to be done in the AppDelegate.
 

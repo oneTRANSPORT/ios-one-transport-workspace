@@ -137,7 +137,7 @@ class PotHoleViewController: BaseViewController {
         
         self.activityIndicator.start()
         
-        let ae = OTSingleton.sharedInstance().cse?.createAe(withId: kPotHoleAE, name: kPotHoleAE)
+        let ae = OTSingleton.sharedInstance().cse?.createAe(withId: APP_ID, name: APP_ID)
         let cnt = ae?.createContainer(withName: kPotHoleCNT)
         let cin = cnt?.createContentInstance(withName: "cin-\(self.stringFromDate(Date()))")
         cin!.content = "{\"comment\":\"\(comment)\",\"rating\":\(rating),\"latitude\":\(coord.latitude),\"longitude\":\(coord.longitude)"

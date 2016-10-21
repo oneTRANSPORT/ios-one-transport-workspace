@@ -20,6 +20,9 @@
 import UIKit
 import oneTRANSPORT
 
+let APP_ID      = "HackathonApp"
+let kPotHoleCNT = "POT-HOLES"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -27,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let APP_ID       = "HackathonApp"
-        let ACCCESS_KEY  = "01jcTWX6Ecu5TnpJ"
-        let ORIGIN       = "C-Y249SGFja2F0aG9uQXBwLG91PXJvb3Q"
+        let APP_ID       = "<Your App Name>"
+        let ACCCESS_KEY  = "<Your Access Key>"
+        let ORIGIN       = "<Your AEID>"
         
         OTSingleton.sharedInstance().configureOneTransport(APP_ID, auth: ACCCESS_KEY, origin: ORIGIN)
         

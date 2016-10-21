@@ -17,9 +17,9 @@
 - (void)setUp {
     [super setUp];
 
-    NSString *APP_ID       = @"HackathonApp";
-    NSString *ACCCESS_KEY  = @"01jcTWX6Ecu5TnpJ";
-    NSString *ORIGIN       = @"C-Y249SGFja2F0aG9uQXBwLG91PXJvb3Q";
+    NSString *APP_ID       = @"<Your App Name>";
+    NSString *ACCCESS_KEY  = @"<Your Access Key>";
+    NSString *ORIGIN       = @"<Your AEID>";
     
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:kUserDefaultsDev];
 
