@@ -1,0 +1,6 @@
+framework module FlorenceSDK {
+  umbrella header "FlorenceSDK.h"
+
+  export *
+  module * { export * }
+}

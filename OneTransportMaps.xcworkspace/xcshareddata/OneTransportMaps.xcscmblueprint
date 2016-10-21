@@ -1,21 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9647547B1877540DF711A6DF46FF0E57AE0E11D7",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "781FC220EBAD7C1C6828A4813881AA4563C2C08E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "9647547B1877540DF711A6DF46FF0E57AE0E11D7" : 0,
-    "F827D90B89529741C0E21214CF20668B8BD3E6A9" : 0
+    "F827D90B89529741C0E21214CF20668B8BD3E6A9" : 0,
+    "781FC220EBAD7C1C6828A4813881AA4563C2C08E" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5A9FFF35-1C79-4D20-ABD2-28CBCB3E4A54",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "9647547B1877540DF711A6DF46FF0E57AE0E11D7" : "oneTransportSDK_iOS\/",
-    "F827D90B89529741C0E21214CF20668B8BD3E6A9" : "FlorenceSDK\/"
+    "F827D90B89529741C0E21214CF20668B8BD3E6A9" : "FlorenceSDK\/",
+    "781FC220EBAD7C1C6828A4813881AA4563C2C08E" : "ios-one-transport-workspace\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "OneTransportMaps",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OneTransportMaps.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oneTRANSPORT\/ios-one-transport-workspace.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "781FC220EBAD7C1C6828A4813881AA4563C2C08E"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.onetransport.uk.net\/dfrazer\/oneTransportSDK_iOS.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

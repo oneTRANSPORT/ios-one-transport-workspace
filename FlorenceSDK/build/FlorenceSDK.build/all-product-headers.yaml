@@ -1,0 +1,113 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/DerivedData/Florence/Build/Products/Debug-iphonesimulator/FlorenceSDK.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FlorenceSDK-Swift.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/DerivedData/Florence/Build/Products/Debug-iphonesimulator/FlorenceSDK.framework/Headers/FlorenceSDK-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FlorenceSDK.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/FlorenceSDK.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTAccessControlContext.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTAccessControlContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTAccessControlIpAddress.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTAccessControlIpAddress.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTAccessControlPolicy.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTAccessControlPolicy.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTAccessControlRule.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTAccessControlRule.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTApplicationEntity.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTApplicationEntity.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTCommonServicesEntity.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTCommonServicesEntity.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTContainer.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTContainer.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTContentInstance.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTContentInstance.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTGroup.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTGroup.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTLocationRegion.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTLocationRegion.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTLocationRegionCircular.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTLocationRegionCircular.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTObjectAnnounceableResource.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTObjectAnnounceableResource.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTObjectBase.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTObjectBase.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTSessionTask.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTSessionTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTSetOfAccessControlRules.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTSetOfAccessControlRules.h"
+        },
+        {
+          'type': 'file',
+          'name': "OTTypes.h",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/FlorenceSDK/OTTypes.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/DerivedData/Florence/Build/Products/Debug-iphonesimulator/FlorenceSDK.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/dominicfrazer/Documents/Projects-Clients/InterDigital/FlorenceSDK/FlorenceSDK/build/FlorenceSDK.build/Debug-iphonesimulator/FlorenceSDK.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

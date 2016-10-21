@@ -17,7 +17,6 @@
 		F85C4A4E1D8FCF8800D659D0 /* BitCarrierTsvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C4A4D1D8FCF8800D659D0 /* BitCarrierTsvViewController.swift */; };
 		F85C4A531D8FF01000D659D0 /* ClearViewReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C4A521D8FF01000D659D0 /* ClearViewReportView.swift */; };
 		F86AAA181D99370000D6F330 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86AAA171D99370000D6F330 /* ExampleViewController.swift */; };
-		F870DCA11D897CB900BF7A19 /* FlorenceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F870DC9A1D897C7C00BF7A19 /* FlorenceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F894B12F1D8290D7003F8F6E /* bit_carrier_silverstone_config_vector.tsv in Resources */ = {isa = PBXBuildFile; fileRef = F894B12E1D8290D7003F8F6E /* bit_carrier_silverstone_config_vector.tsv */; };
 		F894B13B1D82D2FF003F8F6E /* FavouritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894B13A1D82D2FF003F8F6E /* FavouritesDetailViewController.swift */; };
 		F894B1401D868F11003F8F6E /* clearview_silverstone_device.tsv in Resources */ = {isa = PBXBuildFile; fileRef = F894B13F1D868F11003F8F6E /* clearview_silverstone_device.tsv */; };
@@ -75,26 +74,19 @@
 			remoteGlobalIDString = F84B9F241DB7C986000975FD;
 			remoteInfo = oneTRANSPORTTests;
 		};
-		F870DC991D897C7C00BF7A19 /* PBXContainerItemProxy */ = {
+		F8EC9FEC1DB9F26800D2E509 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F8B674A41D897A170004CDB5 /* FlorenceSDK.xcodeproj */;
+			containerPortal = F8EC9FE61DB9F26800D2E509 /* FlorenceSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F8210F101D2A7A0200399B4A;
 			remoteInfo = FlorenceSDK;
 		};
-		F870DC9B1D897C7C00BF7A19 /* PBXContainerItemProxy */ = {
+		F8EC9FEE1DB9F26800D2E509 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F8B674A41D897A170004CDB5 /* FlorenceSDK.xcodeproj */;
+			containerPortal = F8EC9FE61DB9F26800D2E509 /* FlorenceSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F8210F1A1D2A7A0200399B4A;
 			remoteInfo = FlorenceSDKTests;
-		};
-		F870DC9D1D897CAC00BF7A19 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8B674A41D897A170004CDB5 /* FlorenceSDK.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8210F0F1D2A7A0200399B4A;
-			remoteInfo = FlorenceSDK;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -106,7 +98,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F8953A8C1DB89D290069C117 /* oneTRANSPORT.framework in Embed Frameworks */,
-				F870DCA11D897CB900BF7A19 /* FlorenceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +123,6 @@
 		F894B1431D8694FF003F8F6E /* FavouritesHistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesHistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		F894B1441D8694FF003F8F6E /* FavouritesHistoryDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesHistoryDetailTableViewCell.xib; sourceTree = "<group>"; };
 		F8B6749C1D8963780004CDB5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F8B674A41D897A170004CDB5 /* FlorenceSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlorenceSDK.xcodeproj; path = ../../FlorenceSDK/FlorenceSDK/FlorenceSDK.xcodeproj; sourceTree = "<group>"; };
 		F8B6EDDB1D5DB3A50047C7A3 /* OTMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B6EDDE1D5DB3A50047C7A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B6EDE01D5DB3A50047C7A3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +156,7 @@
 		F8CD8FA61D76D98F0094F41E /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		F8CD8FA81D76DBC90094F41E /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		F8CD8FAA1D76DF710094F41E /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
+		F8EC9FE61DB9F26800D2E509 /* FlorenceSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlorenceSDK.xcodeproj; path = ../FlorenceSDK/FlorenceSDK.xcodeproj; sourceTree = "<group>"; };
 		F8FB6BA11D927FB4007BDB89 /* BitCarrierReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitCarrierReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,20 +212,11 @@
 			name = Example;
 			sourceTree = "<group>";
 		};
-		F870DC941D897C7C00BF7A19 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F870DC9A1D897C7C00BF7A19 /* FlorenceSDK.framework */,
-				F870DC9C1D897C7C00BF7A19 /* FlorenceSDKTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F8B6EDD21D5DB3A50047C7A3 = {
 			isa = PBXGroup;
 			children = (
 				F8B6EDDD1D5DB3A50047C7A3 /* OTMap */,
-				F8B674A41D897A170004CDB5 /* FlorenceSDK.xcodeproj */,
+				F8EC9FE61DB9F26800D2E509 /* FlorenceSDK.xcodeproj */,
 				F84B9F351DB7C993000975FD /* oneTRANSPORT.xcodeproj */,
 				F8B6EE091D5DB5420047C7A3 /* MapKit.framework */,
 				F8B6749C1D8963780004CDB5 /* CoreData.framework */,
@@ -363,6 +345,15 @@
 			name = Favourites;
 			sourceTree = "<group>";
 		};
+		F8EC9FE71DB9F26800D2E509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC9FED1DB9F26800D2E509 /* FlorenceSDK.framework */,
+				F8EC9FEF1DB9F26800D2E509 /* FlorenceSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,7 +369,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F870DC9E1D897CAC00BF7A19 /* PBXTargetDependency */,
 			);
 			name = OTMap;
 			productName = OTMap;
@@ -420,8 +410,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F870DC941D897C7C00BF7A19 /* Products */;
-					ProjectRef = F8B674A41D897A170004CDB5 /* FlorenceSDK.xcodeproj */;
+					ProductGroup = F8EC9FE71DB9F26800D2E509 /* Products */;
+					ProjectRef = F8EC9FE61DB9F26800D2E509 /* FlorenceSDK.xcodeproj */;
 				},
 				{
 					ProductGroup = F84B9F361DB7C993000975FD /* Products */;
@@ -450,18 +440,18 @@
 			remoteRef = F84B9F3E1DB7C993000975FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F870DC9A1D897C7C00BF7A19 /* FlorenceSDK.framework */ = {
+		F8EC9FED1DB9F26800D2E509 /* FlorenceSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FlorenceSDK.framework;
-			remoteRef = F870DC991D897C7C00BF7A19 /* PBXContainerItemProxy */;
+			remoteRef = F8EC9FEC1DB9F26800D2E509 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F870DC9C1D897C7C00BF7A19 /* FlorenceSDKTests.xctest */ = {
+		F8EC9FEF1DB9F26800D2E509 /* FlorenceSDKTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = FlorenceSDKTests.xctest;
-			remoteRef = F870DC9B1D897C7C00BF7A19 /* PBXContainerItemProxy */;
+			remoteRef = F8EC9FEE1DB9F26800D2E509 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -532,14 +522,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F870DC9E1D897CAC00BF7A19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FlorenceSDK;
-			targetProxy = F870DC9D1D897CAC00BF7A19 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F8B6EDE21D5DB3A50047C7A3 /* Main.storyboard */ = {
