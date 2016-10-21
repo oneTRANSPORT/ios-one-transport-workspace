@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ji-hy-7yk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="sEi-Nj-iEJ">
+            <objects>
+                <navigationController id="1ji-hy-7yk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KDw-xV-kQD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WUg-LB-PnZ" kind="relationship" relationship="rootViewController" id="Znj-9j-ik3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7q6-uW-YWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2196" y="3624"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="edh-R3-ATX">
+            <objects>
+                <viewController id="WUg-LB-PnZ" customClass="MainViewController" customModule="OTPotHoles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J7i-nQ-dPO"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWZ-a3-wdm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W2r-xc-ILQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWg-uG-k36">
+                                <state key="normal" title="Report Pot Hole"/>
+                                <connections>
+                                    <segue destination="xY4-kz-2r3" kind="show" id="NhG-8u-JbH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-OX-6Ig">
+                                <state key="normal" title="View Pot Hole Container"/>
+                                <connections>
+                                    <segue destination="W6E-W1-ZSN" kind="show" id="xYg-36-rBL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hWg-uG-k36" firstAttribute="top" secondItem="J7i-nQ-dPO" secondAttribute="bottom" constant="30" id="1KN-3e-whh"/>
+                            <constraint firstItem="LcO-OX-6Ig" firstAttribute="centerX" secondItem="W2r-xc-ILQ" secondAttribute="centerX" id="6vb-7I-VpC"/>
+                            <constraint firstItem="hWg-uG-k36" firstAttribute="centerX" secondItem="W2r-xc-ILQ" secondAttribute="centerX" id="QHK-FT-yyg"/>
+                            <constraint firstItem="LcO-OX-6Ig" firstAttribute="top" secondItem="hWg-uG-k36" secondAttribute="bottom" constant="30" id="zz2-a8-8Zm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HET-nC-A3j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oki-oJ-v5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1403" y="3624"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="7Yr-Lf-aVq">
+            <objects>
+                <viewController id="xY4-kz-2r3" customClass="PotHoleViewController" customModule="OTPotHoles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9fG-Bf-zwv"/>
+                        <viewControllerLayoutGuide type="bottom" id="e3D-Yg-ifk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9X-51-ZVG">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-JS-mFk">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-yR-rOv">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KCo-5J-cuj">
+                                <segments>
+                                    <segment title="0 - Light"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4 - Terrible"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eE-ks-H2S">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oTJ-he-UBo" customClass="MapView" customModule="OTPotHoles" customModuleProvider="target">
+                                <connections>
+                                    <outlet property="delegate" destination="xY4-kz-2r3" id="J2f-y0-lEy"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puT-Fr-VfA" customClass="ActivityView" customModule="OTPotHoles" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="A9Q-TD-dKb"/>
+                                    <constraint firstAttribute="width" constant="60" id="cdD-qh-zFp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKh-k3-3df">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sPk-6g-U94"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="pressedSubmit" destination="xY4-kz-2r3" eventType="touchUpInside" id="y7e-RX-6jg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALR-pz-Y38">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="g4y-Ba-0ZD"/>
+                                </constraints>
+                                <state key="normal" title="Hit A Bump"/>
+                                <connections>
+                                    <action selector="pressedBump" destination="xY4-kz-2r3" eventType="touchUpInside" id="4SY-HB-UvL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fda-JS-mFk" firstAttribute="leading" secondItem="b9X-51-ZVG" secondAttribute="leading" constant="20" id="7Nx-te-5zb"/>
+                            <constraint firstItem="ALR-pz-Y38" firstAttribute="leading" secondItem="VKh-k3-3df" secondAttribute="trailing" id="BKi-GD-MTc"/>
+                            <constraint firstItem="Fda-JS-mFk" firstAttribute="top" secondItem="b9X-51-ZVG" secondAttribute="topMargin" constant="20" id="FEV-JU-bh8"/>
+                            <constraint firstItem="VKh-k3-3df" firstAttribute="width" secondItem="b9X-51-ZVG" secondAttribute="width" multiplier="0.5" id="INr-vx-Zih"/>
+                            <constraint firstItem="dZa-yR-rOv" firstAttribute="top" secondItem="Fda-JS-mFk" secondAttribute="bottom" constant="8" id="Jbc-f2-bXw"/>
+                            <constraint firstItem="KCo-5J-cuj" firstAttribute="top" secondItem="dZa-yR-rOv" secondAttribute="bottom" constant="8" id="JdO-hw-xIZ"/>
+                            <constraint firstItem="ALR-pz-Y38" firstAttribute="top" secondItem="VKh-k3-3df" secondAttribute="top" id="MyU-37-CfO"/>
+                            <constraint firstItem="puT-Fr-VfA" firstAttribute="centerY" secondItem="b9X-51-ZVG" secondAttribute="centerY" id="Ocs-8g-aVN"/>
+                            <constraint firstItem="dZa-yR-rOv" firstAttribute="leading" secondItem="b9X-51-ZVG" secondAttribute="leading" constant="20" id="Syf-xp-qUI"/>
+                            <constraint firstItem="puT-Fr-VfA" firstAttribute="centerX" secondItem="b9X-51-ZVG" secondAttribute="centerX" id="Uad-VU-kcO"/>
+                            <constraint firstItem="KCo-5J-cuj" firstAttribute="leading" secondItem="b9X-51-ZVG" secondAttribute="leading" constant="20" id="Xjg-1W-acL"/>
+                            <constraint firstAttribute="trailing" secondItem="KCo-5J-cuj" secondAttribute="trailing" constant="20" id="ajj-04-9Au"/>
+                            <constraint firstItem="4eE-ks-H2S" firstAttribute="top" secondItem="KCo-5J-cuj" secondAttribute="bottom" constant="8" id="cEf-Kl-3T3"/>
+                            <constraint firstItem="ALR-pz-Y38" firstAttribute="width" secondItem="VKh-k3-3df" secondAttribute="width" id="fFX-5f-qoM"/>
+                            <constraint firstAttribute="trailing" secondItem="dZa-yR-rOv" secondAttribute="trailing" constant="20" id="feL-G9-TGQ"/>
+                            <constraint firstItem="e3D-Yg-ifk" firstAttribute="top" secondItem="oTJ-he-UBo" secondAttribute="bottom" id="iJe-xV-LGG"/>
+                            <constraint firstItem="e3D-Yg-ifk" firstAttribute="top" secondItem="VKh-k3-3df" secondAttribute="bottom" id="iSr-gY-dp9"/>
+                            <constraint firstAttribute="trailing" secondItem="oTJ-he-UBo" secondAttribute="trailing" id="l3a-Pg-Y9K"/>
+                            <constraint firstItem="oTJ-he-UBo" firstAttribute="top" secondItem="4eE-ks-H2S" secondAttribute="bottom" constant="8" id="o0z-rO-zi6"/>
+                            <constraint firstItem="oTJ-he-UBo" firstAttribute="leading" secondItem="b9X-51-ZVG" secondAttribute="leading" id="oV9-Yk-k1Q"/>
+                            <constraint firstItem="VKh-k3-3df" firstAttribute="leading" secondItem="b9X-51-ZVG" secondAttribute="leading" id="xRW-V3-VMQ"/>
+                            <constraint firstItem="4eE-ks-H2S" firstAttribute="leading" secondItem="b9X-51-ZVG" secondAttribute="leading" constant="20" id="yhZ-pn-NHf"/>
+                            <constraint firstItem="VKh-k3-3df" firstAttribute="top" secondItem="oTJ-he-UBo" secondAttribute="bottom" id="zst-3Q-5cs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iJe-xV-LGG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Report" id="DT2-RS-rVn"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="puT-Fr-VfA" id="uH6-VV-0Je"/>
+                        <outlet property="buttonBump" destination="ALR-pz-Y38" id="jtr-e6-w1f"/>
+                        <outlet property="buttonSubmit" destination="VKh-k3-3df" id="BT8-Vx-te7"/>
+                        <outlet property="labelLocation" destination="4eE-ks-H2S" id="Yw7-vj-DRI"/>
+                        <outlet property="mapView" destination="oTJ-he-UBo" id="UKe-Cg-R2b"/>
+                        <outlet property="segmentControl" destination="KCo-5J-cuj" id="sQF-sy-key"/>
+                        <outlet property="textFieldComment" destination="dZa-yR-rOv" id="w3k-v6-aW3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaN-7B-lDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="3010"/>
+        </scene>
+        <!--Pot Hole List View Controller-->
+        <scene sceneID="4Ag-tN-UvO">
+            <objects>
+                <viewController id="W6E-W1-ZSN" userLabel="Pot Hole List View Controller" customClass="PotHoleListViewController" customModule="OTPotHoles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sDg-CW-hKi"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8H-R3-Uwy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C3o-7T-5W1">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-LN-Xq1">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8n-C0-p2T" customClass="ActivityView" customModule="OTPotHoles" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bfp-wb-IhQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="gV8-Pi-Hbw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MGI-LN-Xq1" secondAttribute="trailing" id="1GJ-W7-OPH"/>
+                            <constraint firstItem="a8n-C0-p2T" firstAttribute="centerX" secondItem="C3o-7T-5W1" secondAttribute="centerX" id="8ke-Ed-r5v"/>
+                            <constraint firstItem="V8H-R3-Uwy" firstAttribute="top" secondItem="MGI-LN-Xq1" secondAttribute="bottom" id="DdD-Sd-u72"/>
+                            <constraint firstItem="MGI-LN-Xq1" firstAttribute="leading" secondItem="C3o-7T-5W1" secondAttribute="leading" id="Wyt-bF-Vhu"/>
+                            <constraint firstItem="MGI-LN-Xq1" firstAttribute="top" secondItem="sDg-CW-hKi" secondAttribute="bottom" id="nUx-eS-vZB"/>
+                            <constraint firstItem="a8n-C0-p2T" firstAttribute="centerY" secondItem="C3o-7T-5W1" secondAttribute="centerY" id="zhm-au-7Cm"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="List" id="YSJ-52-0xj"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="a8n-C0-p2T" id="nUs-F5-0Vs"/>
+                        <outlet property="textView" destination="MGI-LN-Xq1" id="Ovw-9Q-J51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXN-RQ-ReD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="3697"/>
+        </scene>
+    </scenes>
+</document>

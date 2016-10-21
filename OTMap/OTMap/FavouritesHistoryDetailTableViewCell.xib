@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellHistoryDetail" rowHeight="90" id="h9q-xk-UmT" userLabel="FavouritesHistoryDetailCell" customClass="FavouritesHistoryDetailTableViewCell" customModule="OTMap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="560" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h9q-xk-UmT" id="nVP-2Z-64d">
+                <frame key="frameInset" width="560" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erO-el-dbe" customClass="MapImageView" customModule="OTMap" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="IuH-N6-Cfk"/>
+                            <constraint firstAttribute="height" constant="73" id="dMb-fJ-dAv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-fW-5YR">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-SE-y8c" customClass="BitCarrierVectorHistoryView" customModule="OTMap" customModuleProvider="target">
+                        <color key="backgroundColor" red="0.95473295450210571" green="0.95473295450210571" blue="0.95473295450210571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="qnd-aP-JGk"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7se-qh-1DT" customClass="MapImageView" customModule="OTMap" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="W7G-z9-5Wg"/>
+                            <constraint firstAttribute="height" constant="73" id="o1Q-oc-aap"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Us-fW-5YR" firstAttribute="top" secondItem="nVP-2Z-64d" secondAttribute="top" constant="10" id="0yY-GM-I5y"/>
+                    <constraint firstItem="erO-el-dbe" firstAttribute="top" secondItem="nVP-2Z-64d" secondAttribute="top" constant="10" id="9W6-7a-6V4"/>
+                    <constraint firstItem="qf5-SE-y8c" firstAttribute="top" secondItem="2Us-fW-5YR" secondAttribute="bottom" constant="8" id="D0y-jJ-AOG"/>
+                    <constraint firstAttribute="bottom" secondItem="qf5-SE-y8c" secondAttribute="bottom" constant="8" id="IlV-8d-vct"/>
+                    <constraint firstItem="erO-el-dbe" firstAttribute="leading" secondItem="nVP-2Z-64d" secondAttribute="leading" id="KwU-Ey-cyZ"/>
+                    <constraint firstItem="qf5-SE-y8c" firstAttribute="leading" secondItem="erO-el-dbe" secondAttribute="trailing" constant="10" id="PD4-ML-c13"/>
+                    <constraint firstItem="2Us-fW-5YR" firstAttribute="leading" secondItem="nVP-2Z-64d" secondAttribute="leading" constant="60" id="S4O-1g-pdN"/>
+                    <constraint firstItem="2Us-fW-5YR" firstAttribute="leading" secondItem="erO-el-dbe" secondAttribute="trailing" constant="10" id="SrM-uP-yoz"/>
+                    <constraint firstItem="7se-qh-1DT" firstAttribute="leading" secondItem="qf5-SE-y8c" secondAttribute="trailing" constant="8" id="Upb-5N-5jo"/>
+                    <constraint firstItem="7se-qh-1DT" firstAttribute="top" secondItem="nVP-2Z-64d" secondAttribute="top" constant="8" id="Yu8-pg-zWP"/>
+                    <constraint firstAttribute="trailing" secondItem="7se-qh-1DT" secondAttribute="trailing" id="g23-jz-Jwb"/>
+                    <constraint firstAttribute="trailing" secondItem="qf5-SE-y8c" secondAttribute="trailing" constant="8" id="hI4-KR-6fe"/>
+                    <constraint firstItem="7se-qh-1DT" firstAttribute="centerY" secondItem="nVP-2Z-64d" secondAttribute="centerY" id="hYk-Ra-yTO"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Us-fW-5YR" secondAttribute="trailing" constant="8" id="iyQ-Mb-585"/>
+                    <constraint firstItem="7se-qh-1DT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Us-fW-5YR" secondAttribute="trailing" constant="8" id="yLn-Zw-Tey"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="S4O-1g-pdN"/>
+                        <exclude reference="iyQ-Mb-585"/>
+                        <exclude reference="hI4-KR-6fe"/>
+                        <exclude reference="Yu8-pg-zWP"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewMap1" destination="erO-el-dbe" id="90n-O8-YfW"/>
+                <outlet property="imageViewMap2" destination="7se-qh-1DT" id="sFA-UK-l4E"/>
+                <outlet property="labelHeading" destination="2Us-fW-5YR" id="cdl-Rd-9cq"/>
+                <outlet property="viewVectorHistory" destination="qf5-SE-y8c" id="hcJ-dr-xzA"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

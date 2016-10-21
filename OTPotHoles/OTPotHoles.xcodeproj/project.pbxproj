@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82905591D941E6C0014313C /* FlorenceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82905581D941E6C0014313C /* FlorenceSDK.framework */; };
+		F829055A1D941E6C0014313C /* FlorenceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F82905581D941E6C0014313C /* FlorenceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F84BA0791DB89BD2000975FD /* oneTRANSPORT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84BA0781DB89BD2000975FD /* oneTRANSPORT.framework */; };
+		F84BA07A1DB89BD2000975FD /* oneTRANSPORT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F84BA0781DB89BD2000975FD /* oneTRANSPORT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8A6893A1D87D05800C2EB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689391D87D05800C2EB43 /* AppDelegate.swift */; };
+		F8A6893F1D87D05800C2EB43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A6893D1D87D05800C2EB43 /* Main.storyboard */; };
+		F8A689411D87D05800C2EB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A689401D87D05800C2EB43 /* Assets.xcassets */; };
+		F8A689441D87D05800C2EB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A689421D87D05800C2EB43 /* LaunchScreen.storyboard */; };
+		F8A6894C1D87D07900C2EB43 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6894B1D87D07900C2EB43 /* BaseViewController.swift */; };
+		F8A6894E1D87D09200C2EB43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6894D1D87D09200C2EB43 /* MainViewController.swift */; };
+		F8A689511D87D0A400C2EB43 /* PotHoleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6894F1D87D0A400C2EB43 /* PotHoleListViewController.swift */; };
+		F8A689521D87D0A400C2EB43 /* PotHoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689501D87D0A400C2EB43 /* PotHoleViewController.swift */; };
+		F8A689541D87D1FE00C2EB43 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689531D87D1FE00C2EB43 /* ActivityView.swift */; };
+		F8A689561D87D24800C2EB43 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689551D87D24800C2EB43 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F82905571D941E640014313C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F829055A1D941E6C0014313C /* FlorenceSDK.framework in Embed Frameworks */,
+				F84BA07A1DB89BD2000975FD /* oneTRANSPORT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F82905581D941E6C0014313C /* FlorenceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlorenceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84BA0781DB89BD2000975FD /* oneTRANSPORT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = oneTRANSPORT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A689361D87D05800C2EB43 /* OTPotHoles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPotHoles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A689391D87D05800C2EB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8A6893E1D87D05800C2EB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8A689401D87D05800C2EB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8A689431D87D05800C2EB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8A689451D87D05800C2EB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A6894B1D87D07900C2EB43 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../OTMap/OTMap/BaseViewController.swift; sourceTree = "<group>"; };
+		F8A6894D1D87D09200C2EB43 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../OTMap/OTMap/MainViewController.swift; sourceTree = "<group>"; };
+		F8A6894F1D87D0A400C2EB43 /* PotHoleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PotHoleListViewController.swift; path = ../../OTMap/OTMap/PotHoleListViewController.swift; sourceTree = "<group>"; };
+		F8A689501D87D0A400C2EB43 /* PotHoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PotHoleViewController.swift; path = ../../OTMap/OTMap/PotHoleViewController.swift; sourceTree = "<group>"; };
+		F8A689531D87D1FE00C2EB43 /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityView.swift; path = ../../OTMap/OTMap/ActivityView.swift; sourceTree = "<group>"; };
+		F8A689551D87D24800C2EB43 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = ../../OTMap/OTMap/LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8A689331D87D05800C2EB43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82905591D941E6C0014313C /* FlorenceSDK.framework in Frameworks */,
+				F84BA0791DB89BD2000975FD /* oneTRANSPORT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8A6892D1D87D05800C2EB43 = {
+			isa = PBXGroup;
+			children = (
+				F84BA0781DB89BD2000975FD /* oneTRANSPORT.framework */,
+				F82905581D941E6C0014313C /* FlorenceSDK.framework */,
+				F8A689381D87D05800C2EB43 /* OTPotHoles */,
+				F8A689371D87D05800C2EB43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8A689371D87D05800C2EB43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A689361D87D05800C2EB43 /* OTPotHoles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A689381D87D05800C2EB43 /* OTPotHoles */ = {
+			isa = PBXGroup;
+			children = (
+				F8A689391D87D05800C2EB43 /* AppDelegate.swift */,
+				F8A6894B1D87D07900C2EB43 /* BaseViewController.swift */,
+				F8A6894D1D87D09200C2EB43 /* MainViewController.swift */,
+				F8A6894F1D87D0A400C2EB43 /* PotHoleListViewController.swift */,
+				F8A689501D87D0A400C2EB43 /* PotHoleViewController.swift */,
+				F8A689551D87D24800C2EB43 /* LocationManager.swift */,
+				F8A689531D87D1FE00C2EB43 /* ActivityView.swift */,
+				F8A6893D1D87D05800C2EB43 /* Main.storyboard */,
+				F8A689401D87D05800C2EB43 /* Assets.xcassets */,
+				F8A689421D87D05800C2EB43 /* LaunchScreen.storyboard */,
+				F8A689451D87D05800C2EB43 /* Info.plist */,
+			);
+			path = OTPotHoles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8A689351D87D05800C2EB43 /* OTPotHoles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A689481D87D05800C2EB43 /* Build configuration list for PBXNativeTarget "OTPotHoles" */;
+			buildPhases = (
+				F8A689321D87D05800C2EB43 /* Sources */,
+				F8A689331D87D05800C2EB43 /* Frameworks */,
+				F8A689341D87D05800C2EB43 /* Resources */,
+				F82905571D941E640014313C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTPotHoles;
+			productName = OTPotHoles;
+			productReference = F8A689361D87D05800C2EB43 /* OTPotHoles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8A6892E1D87D05800C2EB43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = InterDigital;
+				TargetAttributes = {
+					F8A689351D87D05800C2EB43 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZLHX6UPC53;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = F8A689311D87D05800C2EB43 /* Build configuration list for PBXProject "OTPotHoles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8A6892D1D87D05800C2EB43;
+			productRefGroup = F8A689371D87D05800C2EB43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A689351D87D05800C2EB43 /* OTPotHoles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A689341D87D05800C2EB43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A689441D87D05800C2EB43 /* LaunchScreen.storyboard in Resources */,
+				F8A689411D87D05800C2EB43 /* Assets.xcassets in Resources */,
+				F8A6893F1D87D05800C2EB43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8A689321D87D05800C2EB43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A689511D87D0A400C2EB43 /* PotHoleListViewController.swift in Sources */,
+				F8A6893A1D87D05800C2EB43 /* AppDelegate.swift in Sources */,
+				F8A6894C1D87D07900C2EB43 /* BaseViewController.swift in Sources */,
+				F8A689561D87D24800C2EB43 /* LocationManager.swift in Sources */,
+				F8A6894E1D87D09200C2EB43 /* MainViewController.swift in Sources */,
+				F8A689521D87D0A400C2EB43 /* PotHoleViewController.swift in Sources */,
+				F8A689541D87D1FE00C2EB43 /* ActivityView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8A6893D1D87D05800C2EB43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A6893E1D87D05800C2EB43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8A689421D87D05800C2EB43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A689431D87D05800C2EB43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8A689461D87D05800C2EB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8A689471D87D05800C2EB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8A689491D87D05800C2EB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				INFOPLIST_FILE = OTPotHoles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PowerSlave.OTPotHoles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F8A6894A1D87D05800C2EB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				INFOPLIST_FILE = OTPotHoles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PowerSlave.OTPotHoles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8A689311D87D05800C2EB43 /* Build configuration list for PBXProject "OTPotHoles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A689461D87D05800C2EB43 /* Debug */,
+				F8A689471D87D05800C2EB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A689481D87D05800C2EB43 /* Build configuration list for PBXNativeTarget "OTPotHoles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A689491D87D05800C2EB43 /* Debug */,
+				F8A6894A1D87D05800C2EB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8A6892E1D87D05800C2EB43 /* Project object */;
+}

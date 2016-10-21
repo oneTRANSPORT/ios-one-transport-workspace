@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F84B9F251DB7C986000975FD /* oneTRANSPORT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84B9F1B1DB7C986000975FD /* oneTRANSPORT.framework */; };
+		F84B9F2C1DB7C986000975FD /* oneTRANSPORT.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F1E1DB7C986000975FD /* oneTRANSPORT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9F571DB7C9CD000975FD /* OneTransportBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F411DB7C9CD000975FD /* OneTransportBaseTests.m */; };
+		F84B9F581DB7C9CD000975FD /* OneTransportBCConfigVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F421DB7C9CD000975FD /* OneTransportBCConfigVectorTests.m */; };
+		F84B9F591DB7C9CD000975FD /* OneTransportBCNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F431DB7C9CD000975FD /* OneTransportBCNodeTests.m */; };
+		F84B9F5A1DB7C9CD000975FD /* OneTransportBCSketchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F441DB7C9CD000975FD /* OneTransportBCSketchTests.m */; };
+		F84B9F5B1DB7C9CD000975FD /* OneTransportBCTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F451DB7C9CD000975FD /* OneTransportBCTravelTests.m */; };
+		F84B9F5C1DB7C9CD000975FD /* OneTransportBCVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F461DB7C9CD000975FD /* OneTransportBCVectorTests.m */; };
+		F84B9F5D1DB7C9CD000975FD /* OneTransportCarParksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F471DB7C9CD000975FD /* OneTransportCarParksTests.m */; };
+		F84B9F5E1DB7C9CD000975FD /* OneTransportCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F481DB7C9CD000975FD /* OneTransportCommonTests.m */; };
+		F84B9F5F1DB7C9CD000975FD /* OneTransportCseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F491DB7C9CD000975FD /* OneTransportCseTests.m */; };
+		F84B9F601DB7C9CD000975FD /* OneTransportCVDeviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F4A1DB7C9CD000975FD /* OneTransportCVDeviceTests.m */; };
+		F84B9F611DB7C9CD000975FD /* OneTransportCVTrafficTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F4B1DB7C9CD000975FD /* OneTransportCVTrafficTests.m */; };
+		F84B9F621DB7C9CD000975FD /* OneTransportEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F4C1DB7C9CD000975FD /* OneTransportEventTests.m */; };
+		F84B9F631DB7C9CD000975FD /* OneTransportPrimitivesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F4D1DB7C9CD000975FD /* OneTransportPrimitivesTests.m */; };
+		F84B9F641DB7C9CD000975FD /* OneTransportRoadworksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F4E1DB7C9CD000975FD /* OneTransportRoadworksTests.m */; };
+		F84B9F651DB7C9CD000975FD /* OneTransportSingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F4F1DB7C9CD000975FD /* OneTransportSingletonTests.m */; };
+		F84B9F671DB7C9CD000975FD /* OneTransportTrafficFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F511DB7C9CD000975FD /* OneTransportTrafficFlowTests.m */; };
+		F84B9F681DB7C9CD000975FD /* OneTransportTrafficQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F521DB7C9CD000975FD /* OneTransportTrafficQueueTests.m */; };
+		F84B9F691DB7C9CD000975FD /* OneTransportTrafficScootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F531DB7C9CD000975FD /* OneTransportTrafficScootTests.m */; };
+		F84B9F6A1DB7C9CD000975FD /* OneTransportTrafficSpeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F541DB7C9CD000975FD /* OneTransportTrafficSpeedTests.m */; };
+		F84B9F6B1DB7C9CD000975FD /* OneTransportTrafficTimesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F551DB7C9CD000975FD /* OneTransportTrafficTimesTests.m */; };
+		F84B9F6C1DB7C9CD000975FD /* OneTransportVariableMSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F561DB7C9CD000975FD /* OneTransportVariableMSTests.m */; };
+		F84B9FEA1DB7CA0D000975FD /* BC_ConfigVector.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F6D1DB7CA0D000975FD /* BC_ConfigVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FEB1DB7CA0D000975FD /* BC_ConfigVector.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F6E1DB7CA0D000975FD /* BC_ConfigVector.m */; };
+		F84B9FEC1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F6F1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FED1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F701DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.m */; };
+		F84B9FEE1DB7CA0D000975FD /* BC_Node.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F711DB7CA0D000975FD /* BC_Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FEF1DB7CA0D000975FD /* BC_Node.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F721DB7CA0D000975FD /* BC_Node.m */; };
+		F84B9FF01DB7CA0D000975FD /* BC_Node+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F731DB7CA0D000975FD /* BC_Node+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FF11DB7CA0D000975FD /* BC_Node+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F741DB7CA0D000975FD /* BC_Node+CoreDataProperties.m */; };
+		F84B9FF21DB7CA0D000975FD /* BC_Sketch.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F751DB7CA0D000975FD /* BC_Sketch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FF31DB7CA0D000975FD /* BC_Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F761DB7CA0D000975FD /* BC_Sketch.m */; };
+		F84B9FF41DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F771DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FF51DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F781DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.m */; };
+		F84B9FF61DB7CA0D000975FD /* BC_Travel.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F791DB7CA0D000975FD /* BC_Travel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FF71DB7CA0D000975FD /* BC_Travel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F7A1DB7CA0D000975FD /* BC_Travel.m */; };
+		F84B9FF81DB7CA0D000975FD /* BC_Travel+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F7B1DB7CA0D000975FD /* BC_Travel+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FF91DB7CA0D000975FD /* BC_Travel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F7C1DB7CA0D000975FD /* BC_Travel+CoreDataProperties.m */; };
+		F84B9FFA1DB7CA0D000975FD /* BC_Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F7D1DB7CA0D000975FD /* BC_Vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FFB1DB7CA0D000975FD /* BC_Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F7E1DB7CA0D000975FD /* BC_Vector.m */; };
+		F84B9FFC1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F7F1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FFD1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F801DB7CA0D000975FD /* BC_Vector+CoreDataProperties.m */; };
+		F84B9FFE1DB7CA0D000975FD /* CarParks.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F811DB7CA0D000975FD /* CarParks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84B9FFF1DB7CA0D000975FD /* CarParks.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F821DB7CA0D000975FD /* CarParks.m */; };
+		F84BA0001DB7CA0D000975FD /* CarParks+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F831DB7CA0D000975FD /* CarParks+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0011DB7CA0D000975FD /* CarParks+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F841DB7CA0D000975FD /* CarParks+CoreDataProperties.m */; };
+		F84BA0021DB7CA0D000975FD /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F851DB7CA0D000975FD /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0031DB7CA0D000975FD /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F861DB7CA0D000975FD /* Common.m */; };
+		F84BA0041DB7CA0D000975FD /* Common+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F871DB7CA0D000975FD /* Common+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0051DB7CA0D000975FD /* Common+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F881DB7CA0D000975FD /* Common+CoreDataProperties.m */; };
+		F84BA0061DB7CA0D000975FD /* CV_Device.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F891DB7CA0D000975FD /* CV_Device.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0071DB7CA0D000975FD /* CV_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F8A1DB7CA0D000975FD /* CV_Device.m */; };
+		F84BA0081DB7CA0D000975FD /* CV_Device+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F8B1DB7CA0D000975FD /* CV_Device+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0091DB7CA0D000975FD /* CV_Device+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F8C1DB7CA0D000975FD /* CV_Device+CoreDataProperties.m */; };
+		F84BA00A1DB7CA0D000975FD /* CV_Traffic.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F8D1DB7CA0D000975FD /* CV_Traffic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA00B1DB7CA0D000975FD /* CV_Traffic.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F8E1DB7CA0D000975FD /* CV_Traffic.m */; };
+		F84BA00C1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F8F1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA00D1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F901DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.m */; };
+		F84BA00E1DB7CA0D000975FD /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F911DB7CA0D000975FD /* Event.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA00F1DB7CA0D000975FD /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F921DB7CA0D000975FD /* Event.m */; };
+		F84BA0101DB7CA0D000975FD /* Event+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F931DB7CA0D000975FD /* Event+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0111DB7CA0D000975FD /* Event+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F941DB7CA0D000975FD /* Event+CoreDataProperties.m */; };
+		F84BA0121DB7CA0D000975FD /* NSObject+Collection.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F951DB7CA0D000975FD /* NSObject+Collection.h */; };
+		F84BA0131DB7CA0D000975FD /* NSObject+Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F961DB7CA0D000975FD /* NSObject+Collection.m */; };
+		F84BA0141DB7CA0D000975FD /* OneTransport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F971DB7CA0D000975FD /* OneTransport.xcdatamodeld */; };
+		F84BA0151DB7CA0D000975FD /* OTCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F991DB7CA0D000975FD /* OTCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0161DB7CA0D000975FD /* OTCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F9A1DB7CA0D000975FD /* OTCoreData.m */; };
+		F84BA0171DB7CA0D000975FD /* OTCoreData+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F9B1DB7CA0D000975FD /* OTCoreData+Private.h */; };
+		F84BA0181DB7CA0D000975FD /* OTCoreDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F9C1DB7CA0D000975FD /* OTCoreDataBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0191DB7CA0D000975FD /* OTCoreDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9F9D1DB7CA0D000975FD /* OTCoreDataBase.m */; };
+		F84BA01A1DB7CA0D000975FD /* OTCoreDataBase+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F9E1DB7CA0D000975FD /* OTCoreDataBase+Private.h */; };
+		F84BA01B1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9F9F1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA01C1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FA01DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.m */; };
+		F84BA01D1DB7CA0D000975FD /* OTCoreDataBitCarrierNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FA11DB7CA0D000975FD /* OTCoreDataBitCarrierNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA01E1DB7CA0D000975FD /* OTCoreDataBitCarrierNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FA21DB7CA0D000975FD /* OTCoreDataBitCarrierNode.m */; };
+		F84BA01F1DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FA31DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0201DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FA41DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.m */; };
+		F84BA0211DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FA51DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0221DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FA61DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.m */; };
+		F84BA0231DB7CA0D000975FD /* OTCoreDataBitCarrierVector.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FA71DB7CA0D000975FD /* OTCoreDataBitCarrierVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0241DB7CA0D000975FD /* OTCoreDataBitCarrierVector.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FA81DB7CA0D000975FD /* OTCoreDataBitCarrierVector.m */; };
+		F84BA0251DB7CA0D000975FD /* OTCoreDataCarPark.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FA91DB7CA0D000975FD /* OTCoreDataCarPark.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0261DB7CA0D000975FD /* OTCoreDataCarPark.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FAA1DB7CA0D000975FD /* OTCoreDataCarPark.m */; };
+		F84BA0271DB7CA0D000975FD /* OTCoreDataClearViewDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FAB1DB7CA0D000975FD /* OTCoreDataClearViewDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0281DB7CA0D000975FD /* OTCoreDataClearViewDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FAC1DB7CA0D000975FD /* OTCoreDataClearViewDevice.m */; };
+		F84BA0291DB7CA0D000975FD /* OTCoreDataClearViewTraffic.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FAD1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA02A1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FAE1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.m */; };
+		F84BA02B1DB7CA0D000975FD /* OTCoreDataCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FAF1DB7CA0D000975FD /* OTCoreDataCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA02C1DB7CA0D000975FD /* OTCoreDataCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FB01DB7CA0D000975FD /* OTCoreDataCommon.m */; };
+		F84BA02D1DB7CA0D000975FD /* OTCoreDataEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FB11DB7CA0D000975FD /* OTCoreDataEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA02E1DB7CA0D000975FD /* OTCoreDataEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FB21DB7CA0D000975FD /* OTCoreDataEvent.m */; };
+		F84BA02F1DB7CA0D000975FD /* OTCoreDataRoadworks.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FB31DB7CA0D000975FD /* OTCoreDataRoadworks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0301DB7CA0D000975FD /* OTCoreDataRoadworks.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FB41DB7CA0D000975FD /* OTCoreDataRoadworks.m */; };
+		F84BA0311DB7CA0D000975FD /* OTCoreDataTraffic.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FB51DB7CA0D000975FD /* OTCoreDataTraffic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0321DB7CA0D000975FD /* OTCoreDataTraffic.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FB61DB7CA0D000975FD /* OTCoreDataTraffic.m */; };
+		F84BA0331DB7CA0D000975FD /* OTCoreDataTraffic+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FB71DB7CA0D000975FD /* OTCoreDataTraffic+Private.h */; };
+		F84BA0341DB7CA0D000975FD /* OTCoreDataTrafficFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FB81DB7CA0D000975FD /* OTCoreDataTrafficFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0351DB7CA0D000975FD /* OTCoreDataTrafficFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FB91DB7CA0D000975FD /* OTCoreDataTrafficFlow.m */; };
+		F84BA0361DB7CA0D000975FD /* OTCoreDataTrafficQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FBA1DB7CA0D000975FD /* OTCoreDataTrafficQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0371DB7CA0D000975FD /* OTCoreDataTrafficQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FBB1DB7CA0D000975FD /* OTCoreDataTrafficQueue.m */; };
+		F84BA0381DB7CA0D000975FD /* OTCoreDataTrafficScoot.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FBC1DB7CA0D000975FD /* OTCoreDataTrafficScoot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0391DB7CA0D000975FD /* OTCoreDataTrafficScoot.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FBD1DB7CA0D000975FD /* OTCoreDataTrafficScoot.m */; };
+		F84BA03A1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FBE1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA03B1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FBF1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.m */; };
+		F84BA03C1DB7CA0D000975FD /* OTCoreDataTrafficTime.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FC01DB7CA0D000975FD /* OTCoreDataTrafficTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA03D1DB7CA0D000975FD /* OTCoreDataTrafficTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FC11DB7CA0D000975FD /* OTCoreDataTrafficTime.m */; };
+		F84BA03E1DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FC21DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA03F1DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FC31DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.m */; };
+		F84BA0401DB7CA0D000975FD /* OTCoreDateBaseTsv.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FC41DB7CA0D000975FD /* OTCoreDateBaseTsv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0411DB7CA0D000975FD /* OTCoreDateBaseTsv.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FC51DB7CA0D000975FD /* OTCoreDateBaseTsv.m */; };
+		F84BA0421DB7CA0D000975FD /* OTOperationFinishedDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FC61DB7CA0D000975FD /* OTOperationFinishedDownload.h */; };
+		F84BA0431DB7CA0D000975FD /* OTOperationFinishedDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FC71DB7CA0D000975FD /* OTOperationFinishedDownload.m */; };
+		F84BA0441DB7CA0D000975FD /* OTSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FC81DB7CA0D000975FD /* OTSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0451DB7CA0D000975FD /* OTSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FC91DB7CA0D000975FD /* OTSingleton.m */; };
+		F84BA0461DB7CA0D000975FD /* OTSingleton+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FCA1DB7CA0D000975FD /* OTSingleton+Private.h */; };
+		F84BA0471DB7CA0D000975FD /* OTTransportTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FCB1DB7CA0D000975FD /* OTTransportTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0481DB7CA0D000975FD /* Roadworks.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FCC1DB7CA0D000975FD /* Roadworks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0491DB7CA0D000975FD /* Roadworks.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FCD1DB7CA0D000975FD /* Roadworks.m */; };
+		F84BA04A1DB7CA0D000975FD /* Roadworks+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FCE1DB7CA0D000975FD /* Roadworks+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA04B1DB7CA0D000975FD /* Roadworks+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FCF1DB7CA0D000975FD /* Roadworks+CoreDataProperties.m */; };
+		F84BA04C1DB7CA0D000975FD /* TrafficFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FD01DB7CA0D000975FD /* TrafficFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA04D1DB7CA0D000975FD /* TrafficFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FD11DB7CA0D000975FD /* TrafficFlow.m */; };
+		F84BA04E1DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FD21DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA04F1DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FD31DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.m */; };
+		F84BA0501DB7CA0D000975FD /* TrafficQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FD41DB7CA0D000975FD /* TrafficQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0511DB7CA0D000975FD /* TrafficQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FD51DB7CA0D000975FD /* TrafficQueue.m */; };
+		F84BA0521DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FD61DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0531DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FD71DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.m */; };
+		F84BA0541DB7CA0D000975FD /* TrafficScoot.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FD81DB7CA0D000975FD /* TrafficScoot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0551DB7CA0D000975FD /* TrafficScoot.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FD91DB7CA0D000975FD /* TrafficScoot.m */; };
+		F84BA0561DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FDA1DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0571DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FDB1DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.m */; };
+		F84BA0581DB7CA0D000975FD /* TrafficSpeed.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FDC1DB7CA0D000975FD /* TrafficSpeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0591DB7CA0D000975FD /* TrafficSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FDD1DB7CA0D000975FD /* TrafficSpeed.m */; };
+		F84BA05A1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FDE1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA05B1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FDF1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.m */; };
+		F84BA05C1DB7CA0D000975FD /* TrafficTime.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FE01DB7CA0D000975FD /* TrafficTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA05D1DB7CA0D000975FD /* TrafficTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FE11DB7CA0D000975FD /* TrafficTime.m */; };
+		F84BA05E1DB7CA0D000975FD /* TrafficTime+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FE21DB7CA0D000975FD /* TrafficTime+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA05F1DB7CA0D000975FD /* TrafficTime+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FE31DB7CA0D000975FD /* TrafficTime+CoreDataProperties.m */; };
+		F84BA0601DB7CA0D000975FD /* TsvObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FE41DB7CA0D000975FD /* TsvObject.h */; };
+		F84BA0611DB7CA0D000975FD /* TsvObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FE51DB7CA0D000975FD /* TsvObject.m */; };
+		F84BA0621DB7CA0D000975FD /* VariableMessageSigns.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FE61DB7CA0D000975FD /* VariableMessageSigns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0631DB7CA0D000975FD /* VariableMessageSigns.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FE71DB7CA0D000975FD /* VariableMessageSigns.m */; };
+		F84BA0641DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = F84B9FE81DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BA0651DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B9FE91DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.m */; };
+		F84BA0711DB7CB60000975FD /* FlorenceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84BA0701DB7CB60000975FD /* FlorenceSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F84B9F261DB7C986000975FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B9F121DB7C986000975FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F84B9F1A1DB7C986000975FD;
+			remoteInfo = oneTRANSPORT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F84B9F1B1DB7C986000975FD /* oneTRANSPORT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = oneTRANSPORT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84B9F1E1DB7C986000975FD /* oneTRANSPORT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oneTRANSPORT.h; sourceTree = "<group>"; };
+		F84B9F1F1DB7C986000975FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84B9F241DB7C986000975FD /* oneTRANSPORTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oneTRANSPORTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84B9F2B1DB7C986000975FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84B9F401DB7C9CD000975FD /* OneTransportBaseTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneTransportBaseTests.h; sourceTree = "<group>"; };
+		F84B9F411DB7C9CD000975FD /* OneTransportBaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportBaseTests.m; sourceTree = "<group>"; };
+		F84B9F421DB7C9CD000975FD /* OneTransportBCConfigVectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportBCConfigVectorTests.m; sourceTree = "<group>"; };
+		F84B9F431DB7C9CD000975FD /* OneTransportBCNodeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportBCNodeTests.m; sourceTree = "<group>"; };
+		F84B9F441DB7C9CD000975FD /* OneTransportBCSketchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportBCSketchTests.m; sourceTree = "<group>"; };
+		F84B9F451DB7C9CD000975FD /* OneTransportBCTravelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportBCTravelTests.m; sourceTree = "<group>"; };
+		F84B9F461DB7C9CD000975FD /* OneTransportBCVectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportBCVectorTests.m; sourceTree = "<group>"; };
+		F84B9F471DB7C9CD000975FD /* OneTransportCarParksTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportCarParksTests.m; sourceTree = "<group>"; };
+		F84B9F481DB7C9CD000975FD /* OneTransportCommonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportCommonTests.m; sourceTree = "<group>"; };
+		F84B9F491DB7C9CD000975FD /* OneTransportCseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportCseTests.m; sourceTree = "<group>"; };
+		F84B9F4A1DB7C9CD000975FD /* OneTransportCVDeviceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportCVDeviceTests.m; sourceTree = "<group>"; };
+		F84B9F4B1DB7C9CD000975FD /* OneTransportCVTrafficTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportCVTrafficTests.m; sourceTree = "<group>"; };
+		F84B9F4C1DB7C9CD000975FD /* OneTransportEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportEventTests.m; sourceTree = "<group>"; };
+		F84B9F4D1DB7C9CD000975FD /* OneTransportPrimitivesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportPrimitivesTests.m; sourceTree = "<group>"; };
+		F84B9F4E1DB7C9CD000975FD /* OneTransportRoadworksTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportRoadworksTests.m; sourceTree = "<group>"; };
+		F84B9F4F1DB7C9CD000975FD /* OneTransportSingletonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportSingletonTests.m; sourceTree = "<group>"; };
+		F84B9F511DB7C9CD000975FD /* OneTransportTrafficFlowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportTrafficFlowTests.m; sourceTree = "<group>"; };
+		F84B9F521DB7C9CD000975FD /* OneTransportTrafficQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportTrafficQueueTests.m; sourceTree = "<group>"; };
+		F84B9F531DB7C9CD000975FD /* OneTransportTrafficScootTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportTrafficScootTests.m; sourceTree = "<group>"; };
+		F84B9F541DB7C9CD000975FD /* OneTransportTrafficSpeedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportTrafficSpeedTests.m; sourceTree = "<group>"; };
+		F84B9F551DB7C9CD000975FD /* OneTransportTrafficTimesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportTrafficTimesTests.m; sourceTree = "<group>"; };
+		F84B9F561DB7C9CD000975FD /* OneTransportVariableMSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTransportVariableMSTests.m; sourceTree = "<group>"; };
+		F84B9F6D1DB7CA0D000975FD /* BC_ConfigVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BC_ConfigVector.h; sourceTree = "<group>"; };
+		F84B9F6E1DB7CA0D000975FD /* BC_ConfigVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BC_ConfigVector.m; sourceTree = "<group>"; };
+		F84B9F6F1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BC_ConfigVector+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F701DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BC_ConfigVector+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F711DB7CA0D000975FD /* BC_Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BC_Node.h; sourceTree = "<group>"; };
+		F84B9F721DB7CA0D000975FD /* BC_Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BC_Node.m; sourceTree = "<group>"; };
+		F84B9F731DB7CA0D000975FD /* BC_Node+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BC_Node+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F741DB7CA0D000975FD /* BC_Node+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BC_Node+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F751DB7CA0D000975FD /* BC_Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BC_Sketch.h; sourceTree = "<group>"; };
+		F84B9F761DB7CA0D000975FD /* BC_Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BC_Sketch.m; sourceTree = "<group>"; };
+		F84B9F771DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BC_Sketch+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F781DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BC_Sketch+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F791DB7CA0D000975FD /* BC_Travel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BC_Travel.h; sourceTree = "<group>"; };
+		F84B9F7A1DB7CA0D000975FD /* BC_Travel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BC_Travel.m; sourceTree = "<group>"; };
+		F84B9F7B1DB7CA0D000975FD /* BC_Travel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BC_Travel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F7C1DB7CA0D000975FD /* BC_Travel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BC_Travel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F7D1DB7CA0D000975FD /* BC_Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BC_Vector.h; sourceTree = "<group>"; };
+		F84B9F7E1DB7CA0D000975FD /* BC_Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BC_Vector.m; sourceTree = "<group>"; };
+		F84B9F7F1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BC_Vector+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F801DB7CA0D000975FD /* BC_Vector+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BC_Vector+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F811DB7CA0D000975FD /* CarParks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarParks.h; sourceTree = "<group>"; };
+		F84B9F821DB7CA0D000975FD /* CarParks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarParks.m; sourceTree = "<group>"; };
+		F84B9F831DB7CA0D000975FD /* CarParks+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarParks+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F841DB7CA0D000975FD /* CarParks+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarParks+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F851DB7CA0D000975FD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		F84B9F861DB7CA0D000975FD /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		F84B9F871DB7CA0D000975FD /* Common+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Common+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F881DB7CA0D000975FD /* Common+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Common+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F891DB7CA0D000975FD /* CV_Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CV_Device.h; sourceTree = "<group>"; };
+		F84B9F8A1DB7CA0D000975FD /* CV_Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CV_Device.m; sourceTree = "<group>"; };
+		F84B9F8B1DB7CA0D000975FD /* CV_Device+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CV_Device+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F8C1DB7CA0D000975FD /* CV_Device+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CV_Device+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F8D1DB7CA0D000975FD /* CV_Traffic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CV_Traffic.h; sourceTree = "<group>"; };
+		F84B9F8E1DB7CA0D000975FD /* CV_Traffic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CV_Traffic.m; sourceTree = "<group>"; };
+		F84B9F8F1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CV_Traffic+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F901DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CV_Traffic+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F911DB7CA0D000975FD /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		F84B9F921DB7CA0D000975FD /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		F84B9F931DB7CA0D000975FD /* Event+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9F941DB7CA0D000975FD /* Event+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9F951DB7CA0D000975FD /* NSObject+Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Collection.h"; sourceTree = "<group>"; };
+		F84B9F961DB7CA0D000975FD /* NSObject+Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Collection.m"; sourceTree = "<group>"; };
+		F84B9F981DB7CA0D000975FD /* OneTransport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneTransport.xcdatamodel; sourceTree = "<group>"; };
+		F84B9F991DB7CA0D000975FD /* OTCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreData.h; sourceTree = "<group>"; };
+		F84B9F9A1DB7CA0D000975FD /* OTCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreData.m; sourceTree = "<group>"; };
+		F84B9F9B1DB7CA0D000975FD /* OTCoreData+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTCoreData+Private.h"; sourceTree = "<group>"; };
+		F84B9F9C1DB7CA0D000975FD /* OTCoreDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataBase.h; sourceTree = "<group>"; };
+		F84B9F9D1DB7CA0D000975FD /* OTCoreDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataBase.m; sourceTree = "<group>"; };
+		F84B9F9E1DB7CA0D000975FD /* OTCoreDataBase+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTCoreDataBase+Private.h"; sourceTree = "<group>"; };
+		F84B9F9F1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataBitCarrierConfigVector.h; sourceTree = "<group>"; };
+		F84B9FA01DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataBitCarrierConfigVector.m; sourceTree = "<group>"; };
+		F84B9FA11DB7CA0D000975FD /* OTCoreDataBitCarrierNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataBitCarrierNode.h; sourceTree = "<group>"; };
+		F84B9FA21DB7CA0D000975FD /* OTCoreDataBitCarrierNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataBitCarrierNode.m; sourceTree = "<group>"; };
+		F84B9FA31DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataBitCarrierSketch.h; sourceTree = "<group>"; };
+		F84B9FA41DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataBitCarrierSketch.m; sourceTree = "<group>"; };
+		F84B9FA51DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataBitCarrierTravel.h; sourceTree = "<group>"; };
+		F84B9FA61DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataBitCarrierTravel.m; sourceTree = "<group>"; };
+		F84B9FA71DB7CA0D000975FD /* OTCoreDataBitCarrierVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataBitCarrierVector.h; sourceTree = "<group>"; };
+		F84B9FA81DB7CA0D000975FD /* OTCoreDataBitCarrierVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataBitCarrierVector.m; sourceTree = "<group>"; };
+		F84B9FA91DB7CA0D000975FD /* OTCoreDataCarPark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataCarPark.h; sourceTree = "<group>"; };
+		F84B9FAA1DB7CA0D000975FD /* OTCoreDataCarPark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataCarPark.m; sourceTree = "<group>"; };
+		F84B9FAB1DB7CA0D000975FD /* OTCoreDataClearViewDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataClearViewDevice.h; sourceTree = "<group>"; };
+		F84B9FAC1DB7CA0D000975FD /* OTCoreDataClearViewDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataClearViewDevice.m; sourceTree = "<group>"; };
+		F84B9FAD1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataClearViewTraffic.h; sourceTree = "<group>"; };
+		F84B9FAE1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataClearViewTraffic.m; sourceTree = "<group>"; };
+		F84B9FAF1DB7CA0D000975FD /* OTCoreDataCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataCommon.h; sourceTree = "<group>"; };
+		F84B9FB01DB7CA0D000975FD /* OTCoreDataCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataCommon.m; sourceTree = "<group>"; };
+		F84B9FB11DB7CA0D000975FD /* OTCoreDataEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataEvent.h; sourceTree = "<group>"; };
+		F84B9FB21DB7CA0D000975FD /* OTCoreDataEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataEvent.m; sourceTree = "<group>"; };
+		F84B9FB31DB7CA0D000975FD /* OTCoreDataRoadworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataRoadworks.h; sourceTree = "<group>"; };
+		F84B9FB41DB7CA0D000975FD /* OTCoreDataRoadworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataRoadworks.m; sourceTree = "<group>"; };
+		F84B9FB51DB7CA0D000975FD /* OTCoreDataTraffic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataTraffic.h; sourceTree = "<group>"; };
+		F84B9FB61DB7CA0D000975FD /* OTCoreDataTraffic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataTraffic.m; sourceTree = "<group>"; };
+		F84B9FB71DB7CA0D000975FD /* OTCoreDataTraffic+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTCoreDataTraffic+Private.h"; sourceTree = "<group>"; };
+		F84B9FB81DB7CA0D000975FD /* OTCoreDataTrafficFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataTrafficFlow.h; sourceTree = "<group>"; };
+		F84B9FB91DB7CA0D000975FD /* OTCoreDataTrafficFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataTrafficFlow.m; sourceTree = "<group>"; };
+		F84B9FBA1DB7CA0D000975FD /* OTCoreDataTrafficQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataTrafficQueue.h; sourceTree = "<group>"; };
+		F84B9FBB1DB7CA0D000975FD /* OTCoreDataTrafficQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataTrafficQueue.m; sourceTree = "<group>"; };
+		F84B9FBC1DB7CA0D000975FD /* OTCoreDataTrafficScoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataTrafficScoot.h; sourceTree = "<group>"; };
+		F84B9FBD1DB7CA0D000975FD /* OTCoreDataTrafficScoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataTrafficScoot.m; sourceTree = "<group>"; };
+		F84B9FBE1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataTrafficSpeed.h; sourceTree = "<group>"; };
+		F84B9FBF1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataTrafficSpeed.m; sourceTree = "<group>"; };
+		F84B9FC01DB7CA0D000975FD /* OTCoreDataTrafficTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataTrafficTime.h; sourceTree = "<group>"; };
+		F84B9FC11DB7CA0D000975FD /* OTCoreDataTrafficTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataTrafficTime.m; sourceTree = "<group>"; };
+		F84B9FC21DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDataVariableMessageSigns.h; sourceTree = "<group>"; };
+		F84B9FC31DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDataVariableMessageSigns.m; sourceTree = "<group>"; };
+		F84B9FC41DB7CA0D000975FD /* OTCoreDateBaseTsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCoreDateBaseTsv.h; sourceTree = "<group>"; };
+		F84B9FC51DB7CA0D000975FD /* OTCoreDateBaseTsv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCoreDateBaseTsv.m; sourceTree = "<group>"; };
+		F84B9FC61DB7CA0D000975FD /* OTOperationFinishedDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOperationFinishedDownload.h; sourceTree = "<group>"; };
+		F84B9FC71DB7CA0D000975FD /* OTOperationFinishedDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOperationFinishedDownload.m; sourceTree = "<group>"; };
+		F84B9FC81DB7CA0D000975FD /* OTSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSingleton.h; sourceTree = "<group>"; };
+		F84B9FC91DB7CA0D000975FD /* OTSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSingleton.m; sourceTree = "<group>"; };
+		F84B9FCA1DB7CA0D000975FD /* OTSingleton+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTSingleton+Private.h"; sourceTree = "<group>"; };
+		F84B9FCB1DB7CA0D000975FD /* OTTransportTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTTransportTypes.h; sourceTree = "<group>"; };
+		F84B9FCC1DB7CA0D000975FD /* Roadworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roadworks.h; sourceTree = "<group>"; };
+		F84B9FCD1DB7CA0D000975FD /* Roadworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Roadworks.m; sourceTree = "<group>"; };
+		F84B9FCE1DB7CA0D000975FD /* Roadworks+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Roadworks+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FCF1DB7CA0D000975FD /* Roadworks+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Roadworks+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9FD01DB7CA0D000975FD /* TrafficFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficFlow.h; sourceTree = "<group>"; };
+		F84B9FD11DB7CA0D000975FD /* TrafficFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficFlow.m; sourceTree = "<group>"; };
+		F84B9FD21DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrafficFlow+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FD31DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TrafficFlow+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9FD41DB7CA0D000975FD /* TrafficQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficQueue.h; sourceTree = "<group>"; };
+		F84B9FD51DB7CA0D000975FD /* TrafficQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficQueue.m; sourceTree = "<group>"; };
+		F84B9FD61DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrafficQueue+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FD71DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TrafficQueue+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9FD81DB7CA0D000975FD /* TrafficScoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficScoot.h; sourceTree = "<group>"; };
+		F84B9FD91DB7CA0D000975FD /* TrafficScoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficScoot.m; sourceTree = "<group>"; };
+		F84B9FDA1DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrafficScoot+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FDB1DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TrafficScoot+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9FDC1DB7CA0D000975FD /* TrafficSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficSpeed.h; sourceTree = "<group>"; };
+		F84B9FDD1DB7CA0D000975FD /* TrafficSpeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficSpeed.m; sourceTree = "<group>"; };
+		F84B9FDE1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrafficSpeed+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FDF1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TrafficSpeed+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9FE01DB7CA0D000975FD /* TrafficTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficTime.h; sourceTree = "<group>"; };
+		F84B9FE11DB7CA0D000975FD /* TrafficTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficTime.m; sourceTree = "<group>"; };
+		F84B9FE21DB7CA0D000975FD /* TrafficTime+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrafficTime+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FE31DB7CA0D000975FD /* TrafficTime+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TrafficTime+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84B9FE41DB7CA0D000975FD /* TsvObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TsvObject.h; sourceTree = "<group>"; };
+		F84B9FE51DB7CA0D000975FD /* TsvObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TsvObject.m; sourceTree = "<group>"; };
+		F84B9FE61DB7CA0D000975FD /* VariableMessageSigns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariableMessageSigns.h; sourceTree = "<group>"; };
+		F84B9FE71DB7CA0D000975FD /* VariableMessageSigns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariableMessageSigns.m; sourceTree = "<group>"; };
+		F84B9FE81DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VariableMessageSigns+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F84B9FE91DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VariableMessageSigns+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F84BA0701DB7CB60000975FD /* FlorenceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlorenceSDK.framework; path = "../DerivedData/OneTransportMaps/Build/Products/Debug-iphonesimulator/FlorenceSDK.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F84B9F171DB7C986000975FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84BA0711DB7CB60000975FD /* FlorenceSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84B9F211DB7C986000975FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84B9F251DB7C986000975FD /* oneTRANSPORT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F84B9F111DB7C986000975FD = {
+			isa = PBXGroup;
+			children = (
+				F84B9F1D1DB7C986000975FD /* oneTRANSPORT */,
+				F84B9F281DB7C986000975FD /* oneTRANSPORTTests */,
+				F84B9F1C1DB7C986000975FD /* Products */,
+				F84BA06F1DB7CB60000975FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F84B9F1C1DB7C986000975FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9F1B1DB7C986000975FD /* oneTRANSPORT.framework */,
+				F84B9F241DB7C986000975FD /* oneTRANSPORTTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F84B9F1D1DB7C986000975FD /* oneTRANSPORT */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FCB1DB7CA0D000975FD /* OTTransportTypes.h */,
+				F84B9FC81DB7CA0D000975FD /* OTSingleton.h */,
+				F84B9FC91DB7CA0D000975FD /* OTSingleton.m */,
+				F84B9FCA1DB7CA0D000975FD /* OTSingleton+Private.h */,
+				F84B9F951DB7CA0D000975FD /* NSObject+Collection.h */,
+				F84B9F961DB7CA0D000975FD /* NSObject+Collection.m */,
+				F84B9FC61DB7CA0D000975FD /* OTOperationFinishedDownload.h */,
+				F84B9FC71DB7CA0D000975FD /* OTOperationFinishedDownload.m */,
+				F84BA0661DB7CA12000975FD /* CoreData */,
+				F84B9F1E1DB7C986000975FD /* oneTRANSPORT.h */,
+				F84B9F1F1DB7C986000975FD /* Info.plist */,
+			);
+			path = oneTRANSPORT;
+			sourceTree = "<group>";
+		};
+		F84B9F281DB7C986000975FD /* oneTRANSPORTTests */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9F401DB7C9CD000975FD /* OneTransportBaseTests.h */,
+				F84B9F411DB7C9CD000975FD /* OneTransportBaseTests.m */,
+				F84B9F491DB7C9CD000975FD /* OneTransportCseTests.m */,
+				F84B9F421DB7C9CD000975FD /* OneTransportBCConfigVectorTests.m */,
+				F84B9F431DB7C9CD000975FD /* OneTransportBCNodeTests.m */,
+				F84B9F441DB7C9CD000975FD /* OneTransportBCSketchTests.m */,
+				F84B9F451DB7C9CD000975FD /* OneTransportBCTravelTests.m */,
+				F84B9F461DB7C9CD000975FD /* OneTransportBCVectorTests.m */,
+				F84B9F471DB7C9CD000975FD /* OneTransportCarParksTests.m */,
+				F84B9F481DB7C9CD000975FD /* OneTransportCommonTests.m */,
+				F84B9F4A1DB7C9CD000975FD /* OneTransportCVDeviceTests.m */,
+				F84B9F4B1DB7C9CD000975FD /* OneTransportCVTrafficTests.m */,
+				F84B9F4C1DB7C9CD000975FD /* OneTransportEventTests.m */,
+				F84B9F4D1DB7C9CD000975FD /* OneTransportPrimitivesTests.m */,
+				F84B9F4E1DB7C9CD000975FD /* OneTransportRoadworksTests.m */,
+				F84B9F4F1DB7C9CD000975FD /* OneTransportSingletonTests.m */,
+				F84B9F511DB7C9CD000975FD /* OneTransportTrafficFlowTests.m */,
+				F84B9F521DB7C9CD000975FD /* OneTransportTrafficQueueTests.m */,
+				F84B9F531DB7C9CD000975FD /* OneTransportTrafficScootTests.m */,
+				F84B9F541DB7C9CD000975FD /* OneTransportTrafficSpeedTests.m */,
+				F84B9F551DB7C9CD000975FD /* OneTransportTrafficTimesTests.m */,
+				F84B9F561DB7C9CD000975FD /* OneTransportVariableMSTests.m */,
+				F84B9F2B1DB7C986000975FD /* Info.plist */,
+			);
+			path = oneTRANSPORTTests;
+			sourceTree = "<group>";
+		};
+		F84BA0661DB7CA12000975FD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9F971DB7CA0D000975FD /* OneTransport.xcdatamodeld */,
+				F84B9F991DB7CA0D000975FD /* OTCoreData.h */,
+				F84B9F9A1DB7CA0D000975FD /* OTCoreData.m */,
+				F84B9F9B1DB7CA0D000975FD /* OTCoreData+Private.h */,
+				F84B9F9C1DB7CA0D000975FD /* OTCoreDataBase.h */,
+				F84B9F9D1DB7CA0D000975FD /* OTCoreDataBase.m */,
+				F84B9F9E1DB7CA0D000975FD /* OTCoreDataBase+Private.h */,
+				F84B9FC41DB7CA0D000975FD /* OTCoreDateBaseTsv.h */,
+				F84B9FC51DB7CA0D000975FD /* OTCoreDateBaseTsv.m */,
+				F84B9FE41DB7CA0D000975FD /* TsvObject.h */,
+				F84B9FE51DB7CA0D000975FD /* TsvObject.m */,
+				F84BA06E1DB7CA47000975FD /* Common */,
+				F84BA06D1DB7CA3F000975FD /* VariableMessageSigns */,
+				F84BA06C1DB7CA3A000975FD /* CarParks */,
+				F84BA06B1DB7CA33000975FD /* Traffic */,
+				F84BA06A1DB7CA2D000975FD /* Roadworks */,
+				F84BA0691DB7CA24000975FD /* Events */,
+				F84BA0681DB7CA1E000975FD /* BitCarrier */,
+				F84BA0671DB7CA17000975FD /* ClearView */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		F84BA0671DB7CA17000975FD /* ClearView */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FAB1DB7CA0D000975FD /* OTCoreDataClearViewDevice.h */,
+				F84B9FAC1DB7CA0D000975FD /* OTCoreDataClearViewDevice.m */,
+				F84B9FAD1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.h */,
+				F84B9FAE1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.m */,
+				F84B9F891DB7CA0D000975FD /* CV_Device.h */,
+				F84B9F8A1DB7CA0D000975FD /* CV_Device.m */,
+				F84B9F8B1DB7CA0D000975FD /* CV_Device+CoreDataProperties.h */,
+				F84B9F8C1DB7CA0D000975FD /* CV_Device+CoreDataProperties.m */,
+				F84B9F8D1DB7CA0D000975FD /* CV_Traffic.h */,
+				F84B9F8E1DB7CA0D000975FD /* CV_Traffic.m */,
+				F84B9F8F1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.h */,
+				F84B9F901DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.m */,
+			);
+			name = ClearView;
+			sourceTree = "<group>";
+		};
+		F84BA0681DB7CA1E000975FD /* BitCarrier */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9F9F1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.h */,
+				F84B9FA01DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.m */,
+				F84B9FA11DB7CA0D000975FD /* OTCoreDataBitCarrierNode.h */,
+				F84B9FA21DB7CA0D000975FD /* OTCoreDataBitCarrierNode.m */,
+				F84B9FA31DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.h */,
+				F84B9FA41DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.m */,
+				F84B9FA51DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.h */,
+				F84B9FA61DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.m */,
+				F84B9FA71DB7CA0D000975FD /* OTCoreDataBitCarrierVector.h */,
+				F84B9FA81DB7CA0D000975FD /* OTCoreDataBitCarrierVector.m */,
+				F84B9F6D1DB7CA0D000975FD /* BC_ConfigVector.h */,
+				F84B9F6E1DB7CA0D000975FD /* BC_ConfigVector.m */,
+				F84B9F6F1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.h */,
+				F84B9F701DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.m */,
+				F84B9F711DB7CA0D000975FD /* BC_Node.h */,
+				F84B9F721DB7CA0D000975FD /* BC_Node.m */,
+				F84B9F731DB7CA0D000975FD /* BC_Node+CoreDataProperties.h */,
+				F84B9F741DB7CA0D000975FD /* BC_Node+CoreDataProperties.m */,
+				F84B9F751DB7CA0D000975FD /* BC_Sketch.h */,
+				F84B9F761DB7CA0D000975FD /* BC_Sketch.m */,
+				F84B9F771DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.h */,
+				F84B9F781DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.m */,
+				F84B9F791DB7CA0D000975FD /* BC_Travel.h */,
+				F84B9F7A1DB7CA0D000975FD /* BC_Travel.m */,
+				F84B9F7B1DB7CA0D000975FD /* BC_Travel+CoreDataProperties.h */,
+				F84B9F7C1DB7CA0D000975FD /* BC_Travel+CoreDataProperties.m */,
+				F84B9F7D1DB7CA0D000975FD /* BC_Vector.h */,
+				F84B9F7E1DB7CA0D000975FD /* BC_Vector.m */,
+				F84B9F7F1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.h */,
+				F84B9F801DB7CA0D000975FD /* BC_Vector+CoreDataProperties.m */,
+			);
+			name = BitCarrier;
+			sourceTree = "<group>";
+		};
+		F84BA0691DB7CA24000975FD /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FB11DB7CA0D000975FD /* OTCoreDataEvent.h */,
+				F84B9FB21DB7CA0D000975FD /* OTCoreDataEvent.m */,
+				F84B9F911DB7CA0D000975FD /* Event.h */,
+				F84B9F921DB7CA0D000975FD /* Event.m */,
+				F84B9F931DB7CA0D000975FD /* Event+CoreDataProperties.h */,
+				F84B9F941DB7CA0D000975FD /* Event+CoreDataProperties.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		F84BA06A1DB7CA2D000975FD /* Roadworks */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FB31DB7CA0D000975FD /* OTCoreDataRoadworks.h */,
+				F84B9FB41DB7CA0D000975FD /* OTCoreDataRoadworks.m */,
+				F84B9FCC1DB7CA0D000975FD /* Roadworks.h */,
+				F84B9FCD1DB7CA0D000975FD /* Roadworks.m */,
+				F84B9FCE1DB7CA0D000975FD /* Roadworks+CoreDataProperties.h */,
+				F84B9FCF1DB7CA0D000975FD /* Roadworks+CoreDataProperties.m */,
+			);
+			name = Roadworks;
+			sourceTree = "<group>";
+		};
+		F84BA06B1DB7CA33000975FD /* Traffic */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FB51DB7CA0D000975FD /* OTCoreDataTraffic.h */,
+				F84B9FB61DB7CA0D000975FD /* OTCoreDataTraffic.m */,
+				F84B9FB71DB7CA0D000975FD /* OTCoreDataTraffic+Private.h */,
+				F84B9FB81DB7CA0D000975FD /* OTCoreDataTrafficFlow.h */,
+				F84B9FB91DB7CA0D000975FD /* OTCoreDataTrafficFlow.m */,
+				F84B9FBA1DB7CA0D000975FD /* OTCoreDataTrafficQueue.h */,
+				F84B9FBB1DB7CA0D000975FD /* OTCoreDataTrafficQueue.m */,
+				F84B9FBC1DB7CA0D000975FD /* OTCoreDataTrafficScoot.h */,
+				F84B9FBD1DB7CA0D000975FD /* OTCoreDataTrafficScoot.m */,
+				F84B9FBE1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.h */,
+				F84B9FBF1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.m */,
+				F84B9FC01DB7CA0D000975FD /* OTCoreDataTrafficTime.h */,
+				F84B9FC11DB7CA0D000975FD /* OTCoreDataTrafficTime.m */,
+				F84B9FD01DB7CA0D000975FD /* TrafficFlow.h */,
+				F84B9FD11DB7CA0D000975FD /* TrafficFlow.m */,
+				F84B9FD21DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.h */,
+				F84B9FD31DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.m */,
+				F84B9FD41DB7CA0D000975FD /* TrafficQueue.h */,
+				F84B9FD51DB7CA0D000975FD /* TrafficQueue.m */,
+				F84B9FD61DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.h */,
+				F84B9FD71DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.m */,
+				F84B9FD81DB7CA0D000975FD /* TrafficScoot.h */,
+				F84B9FD91DB7CA0D000975FD /* TrafficScoot.m */,
+				F84B9FDA1DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.h */,
+				F84B9FDB1DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.m */,
+				F84B9FDC1DB7CA0D000975FD /* TrafficSpeed.h */,
+				F84B9FDD1DB7CA0D000975FD /* TrafficSpeed.m */,
+				F84B9FDE1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.h */,
+				F84B9FDF1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.m */,
+				F84B9FE01DB7CA0D000975FD /* TrafficTime.h */,
+				F84B9FE11DB7CA0D000975FD /* TrafficTime.m */,
+				F84B9FE21DB7CA0D000975FD /* TrafficTime+CoreDataProperties.h */,
+				F84B9FE31DB7CA0D000975FD /* TrafficTime+CoreDataProperties.m */,
+			);
+			name = Traffic;
+			sourceTree = "<group>";
+		};
+		F84BA06C1DB7CA3A000975FD /* CarParks */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FA91DB7CA0D000975FD /* OTCoreDataCarPark.h */,
+				F84B9FAA1DB7CA0D000975FD /* OTCoreDataCarPark.m */,
+				F84B9F811DB7CA0D000975FD /* CarParks.h */,
+				F84B9F821DB7CA0D000975FD /* CarParks.m */,
+				F84B9F831DB7CA0D000975FD /* CarParks+CoreDataProperties.h */,
+				F84B9F841DB7CA0D000975FD /* CarParks+CoreDataProperties.m */,
+			);
+			name = CarParks;
+			sourceTree = "<group>";
+		};
+		F84BA06D1DB7CA3F000975FD /* VariableMessageSigns */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FC21DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.h */,
+				F84B9FC31DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.m */,
+				F84B9FE61DB7CA0D000975FD /* VariableMessageSigns.h */,
+				F84B9FE71DB7CA0D000975FD /* VariableMessageSigns.m */,
+				F84B9FE81DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.h */,
+				F84B9FE91DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.m */,
+			);
+			name = VariableMessageSigns;
+			sourceTree = "<group>";
+		};
+		F84BA06E1DB7CA47000975FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F84B9FAF1DB7CA0D000975FD /* OTCoreDataCommon.h */,
+				F84B9FB01DB7CA0D000975FD /* OTCoreDataCommon.m */,
+				F84B9F851DB7CA0D000975FD /* Common.h */,
+				F84B9F861DB7CA0D000975FD /* Common.m */,
+				F84B9F871DB7CA0D000975FD /* Common+CoreDataProperties.h */,
+				F84B9F881DB7CA0D000975FD /* Common+CoreDataProperties.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F84BA06F1DB7CB60000975FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F84BA0701DB7CB60000975FD /* FlorenceSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F84B9F181DB7C986000975FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84BA0001DB7CA0D000975FD /* CarParks+CoreDataProperties.h in Headers */,
+				F84BA00A1DB7CA0D000975FD /* CV_Traffic.h in Headers */,
+				F84BA04E1DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.h in Headers */,
+				F84B9FFC1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.h in Headers */,
+				F84B9FFA1DB7CA0D000975FD /* BC_Vector.h in Headers */,
+				F84B9FEA1DB7CA0D000975FD /* BC_ConfigVector.h in Headers */,
+				F84BA03C1DB7CA0D000975FD /* OTCoreDataTrafficTime.h in Headers */,
+				F84B9FEE1DB7CA0D000975FD /* BC_Node.h in Headers */,
+				F84BA02F1DB7CA0D000975FD /* OTCoreDataRoadworks.h in Headers */,
+				F84BA0271DB7CA0D000975FD /* OTCoreDataClearViewDevice.h in Headers */,
+				F84BA0521DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.h in Headers */,
+				F84BA03A1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.h in Headers */,
+				F84BA02D1DB7CA0D000975FD /* OTCoreDataEvent.h in Headers */,
+				F84BA0601DB7CA0D000975FD /* TsvObject.h in Headers */,
+				F84BA0081DB7CA0D000975FD /* CV_Device+CoreDataProperties.h in Headers */,
+				F84BA00E1DB7CA0D000975FD /* Event.h in Headers */,
+				F84BA0561DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.h in Headers */,
+				F84BA05C1DB7CA0D000975FD /* TrafficTime.h in Headers */,
+				F84BA0471DB7CA0D000975FD /* OTTransportTypes.h in Headers */,
+				F84BA0401DB7CA0D000975FD /* OTCoreDateBaseTsv.h in Headers */,
+				F84BA05A1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.h in Headers */,
+				F84BA0361DB7CA0D000975FD /* OTCoreDataTrafficQueue.h in Headers */,
+				F84BA0581DB7CA0D000975FD /* TrafficSpeed.h in Headers */,
+				F84B9FEC1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.h in Headers */,
+				F84BA0641DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.h in Headers */,
+				F84B9FF61DB7CA0D000975FD /* BC_Travel.h in Headers */,
+				F84B9FF41DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.h in Headers */,
+				F84BA01D1DB7CA0D000975FD /* OTCoreDataBitCarrierNode.h in Headers */,
+				F84BA0621DB7CA0D000975FD /* VariableMessageSigns.h in Headers */,
+				F84BA00C1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.h in Headers */,
+				F84BA0421DB7CA0D000975FD /* OTOperationFinishedDownload.h in Headers */,
+				F84BA0541DB7CA0D000975FD /* TrafficScoot.h in Headers */,
+				F84BA02B1DB7CA0D000975FD /* OTCoreDataCommon.h in Headers */,
+				F84BA0121DB7CA0D000975FD /* NSObject+Collection.h in Headers */,
+				F84BA0341DB7CA0D000975FD /* OTCoreDataTrafficFlow.h in Headers */,
+				F84B9FF21DB7CA0D000975FD /* BC_Sketch.h in Headers */,
+				F84BA0441DB7CA0D000975FD /* OTSingleton.h in Headers */,
+				F84BA0171DB7CA0D000975FD /* OTCoreData+Private.h in Headers */,
+				F84BA0101DB7CA0D000975FD /* Event+CoreDataProperties.h in Headers */,
+				F84BA0061DB7CA0D000975FD /* CV_Device.h in Headers */,
+				F84BA0021DB7CA0D000975FD /* Common.h in Headers */,
+				F84BA0251DB7CA0D000975FD /* OTCoreDataCarPark.h in Headers */,
+				F84B9FF01DB7CA0D000975FD /* BC_Node+CoreDataProperties.h in Headers */,
+				F84BA0041DB7CA0D000975FD /* Common+CoreDataProperties.h in Headers */,
+				F84BA0461DB7CA0D000975FD /* OTSingleton+Private.h in Headers */,
+				F84BA0151DB7CA0D000975FD /* OTCoreData.h in Headers */,
+				F84BA01F1DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.h in Headers */,
+				F84BA0501DB7CA0D000975FD /* TrafficQueue.h in Headers */,
+				F84BA0231DB7CA0D000975FD /* OTCoreDataBitCarrierVector.h in Headers */,
+				F84BA0211DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.h in Headers */,
+				F84B9F2C1DB7C986000975FD /* oneTRANSPORT.h in Headers */,
+				F84B9FF81DB7CA0D000975FD /* BC_Travel+CoreDataProperties.h in Headers */,
+				F84BA01A1DB7CA0D000975FD /* OTCoreDataBase+Private.h in Headers */,
+				F84B9FFE1DB7CA0D000975FD /* CarParks.h in Headers */,
+				F84BA04A1DB7CA0D000975FD /* Roadworks+CoreDataProperties.h in Headers */,
+				F84BA0311DB7CA0D000975FD /* OTCoreDataTraffic.h in Headers */,
+				F84BA0381DB7CA0D000975FD /* OTCoreDataTrafficScoot.h in Headers */,
+				F84BA0181DB7CA0D000975FD /* OTCoreDataBase.h in Headers */,
+				F84BA01B1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.h in Headers */,
+				F84BA04C1DB7CA0D000975FD /* TrafficFlow.h in Headers */,
+				F84BA0481DB7CA0D000975FD /* Roadworks.h in Headers */,
+				F84BA03E1DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.h in Headers */,
+				F84BA0331DB7CA0D000975FD /* OTCoreDataTraffic+Private.h in Headers */,
+				F84BA05E1DB7CA0D000975FD /* TrafficTime+CoreDataProperties.h in Headers */,
+				F84BA0291DB7CA0D000975FD /* OTCoreDataClearViewTraffic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F84B9F1A1DB7C986000975FD /* oneTRANSPORT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84B9F2F1DB7C986000975FD /* Build configuration list for PBXNativeTarget "oneTRANSPORT" */;
+			buildPhases = (
+				F84B9F161DB7C986000975FD /* Sources */,
+				F84B9F171DB7C986000975FD /* Frameworks */,
+				F84B9F181DB7C986000975FD /* Headers */,
+				F84B9F191DB7C986000975FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oneTRANSPORT;
+			productName = oneTRANSPORT;
+			productReference = F84B9F1B1DB7C986000975FD /* oneTRANSPORT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F84B9F231DB7C986000975FD /* oneTRANSPORTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84B9F321DB7C986000975FD /* Build configuration list for PBXNativeTarget "oneTRANSPORTTests" */;
+			buildPhases = (
+				F84B9F201DB7C986000975FD /* Sources */,
+				F84B9F211DB7C986000975FD /* Frameworks */,
+				F84B9F221DB7C986000975FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F84B9F271DB7C986000975FD /* PBXTargetDependency */,
+			);
+			name = oneTRANSPORTTests;
+			productName = oneTRANSPORTTests;
+			productReference = F84B9F241DB7C986000975FD /* oneTRANSPORTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F84B9F121DB7C986000975FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = InterDigital;
+				TargetAttributes = {
+					F84B9F1A1DB7C986000975FD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZLHX6UPC53;
+						ProvisioningStyle = Automatic;
+					};
+					F84B9F231DB7C986000975FD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZLHX6UPC53;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F84B9F151DB7C986000975FD /* Build configuration list for PBXProject "oneTRANSPORT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F84B9F111DB7C986000975FD;
+			productRefGroup = F84B9F1C1DB7C986000975FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F84B9F1A1DB7C986000975FD /* oneTRANSPORT */,
+				F84B9F231DB7C986000975FD /* oneTRANSPORTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F84B9F191DB7C986000975FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84B9F221DB7C986000975FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F84B9F161DB7C986000975FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84BA00D1DB7CA0D000975FD /* CV_Traffic+CoreDataProperties.m in Sources */,
+				F84B9FF11DB7CA0D000975FD /* BC_Node+CoreDataProperties.m in Sources */,
+				F84BA0221DB7CA0D000975FD /* OTCoreDataBitCarrierTravel.m in Sources */,
+				F84BA03D1DB7CA0D000975FD /* OTCoreDataTrafficTime.m in Sources */,
+				F84BA0131DB7CA0D000975FD /* NSObject+Collection.m in Sources */,
+				F84B9FEB1DB7CA0D000975FD /* BC_ConfigVector.m in Sources */,
+				F84BA00B1DB7CA0D000975FD /* CV_Traffic.m in Sources */,
+				F84BA0301DB7CA0D000975FD /* OTCoreDataRoadworks.m in Sources */,
+				F84BA0351DB7CA0D000975FD /* OTCoreDataTrafficFlow.m in Sources */,
+				F84BA01C1DB7CA0D000975FD /* OTCoreDataBitCarrierConfigVector.m in Sources */,
+				F84BA0451DB7CA0D000975FD /* OTSingleton.m in Sources */,
+				F84BA0011DB7CA0D000975FD /* CarParks+CoreDataProperties.m in Sources */,
+				F84BA0071DB7CA0D000975FD /* CV_Device.m in Sources */,
+				F84BA00F1DB7CA0D000975FD /* Event.m in Sources */,
+				F84BA0491DB7CA0D000975FD /* Roadworks.m in Sources */,
+				F84BA0591DB7CA0D000975FD /* TrafficSpeed.m in Sources */,
+				F84BA02C1DB7CA0D000975FD /* OTCoreDataCommon.m in Sources */,
+				F84BA0431DB7CA0D000975FD /* OTOperationFinishedDownload.m in Sources */,
+				F84B9FED1DB7CA0D000975FD /* BC_ConfigVector+CoreDataProperties.m in Sources */,
+				F84BA04F1DB7CA0D000975FD /* TrafficFlow+CoreDataProperties.m in Sources */,
+				F84B9FFF1DB7CA0D000975FD /* CarParks.m in Sources */,
+				F84BA03F1DB7CA0D000975FD /* OTCoreDataVariableMessageSigns.m in Sources */,
+				F84BA0531DB7CA0D000975FD /* TrafficQueue+CoreDataProperties.m in Sources */,
+				F84B9FFB1DB7CA0D000975FD /* BC_Vector.m in Sources */,
+				F84BA02E1DB7CA0D000975FD /* OTCoreDataEvent.m in Sources */,
+				F84BA0511DB7CA0D000975FD /* TrafficQueue.m in Sources */,
+				F84BA0161DB7CA0D000975FD /* OTCoreData.m in Sources */,
+				F84BA0191DB7CA0D000975FD /* OTCoreDataBase.m in Sources */,
+				F84B9FF31DB7CA0D000975FD /* BC_Sketch.m in Sources */,
+				F84B9FF71DB7CA0D000975FD /* BC_Travel.m in Sources */,
+				F84BA0411DB7CA0D000975FD /* OTCoreDateBaseTsv.m in Sources */,
+				F84B9FF51DB7CA0D000975FD /* BC_Sketch+CoreDataProperties.m in Sources */,
+				F84BA0571DB7CA0D000975FD /* TrafficScoot+CoreDataProperties.m in Sources */,
+				F84BA0261DB7CA0D000975FD /* OTCoreDataCarPark.m in Sources */,
+				F84BA0391DB7CA0D000975FD /* OTCoreDataTrafficScoot.m in Sources */,
+				F84BA0201DB7CA0D000975FD /* OTCoreDataBitCarrierSketch.m in Sources */,
+				F84BA04D1DB7CA0D000975FD /* TrafficFlow.m in Sources */,
+				F84BA04B1DB7CA0D000975FD /* Roadworks+CoreDataProperties.m in Sources */,
+				F84BA03B1DB7CA0D000975FD /* OTCoreDataTrafficSpeed.m in Sources */,
+				F84BA0321DB7CA0D000975FD /* OTCoreDataTraffic.m in Sources */,
+				F84B9FF91DB7CA0D000975FD /* BC_Travel+CoreDataProperties.m in Sources */,
+				F84BA0111DB7CA0D000975FD /* Event+CoreDataProperties.m in Sources */,
+				F84BA0551DB7CA0D000975FD /* TrafficScoot.m in Sources */,
+				F84BA0141DB7CA0D000975FD /* OneTransport.xcdatamodeld in Sources */,
+				F84BA05F1DB7CA0D000975FD /* TrafficTime+CoreDataProperties.m in Sources */,
+				F84BA0031DB7CA0D000975FD /* Common.m in Sources */,
+				F84BA0091DB7CA0D000975FD /* CV_Device+CoreDataProperties.m in Sources */,
+				F84BA05D1DB7CA0D000975FD /* TrafficTime.m in Sources */,
+				F84BA0611DB7CA0D000975FD /* TsvObject.m in Sources */,
+				F84B9FEF1DB7CA0D000975FD /* BC_Node.m in Sources */,
+				F84BA0051DB7CA0D000975FD /* Common+CoreDataProperties.m in Sources */,
+				F84BA01E1DB7CA0D000975FD /* OTCoreDataBitCarrierNode.m in Sources */,
+				F84BA0241DB7CA0D000975FD /* OTCoreDataBitCarrierVector.m in Sources */,
+				F84B9FFD1DB7CA0D000975FD /* BC_Vector+CoreDataProperties.m in Sources */,
+				F84BA0651DB7CA0D000975FD /* VariableMessageSigns+CoreDataProperties.m in Sources */,
+				F84BA0631DB7CA0D000975FD /* VariableMessageSigns.m in Sources */,
+				F84BA0371DB7CA0D000975FD /* OTCoreDataTrafficQueue.m in Sources */,
+				F84BA02A1DB7CA0D000975FD /* OTCoreDataClearViewTraffic.m in Sources */,
+				F84BA05B1DB7CA0D000975FD /* TrafficSpeed+CoreDataProperties.m in Sources */,
+				F84BA0281DB7CA0D000975FD /* OTCoreDataClearViewDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84B9F201DB7C986000975FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84B9F5B1DB7C9CD000975FD /* OneTransportBCTravelTests.m in Sources */,
+				F84B9F6C1DB7C9CD000975FD /* OneTransportVariableMSTests.m in Sources */,
+				F84B9F591DB7C9CD000975FD /* OneTransportBCNodeTests.m in Sources */,
+				F84B9F5C1DB7C9CD000975FD /* OneTransportBCVectorTests.m in Sources */,
+				F84B9F6A1DB7C9CD000975FD /* OneTransportTrafficSpeedTests.m in Sources */,
+				F84B9F611DB7C9CD000975FD /* OneTransportCVTrafficTests.m in Sources */,
+				F84B9F691DB7C9CD000975FD /* OneTransportTrafficScootTests.m in Sources */,
+				F84B9F5D1DB7C9CD000975FD /* OneTransportCarParksTests.m in Sources */,
+				F84B9F581DB7C9CD000975FD /* OneTransportBCConfigVectorTests.m in Sources */,
+				F84B9F571DB7C9CD000975FD /* OneTransportBaseTests.m in Sources */,
+				F84B9F5A1DB7C9CD000975FD /* OneTransportBCSketchTests.m in Sources */,
+				F84B9F601DB7C9CD000975FD /* OneTransportCVDeviceTests.m in Sources */,
+				F84B9F671DB7C9CD000975FD /* OneTransportTrafficFlowTests.m in Sources */,
+				F84B9F5F1DB7C9CD000975FD /* OneTransportCseTests.m in Sources */,
+				F84B9F651DB7C9CD000975FD /* OneTransportSingletonTests.m in Sources */,
+				F84B9F631DB7C9CD000975FD /* OneTransportPrimitivesTests.m in Sources */,
+				F84B9F681DB7C9CD000975FD /* OneTransportTrafficQueueTests.m in Sources */,
+				F84B9F641DB7C9CD000975FD /* OneTransportRoadworksTests.m in Sources */,
+				F84B9F5E1DB7C9CD000975FD /* OneTransportCommonTests.m in Sources */,
+				F84B9F621DB7C9CD000975FD /* OneTransportEventTests.m in Sources */,
+				F84B9F6B1DB7C9CD000975FD /* OneTransportTrafficTimesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F84B9F271DB7C986000975FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F84B9F1A1DB7C986000975FD /* oneTRANSPORT */;
+			targetProxy = F84B9F261DB7C986000975FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F84B9F2D1DB7C986000975FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F84B9F2E1DB7C986000975FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F84B9F301DB7C986000975FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = oneTRANSPORT/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.uk.onetransport.oneTRANSPORT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F84B9F311DB7C986000975FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = oneTRANSPORT/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.uk.onetransport.oneTRANSPORT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F84B9F331DB7C986000975FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				INFOPLIST_FILE = oneTRANSPORTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.uk.onetransport.oneTRANSPORTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F84B9F341DB7C986000975FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZLHX6UPC53;
+				INFOPLIST_FILE = oneTRANSPORTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.uk.onetransport.oneTRANSPORTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F84B9F151DB7C986000975FD /* Build configuration list for PBXProject "oneTRANSPORT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84B9F2D1DB7C986000975FD /* Debug */,
+				F84B9F2E1DB7C986000975FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F84B9F2F1DB7C986000975FD /* Build configuration list for PBXNativeTarget "oneTRANSPORT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84B9F301DB7C986000975FD /* Debug */,
+				F84B9F311DB7C986000975FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F84B9F321DB7C986000975FD /* Build configuration list for PBXNativeTarget "oneTRANSPORTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84B9F331DB7C986000975FD /* Debug */,
+				F84B9F341DB7C986000975FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F84B9F971DB7CA0D000975FD /* OneTransport.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F84B9F981DB7CA0D000975FD /* OneTransport.xcdatamodel */,
+			);
+			currentVersion = F84B9F981DB7CA0D000975FD /* OneTransport.xcdatamodel */;
+			path = OneTransport.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F84B9F121DB7C986000975FD /* Project object */;
+}

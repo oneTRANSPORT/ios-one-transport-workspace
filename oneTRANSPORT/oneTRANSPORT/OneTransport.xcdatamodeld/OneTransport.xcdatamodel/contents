@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="BC_ConfigVector" representedClassName="BC_ConfigVector" syncable="YES">
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="from_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="sketch_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="to_location" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BC_Node" representedClassName="BC_Node" syncable="YES">
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="BC_Sketch" representedClassName="BC_Sketch" syncable="YES">
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat_lon_array" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level_of_service" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="sketch_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="vector_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BC_Travel" representedClassName="BC_Travel" syncable="YES">
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clock_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="elapsed" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="from_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="to_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="travel_summary_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trend" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="BC_Vector" representedClassName="BC_Vector" syncable="YES">
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="levelOfService" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="CarParks" representedClassName="CarParks" syncable="YES">
+        <attribute name="almostFullDec" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="almostFullInc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="full" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fullDec" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fullInc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="occupancy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="occupancyTrend" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="queuingTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rateExit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rateFill" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="spacesAvailable" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Common" representedClassName="Common" syncable="YES">
+        <attribute name="angle" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="counter1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="counter2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitudeTo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitudeTo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleTo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tpegDirection" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="typeSubFrom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeSubTo" optional="YES" attributeType="String" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="type"/>
+            </compoundIndex>
+        </compoundIndexes>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="reference"/>
+                <constraint value="type"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CV_Device" representedClassName="CV_Device" syncable="YES">
+        <attribute name="changed" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CV_Traffic" representedClassName="CV_Traffic" syncable="YES">
+        <attribute name="cin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationtime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="direction" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lane" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primary_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="impactOnTraffic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overallStart" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="overEnd" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="periodEnd" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="periodStart" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="validityStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Roadworks" representedClassName="Roadworks" versionHashModifier="1" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="effectOnRoadLayout" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="impactOnTraffic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overallEndTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="overallStartTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="periods" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="roadMaintenanceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TrafficFlow" representedClassName="TrafficFlow" syncable="YES">
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="vehicleFlow" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="TrafficQueue" representedClassName="TrafficQueue" syncable="YES">
+        <attribute name="present" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="severity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="TrafficScoot" representedClassName="TrafficScoot" syncable="YES">
+        <attribute name="averageSpeed" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="congestionPercent" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="currentFlow" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="linkTravelTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="TrafficSpeed" representedClassName="TrafficSpeed" syncable="YES">
+        <attribute name="averageVehicleSpeed" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="TrafficTime" representedClassName="TrafficTime" syncable="YES">
+        <attribute name="freeFlowSpeed" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="freeFlowTravelTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="travelTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="VariableMS" representedClassName="VariableMessageSigns" syncable="YES">
+        <attribute name="legends" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reference" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="reference"/>
+                <index value="timestamp"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <elements>
+        <element name="BC_ConfigVector" positionX="-36" positionY="135" width="128" height="195"/>
+        <element name="BC_Node" positionX="-36" positionY="135" width="128" height="165"/>
+        <element name="BC_Sketch" positionX="-27" positionY="144" width="128" height="150"/>
+        <element name="BC_Travel" positionX="-9" positionY="162" width="128" height="210"/>
+        <element name="BC_Vector" positionX="-18" positionY="153" width="128" height="150"/>
+        <element name="CarParks" positionX="-63" positionY="-18" width="128" height="270"/>
+        <element name="Common" positionX="-36" positionY="135" width="128" height="285"/>
+        <element name="CV_Device" positionX="-27" positionY="144" width="128" height="195"/>
+        <element name="CV_Traffic" positionX="-18" positionY="153" width="128" height="150"/>
+        <element name="Event" positionX="-36" positionY="135" width="128" height="165"/>
+        <element name="Roadworks" positionX="-54" positionY="63" width="128" height="210"/>
+        <element name="TrafficFlow" positionX="-36" positionY="135" width="128" height="90"/>
+        <element name="TrafficQueue" positionX="-27" positionY="144" width="128" height="105"/>
+        <element name="TrafficScoot" positionX="-18" positionY="153" width="128" height="135"/>
+        <element name="TrafficSpeed" positionX="-9" positionY="162" width="128" height="90"/>
+        <element name="TrafficTime" positionX="-18" positionY="153" width="128" height="120"/>
+        <element name="VariableMS" positionX="-36" positionY="144" width="128" height="105"/>
+    </elements>
+</model>
