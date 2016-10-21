@@ -17,11 +17,11 @@
 		F8A689441D87D05800C2EB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A689421D87D05800C2EB43 /* LaunchScreen.storyboard */; };
 		F8A6894C1D87D07900C2EB43 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6894B1D87D07900C2EB43 /* BaseViewController.swift */; };
 		F8A6894E1D87D09200C2EB43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6894D1D87D09200C2EB43 /* MainViewController.swift */; };
-		F8A689511D87D0A400C2EB43 /* PotHoleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6894F1D87D0A400C2EB43 /* PotHoleListViewController.swift */; };
-		F8A689521D87D0A400C2EB43 /* PotHoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689501D87D0A400C2EB43 /* PotHoleViewController.swift */; };
 		F8A689541D87D1FE00C2EB43 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689531D87D1FE00C2EB43 /* ActivityView.swift */; };
 		F8A689561D87D24800C2EB43 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A689551D87D24800C2EB43 /* LocationManager.swift */; };
 		F8ECA0061DBA289300D2E509 /* PotHoleCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECA0051DBA289300D2E509 /* PotHoleCreateViewController.swift */; };
+		F8ECA0221DBA574B00D2E509 /* PotHoleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECA0201DBA574B00D2E509 /* PotHoleListViewController.swift */; };
+		F8ECA0231DBA574B00D2E509 /* PotHoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECA0211DBA574B00D2E509 /* PotHoleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,11 +50,11 @@
 		F8A689451D87D05800C2EB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A6894B1D87D07900C2EB43 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../OTMap/OTMap/BaseViewController.swift; sourceTree = "<group>"; };
 		F8A6894D1D87D09200C2EB43 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../OTMap/OTMap/MainViewController.swift; sourceTree = "<group>"; };
-		F8A6894F1D87D0A400C2EB43 /* PotHoleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PotHoleListViewController.swift; path = ../../OTMap/OTMap/PotHoleListViewController.swift; sourceTree = "<group>"; };
-		F8A689501D87D0A400C2EB43 /* PotHoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PotHoleViewController.swift; path = ../../OTMap/OTMap/PotHoleViewController.swift; sourceTree = "<group>"; };
 		F8A689531D87D1FE00C2EB43 /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityView.swift; path = ../../OTMap/OTMap/ActivityView.swift; sourceTree = "<group>"; };
 		F8A689551D87D24800C2EB43 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = ../../OTMap/OTMap/LocationManager.swift; sourceTree = "<group>"; };
 		F8ECA0051DBA289300D2E509 /* PotHoleCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotHoleCreateViewController.swift; sourceTree = "<group>"; };
+		F8ECA0201DBA574B00D2E509 /* PotHoleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotHoleListViewController.swift; sourceTree = "<group>"; };
+		F8ECA0211DBA574B00D2E509 /* PotHoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotHoleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 				F8A689391D87D05800C2EB43 /* AppDelegate.swift */,
 				F8A6894B1D87D07900C2EB43 /* BaseViewController.swift */,
 				F8A6894D1D87D09200C2EB43 /* MainViewController.swift */,
-				F8A689501D87D0A400C2EB43 /* PotHoleViewController.swift */,
-				F8A6894F1D87D0A400C2EB43 /* PotHoleListViewController.swift */,
+				F8ECA0211DBA574B00D2E509 /* PotHoleViewController.swift */,
+				F8ECA0201DBA574B00D2E509 /* PotHoleListViewController.swift */,
 				F8ECA0051DBA289300D2E509 /* PotHoleCreateViewController.swift */,
 				F8A689551D87D24800C2EB43 /* LocationManager.swift */,
 				F8A689531D87D1FE00C2EB43 /* ActivityView.swift */,
@@ -180,12 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8A689511D87D0A400C2EB43 /* PotHoleListViewController.swift in Sources */,
 				F8A6893A1D87D05800C2EB43 /* AppDelegate.swift in Sources */,
 				F8A6894C1D87D07900C2EB43 /* BaseViewController.swift in Sources */,
 				F8A689561D87D24800C2EB43 /* LocationManager.swift in Sources */,
+				F8ECA0231DBA574B00D2E509 /* PotHoleViewController.swift in Sources */,
 				F8A6894E1D87D09200C2EB43 /* MainViewController.swift in Sources */,
-				F8A689521D87D0A400C2EB43 /* PotHoleViewController.swift in Sources */,
+				F8ECA0221DBA574B00D2E509 /* PotHoleListViewController.swift in Sources */,
 				F8ECA0061DBA289300D2E509 /* PotHoleCreateViewController.swift in Sources */,
 				F8A689541D87D1FE00C2EB43 /* ActivityView.swift in Sources */,
 			);

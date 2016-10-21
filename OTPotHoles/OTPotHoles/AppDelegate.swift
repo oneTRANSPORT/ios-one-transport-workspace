@@ -20,7 +20,7 @@
 import UIKit
 import oneTRANSPORT
 
-let APP_ID      = "HackathonApp"
+let APP_ID      = "<Your App Name>"
 let kPotHoleCNT = "POT-HOLES"
 
 @UIApplicationMain
@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let APP_ID       = "<Your App Name>"
         let ACCCESS_KEY  = "<Your Access Key>"
         let ORIGIN       = "<Your AEID>"
         
