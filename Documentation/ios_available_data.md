@@ -10,28 +10,20 @@ message signs near Luton and Leicester.  We suggest consuming all the feeds
 for the items in which you are interested and then filtering with a geonet
 if needed.
 
-Also, not every county provides every type of data.  These feeds are
+Also, not every local authority provides every type of data.  These feeds are
 available:
 
-> ### Buckinghamshire
-> > Car parks, events, traffic flow, traffic queue, traffic scoot, traffic
-> > speed, traffic travel time, roadworks, variable message signs
-
-> ### Hertfordshire
-> > Car parks, events, traffic flow, traffic scoot, traffic
-> > speed, traffic travel time, roadworks, variable message signs
-
-> ### Northamptonshire
-> > Car parks, traffic flow, traffic travel time, roadworks,
-> > variable message signs
-
-> ### Oxfordshire
-> > Car parks, events, traffic flow, traffic queue, traffic scoot, traffic
-> > speed, traffic travel time, roadworks, variable message signs
-
-> ### Birmingham
-> > Car parks, traffic flow, traffic scoot, traffic speed,
-> > traffic travel time, roadworks, variable message signs
+|                        | Bucks   | Herts   |Northants| Oxon    |Birmingham|
+|------------------------|:-------:|:-------:|:-------:|:-------:|:--------:|
+| Variable Message Signs |    X    |    X    |    X    |    X    |    X     |
+| Car Parks              |    X    |    X    |    X    |    X    |    X     |
+| Traffic Flow           |    X    |    X    |    X    |    X    |    X     |
+| Traffic Queue          |    X    |    -    |    -    |    X    |    -     |
+| Traffic Speed          |    X    |    X    |    -    |    X    |    X     |
+| Traffic Scoot          |    X    |    X    |    -    |    X    |    X     |
+| Traffic Time           |    X    |    X    |    X    |    X    |    X     |
+| Roadworks              |    X    |    X    |    X    |    X    |    X     |
+| Events                 |    X    |    X    |    -    |    X    |    -     |
 
 The data types in each feed are common across counties, so a car park object from Bucks will be the same format as one from Northants.  Objects retrieved from a feed are generally indicative of the current situation, so if an average speed reading across a link is 40kph, then that was true when the last reading was observed a few minutes ago.  If an event occurs in a feed, then that event is happening now.
 

@@ -1,7 +1,7 @@
 Florence oneM2M iOS SDK
 =======================
 
-For details on the oneM2M standard, please refer to the [oneM2M documentation] (http://onem2m.org/technical/latest-drafts)
+Please refer to the [oneM2M documentation] (http://onem2m.org/technical/latest-drafts) for details of the oneM2M standard.
 
 Requests to the CSE are made available through requests that wrap HTTPS requests.  These are asynchronous, working on background threads and returning results in completion blocks.
 

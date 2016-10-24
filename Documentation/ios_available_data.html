@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>available_data</title>
+<title>ios_available_data</title>
 
 
 <style type="text/css">
@@ -338,52 +338,103 @@ message signs near Luton and Leicester.  We suggest consuming all the feeds
 for the items in which you are interested and then filtering with a geonet
 if needed.</p>
 
-<p>Also, not every county provides every type of data.  These feeds are
+<p>Also, not every local authority provides every type of data.  These feeds are
 available:</p>
 
-<blockquote>
-<h3 id="toc_2">Buckinghamshire</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: center">Bucks</th>
+<th style="text-align: center">Herts</th>
+<th style="text-align: center">Northants</th>
+<th style="text-align: center">Oxon</th>
+<th style="text-align: center">Birmingham</th>
+</tr>
+</thead>
 
-<blockquote>
-<p>Car parks, events, traffic flow, traffic queue, traffic scoot, traffic
-speed, traffic travel time, roadworks, variable message signs</p>
-</blockquote>
-
-<h3 id="toc_3">Hertfordshire</h3>
-
-<blockquote>
-<p>Car parks, events, traffic flow, traffic scoot, traffic
-speed, traffic travel time, roadworks, variable message signs</p>
-</blockquote>
-
-<h3 id="toc_4">Northamptonshire</h3>
-
-<blockquote>
-<p>Car parks, traffic flow, traffic travel time, roadworks,
-variable message signs</p>
-</blockquote>
-
-<h3 id="toc_5">Oxfordshire</h3>
-
-<blockquote>
-<p>Car parks, events, traffic flow, traffic queue, traffic scoot, traffic
-speed, traffic travel time, roadworks, variable message signs</p>
-</blockquote>
-
-<h3 id="toc_6">Birmingham</h3>
-
-<blockquote>
-<p>Car parks, traffic flow, traffic scoot, traffic speed,
-traffic travel time, roadworks, variable message signs</p>
-</blockquote>
-</blockquote>
+<tbody>
+<tr>
+<td>Variable Message Signs</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Car Parks</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Traffic Flow</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Traffic Queue</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr>
+<td>Traffic Speed</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Traffic Scoot</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Traffic Time</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Roadworks</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+</tr>
+<tr>
+<td>Events</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">X</td>
+<td style="text-align: center">-</td>
+</tr>
+</tbody>
+</table>
 
 <p>The data types in each feed are common across counties, so a car park object from Bucks will be the same format as one from Northants.  Objects retrieved from a feed are generally indicative of the current situation, so if an average speed reading across a link is 40kph, then that was true when the last reading was observed a few minutes ago.  If an event occurs in a feed, then that event is happening now.</p>
 
 <p>Here are some examples to show the structure for data classes:</p>
 
 <blockquote>
-<h3 id="toc_7"><code>Common</code></h3>
+<h3 id="toc_2"><code>Common</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier</p>
@@ -451,7 +502,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSNumber *angle</code></strong> float calculated angle between from and to coordinates</p>
 </blockquote>
 
-<h3 id="toc_8"><code>CarParks</code></h3>
+<h3 id="toc_3"><code>CarParks</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -485,7 +536,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSNumber *queuingTime</code></strong> current queuing time for car park entry</p>
 </blockquote>
 
-<h3 id="toc_9"><code>Event</code></h3>
+<h3 id="toc_4"><code>Event</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -505,7 +556,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSString *validityStatus</code></strong> </p>
 </blockquote>
 
-<h3 id="toc_10"><code>Roadworks</code></h3>
+<h3 id="toc_5"><code>Roadworks</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -531,7 +582,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 </blockquote>
 
-<h3 id="toc_11"><code>TrafficFlow</code></h3>
+<h3 id="toc_6"><code>TrafficFlow</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -541,7 +592,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSNumber *vehicleFlow</code></strong> number of vehicles along the link per hour</p>
 </blockquote>
 
-<h3 id="toc_12"><code>TrafficQueue</code></h3>
+<h3 id="toc_7"><code>TrafficQueue</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -553,7 +604,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSString *present</code></strong> &#39;Y&#39; if a queue exists, &#39;N&#39; otherwise</p>
 </blockquote>
 
-<h3 id="toc_13"><code>TrafficScoot</code></h3>
+<h3 id="toc_8"><code>TrafficScoot</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -569,7 +620,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSNumber *linkTravelTime</code></strong></p>
 </blockquote>
 
-<h3 id="toc_14"><code>TrafficSpeed</code></h3>
+<h3 id="toc_9"><code>TrafficSpeed</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -579,7 +630,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSNumber *averageVehicleSpeed</code></strong> NSInteger average speed along this link in km/h</p>
 </blockquote>
 
-<h3 id="toc_15"><code>TrafficTravelTime</code></h3>
+<h3 id="toc_10"><code>TrafficTravelTime</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -593,7 +644,7 @@ traffic travel time, roadworks, variable message signs</p>
 <p><strong><code>NSNumber *freeFlowTravelTime</code></strong> NSInteger best possible speed given minimal congestion</p>
 </blockquote>
 
-<h3 id="toc_16"><code>VariableMessageSign</code></h3>
+<h3 id="toc_11"><code>VariableMessageSign</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -606,7 +657,7 @@ traffic travel time, roadworks, variable message signs</p>
 </blockquote>
 </blockquote>
 
-<h2 id="toc_17">Silverstone near-real-time and historical data</h2>
+<h2 id="toc_12">Silverstone near-real-time and historical data</h2>
 
 <p>We have two groups of feeds supplied by Clearview and BitCarrier, for the
 car parks and roads at Silverstone circuit.</p>
@@ -626,7 +677,7 @@ You can add import this data into your app and continue to add to it with curren
 feed data if you like.</p>
 
 <blockquote>
-<h3 id="toc_18"><code>Device</code></h3>
+<h3 id="toc_13"><code>Device</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -650,7 +701,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong></p>
 </blockquote>
 
-<h3 id="toc_19"><code>Traffic</code></h3>
+<h3 id="toc_14"><code>Traffic</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -668,7 +719,7 @@ feed data if you like.</p>
 <p><strong><code>NSString *cin_id</code></strong></p>
 </blockquote>
 
-<h3 id="toc_20"><code>Node</code></h3>
+<h3 id="toc_15"><code>Node</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -688,7 +739,7 @@ feed data if you like.</p>
 <p><strong><code>NSString *cin_id</code></strong></p>
 </blockquote>
 
-<h3 id="toc_21"><code>Sketch</code></h3>
+<h3 id="toc_16"><code>Sketch</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -706,7 +757,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>
 
-<h3 id="toc_22"><code>Vector</code></h3>
+<h3 id="toc_17"><code>Vector</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -724,7 +775,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>
 
-<h3 id="toc_23"><code>Config Vector</code></h3>
+<h3 id="toc_18"><code>Config Vector</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -748,7 +799,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>
 
-<h3 id="toc_24"><code>Travel</code></h3>
+<h3 id="toc_19"><code>Travel</code></h3>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
