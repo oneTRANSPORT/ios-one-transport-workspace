@@ -20,10 +20,11 @@
 #ifndef OTTransportTypes_h
 #define OTTransportTypes_h
 
-#define k_CSE_BASEURL_DEV    @"https://staging.onetransport.uk.net"
-#define k_CSE_BASEURL_LIVE   @"https://cse-01.onetransport.uk.net"
-#define k_CSE_ID             @"ONE-CSE-01"
-#define k_CSE_NAME           @"ONETCSE01"
+#define k_CSE_BASEURL_DEV      @"https://dev.onetransport.uk.net"
+#define k_CSE_BASEURL_STAGING  @"https://staging.onetransport.uk.net"
+#define k_CSE_BASEURL_LIVE     @"https://cse-01.onetransport.uk.net"
+#define k_CSE_ID               @"ONE-CSE-01"
+#define k_CSE_NAME             @"ONETCSE01"
 
 // API Requests
 
@@ -84,7 +85,13 @@ typedef NS_ENUM(NSInteger, EmptyLatLon) {
 
 // User Defaults - Show developer log in the console
 
-#define kUserDefaultsDev            @"oneT_UserDefaultsDev"
+#define kUserDefaultsCommsMode            @"oneT_UserDefaultsDev"
+
+typedef NS_ENUM(NSInteger, CommsTest) {
+    CommsTestLive       = 0,
+    CommsTestStaging    = 1,
+    CommsTestDev        = 2,
+};
 
 // User Defaults - Show kph/mph
 

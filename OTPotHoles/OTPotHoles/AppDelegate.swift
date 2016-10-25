@@ -34,7 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ORIGIN       = "<Your AEID>"
         
         OTSingleton.sharedInstance().configureOneTransport(APP_ID, auth: ACCCESS_KEY, origin: ORIGIN)
-        
+        UserDefaults.standard.set(CommsTest.live.rawValue, forKey: kUserDefaultsCommsMode)
+
         return true
     }
     

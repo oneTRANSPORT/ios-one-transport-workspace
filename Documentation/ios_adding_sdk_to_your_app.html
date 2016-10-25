@@ -327,8 +327,6 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">Adding the SDK to your XCode app</h1>
-
 <p>The oneTRANSPORT SDK for iOS is currently distributed as a set of two Frameworks.</p>
 
 <p>Add both of the following to your XCode project:</p>
@@ -338,24 +336,9 @@ kbd {
 <li><p>oneTRANSPORT.framework</p></li>
 </ol>
 
-<p>For Swift:</p>
+<h1 id="toc_0">New Projects</h1>
 
-<p>Add the following to AppDelegate.swift</p>
-
-<div><pre><code class="language-none">import oneTRANSPORT</code></pre></div>
-
-<p>And ensure that didFinishLaunchingWithOptions includes the following: </p>
-
-<div><pre><code class="language-none">func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {   
-
-    let APP_ID       = &quot;&lt;Your App Name&gt;&quot;
-    let ACCCESS_KEY  = &quot;&lt;Your Access Key&gt;&quot;
-    let ORIGIN       = &quot;&lt;Your AEID&gt;&quot;
-
-    OTSingleton.sharedInstance().configureOneTransport(APP_ID, auth: ACCCESS_KEY, origin: ORIGIN)
-
-    return true
-}</code></pre></div>
+<p>For new projects you need to include both frameworks.</p>
 
 <p>For Objective-C:</p>
 
@@ -374,6 +357,25 @@ kbd {
     [[OTSingleton sharedInstance] configureOneTransport:APP_ID auth:APP_TOKEN origin:APP_ORIGIN];
 
     return YES;
+}</code></pre></div>
+
+<p>For Swift:</p>
+
+<p>Add the following to AppDelegate.swift</p>
+
+<div><pre><code class="language-none">import oneTRANSPORT</code></pre></div>
+
+<p>And ensure that didFinishLaunchingWithOptions includes the following: </p>
+
+<div><pre><code class="language-none">func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {   
+
+    let APP_ID       = &quot;&lt;Your App Name&gt;&quot;
+    let ACCCESS_KEY  = &quot;&lt;Your Access Key&gt;&quot;
+    let ORIGIN       = &quot;&lt;Your AEID&gt;&quot;
+
+    OTSingleton.sharedInstance().configureOneTransport(APP_ID, auth: ACCCESS_KEY, origin: ORIGIN)
+
+    return true
 }</code></pre></div>
 
 

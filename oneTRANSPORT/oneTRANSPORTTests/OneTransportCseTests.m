@@ -21,8 +21,8 @@
     NSString *ACCCESS_KEY  = @"<Your Access Key>";
     NSString *ORIGIN       = @"<Your AEID>";
     
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:kUserDefaultsDev];
-
+    [[NSUserDefaults standardUserDefaults] setInteger:CommsTestLive forKey:kUserDefaultsCommsMode];
+    
     [self.singleton deleteCse];
     [self.singleton configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
 

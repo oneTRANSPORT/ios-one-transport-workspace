@@ -327,11 +327,9 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">Using the OneTransportMaps workspace</h1>
-
 <p>The oneTRANSPORTMaps workspace can be downloaded from <a href="https://github.com/oneTRANSPORT/ios-one-transport-workspace">GitHub</a></p>
 
-<h1 id="toc_1">Credentials</h1>
+<h1 id="toc_0">Credentials</h1>
 
 <p>Before you can run the applications you will need to create an App in the oneTRANSPORT <a href="https://cse-01.onetransport.uk.net/portal/login">Developer Portal</a> and replace the existing source code credentials with the following.</p>
 
@@ -351,9 +349,113 @@ kbd {
     NSString *APP_TOKEN  = @&quot;&lt;Your Access Key&gt;&quot;;
     NSString *APP_ORIGIN = @&quot;&lt;Your AEID&gt;&quot;;</code></pre></div>
 
-<h1 id="toc_2">Project Settings</h1>
+<h1 id="toc_1">Project Settings</h1>
 
 <p>In the Project Settings for OTMap, OTPotHoles and OTObjCExample you will need to put in your own <strong>Bundle Identifier</strong> and <strong>Developer Team</strong>.</p>
+
+<h1 id="toc_2">The Projects</h1>
+
+<h2 id="toc_3">OTMap</h2>
+
+<p>OTMap is the basis for an Apple Maps based application that displays local authority data as icons. </p>
+
+<h3 id="toc_4">Menu Option - Map View</h3>
+
+<p>Displays a map of items/sensors with refresh and filter options. For convience, if a single local authority is selected the map will be positioned within that authority&#39;s area.</p>
+
+<ol>
+<li>Filter by local authority and data type</li>
+<li>Refresh the data set (the option disables itself for 30 seconds after being pressed)</li>
+<li>Press to set a Map Rectangle Filter to the current map view bounds. Press again to clear the Map Rectangle Filter.</li>
+<li>Tapping on an item icon displays basic information about the related Content Instance. 
+
+<ol>
+<li>Tapping on Debug displays the CoreData records related to the item.</li>
+<li>Tapping on the Favourite icon toggles a local CoreData flag</li>
+</ol></li>
+<li> Scrolling and zooming the map will refresh the data set</li>
+</ol>
+
+<h3 id="toc_5">Menu Option - Map Filters</h3>
+
+<p>Display the map filter view controller.</p>
+
+<h3 id="toc_6">Menu Option - Favourites</h3>
+
+<p>Display the currently selected favourites along with a thumbnail view of the item/sensor location. To set favourites refer to MapView, option 4 (above).</p>
+
+<h3 id="toc_7">Menu Option - Bit Carrier / ClearView</h3>
+
+<p>Test the Bit Carrier and Clear View CSE requests and change the sensor names to request specific data.</p>
+
+<ol>
+<li><p>Select <strong>TSV Data</strong> to import the TSV files into CoreData.</p>
+
+<ol>
+<li><p>Select <strong>Load All</strong> to clear and import all data from the TSVs.</p></li>
+<li><p>Select individual options to clear and import a particular data set.</p></li>
+<li><p>The TSV files are in the SampleData group within the Project.</p></li>
+</ol></li>
+<li><p>Select <strong>ClearView Report</strong> to display a graph of data based on the current CoreData set.</p>
+
+<ol>
+<li><p>Select <strong>Show Dates</strong> to see the range available within the current set.</p></li>
+<li><p>For the test data, try a range of 1 or 2 days at the beginning of the set to see the data more clearly.</p></li>
+</ol></li>
+</ol>
+
+<h3 id="toc_8">Menu Option - Settings</h3>
+
+<p>Modify settings and data within the app.</p>
+
+<ol>
+<li><p>Set the refresh interval for the map view.</p></li>
+<li><p>Set kph (kilometres per hour) or mph (miles per hour).</p></li>
+<li><p>Flush the entire CoreData database.</p></li>
+<li><p>See the current Map Rectangle Filter with the option to clear it.</p></li>
+<li><p>Turn on/off the extended trace log for oneTRANSPORT HTTPS requests</p></li>
+<li><p>See the current table record counts within CoreData.</p></li>
+</ol>
+
+<h3 id="toc_9">Menu Option - Example Request</h3>
+
+<p>A handy Swift view controller that matches the functionality of OTObjCExample.</p>
+
+<ol>
+<li><p>A request through OTSingleton is made to return car park data for local authorities.</p></li>
+<li><p>Completion blocks are prepared that will display an error or the contents of a successful response.</p></li>
+</ol>
+
+<h2 id="toc_10">OTPotHoles</h2>
+
+<p>OTPotHoles is a simplified app to demonstrate how to generate containers and store content in an AE (Application Entity). </p>
+
+<p><em>Create</em> a new <strong>Container</strong> in your <strong>AE</strong>.</p>
+
+<p><em>Create</em> <strong>Content Instances</strong> within the <strong>Container</strong>.</p>
+
+<p>Use <em>Discover</em> to list the <strong>Content Instances</strong> with the <strong>Container</strong> and then <em>Retrieve</em> the contents.</p>
+
+<h3 id="toc_11">Menu Option - Report Pot Hole</h3>
+
+<p>Within the XCode Simulator the app &#39;drives&#39; around Buckinghamshire updating the app latitude/longitude. The user can enter a comment, set a severity level and submit the coordinates and additional information to the AE.</p>
+
+<h3 id="toc_12">Menu Option - View Pot Hole Container</h3>
+
+<p>As the view controller is displayed a request to the AE discovers all content instances and returns their contents.</p>
+
+<h3 id="toc_13">Menu Option - Create Pot Hole Container</h3>
+
+<p>As the view controller is displayed a request to the AE creates the pot hole container. An error is generated by the CSE if the container already exists.</p>
+
+<h2 id="toc_14">OTObjCExample</h2>
+
+<p>OTObjCExample is a single view controller app to demonstrate how to make requests through the oneTRANSPORT framework using Objective-C.</p>
+
+<ol>
+<li><p>A completion block is prepared that will display an error or the contents of a successful response.</p></li>
+<li><p>A single request through OTSingleton is made to return car park data for Birmingham.</p></li>
+</ol>
 
 
 

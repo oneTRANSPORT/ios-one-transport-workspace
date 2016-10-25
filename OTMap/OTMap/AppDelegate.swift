@@ -33,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ACCCESS_KEY  = "<Your Access Key>"
         let ORIGIN       = "<Your AEID>"
         OTSingleton.sharedInstance().configureOneTransport(APP_ID, auth: ACCCESS_KEY, origin: ORIGIN)
-
+        UserDefaults.standard.set(CommsTest.live.rawValue, forKey: kUserDefaultsCommsMode)
+        
         self.checkFirstTimeFilter()
         if UserDefaults.standard.bool(forKey: kUserDefaultsActiveLocation) { //App has restarted while location active
             let _ = LocationManager.sharedInstance.start()

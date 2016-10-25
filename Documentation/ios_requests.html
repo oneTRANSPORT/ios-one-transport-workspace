@@ -327,8 +327,6 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">oneTRANSPORT API</h1>
-
 <p>Current feed data from oneTRANSPORT is made available through requests that wrap HTTPS requests to the CSE.  These are asynchronous, working on background threads and returning results in completion blocks.</p>
 
 <p>A typical request is made to a local authority AE, requesting a particular container type.</p>
@@ -434,6 +432,26 @@ OTSingleton.sharedInstance().requestData(.bucks, container: .carParks) {response
         print (array)
     }
 }</code></pre></div>
+
+<h1 id="toc_0">Thread safe</h1>
+
+<p>All completion blocks return on a background thread hences the need to dispatch UI changes to the main thread.</p>
+
+<p>The above examples demonstrate that Core Data entities can be interrogated within a completion block. </p>
+
+<p>Since oneTRANSPORT Core Data is thread safe it is acceptable to query objects on the main or background threads.</p>
+
+<h1 id="toc_1">Purge old data</h1>
+
+<p>New requests for data from the CSE forces an age check of the historical data in the entity. Any data older than the specified number of hours is purged. To override the default of 4 hours of data to retain can be overridden with:</p>
+
+<p>Objective-C</p>
+
+<div><pre><code class="language-none">[[OTSingleton sharedInstance] setMaxHoursDataAge:99];</code></pre></div>
+
+<p>Swift</p>
+
+<div><pre><code class="language-none">OTSingleton.sharedInstance().setMaxHoursDataAge(99)</code></pre></div>
 
 
 

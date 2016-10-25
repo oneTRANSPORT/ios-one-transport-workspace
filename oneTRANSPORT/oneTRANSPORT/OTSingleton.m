@@ -93,10 +93,16 @@
                        origin:(NSString *)origin {
 
     NSString *baseUrl;
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:kUserDefaultsDev]) {
-        baseUrl = k_CSE_BASEURL_DEV;
-    } else {
-        baseUrl = k_CSE_BASEURL_LIVE;
+    switch ([[NSUserDefaults standardUserDefaults] integerForKey:kUserDefaultsCommsMode]) {
+        case CommsTestDev:
+            baseUrl = k_CSE_BASEURL_DEV;
+            break;
+        case CommsTestStaging:
+            baseUrl = k_CSE_BASEURL_STAGING;
+            break;
+        default:
+            baseUrl = k_CSE_BASEURL_LIVE;
+            break;
     }
     [self configureCseWithBaseUrl:baseUrl
                             appId:appId

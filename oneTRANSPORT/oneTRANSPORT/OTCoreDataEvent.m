@@ -44,7 +44,7 @@
 
 - (BOOL)isAllowedToMakeRequest:(LocalAuthority)la {
     
-    return [super isAllowedToMakeRequest:la] && (la != LocalAuthorityBirmingham);
+    return [super isAllowedToMakeRequest:la] && (la != LocalAuthorityBirmingham) && (la != LocalAuthorityNorthants);
 }
 
 - (NSArray *)populateTableWith:(id)data timestamp:(NSDate *)date {

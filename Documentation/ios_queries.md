@@ -1,6 +1,3 @@
-CoreData queries
-================
-
 Custom queries are possible using standard NSPredicate objects and the helper retrieval methods in the oneTRANSPORT framework.
 
 For example, to extract ClearView traffic sensor 1747 data for yesterday:

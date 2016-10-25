@@ -35,6 +35,7 @@
     
     [[OTSingleton sharedInstance] configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
     [[OTSingleton sharedInstance] setTrace:true];
+    [[NSUserDefaults standardUserDefaults] setInteger:CommsTestLive forKey:kUserDefaultsCommsMode];
     return YES;
 }
 

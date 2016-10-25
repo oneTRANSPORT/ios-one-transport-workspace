@@ -40,8 +40,6 @@
 		F8B6EE1B1D5DE3280047C7A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6EE1A1D5DE3280047C7A3 /* BaseViewController.swift */; };
 		F8B6EE1F1D5DE6380047C7A3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6EE1E1D5DE6380047C7A3 /* InfoViewController.swift */; };
 		F8B6EE211D5DE6480047C7A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6EE201D5DE6480047C7A3 /* MainViewController.swift */; };
-		F8C7B5371D7DA13C009F9C8C /* PotHoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7B5361D7DA13C009F9C8C /* PotHoleViewController.swift */; };
-		F8C7B5441D7E9A5B009F9C8C /* PotHoleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7B5431D7E9A5B009F9C8C /* PotHoleListViewController.swift */; };
 		F8C7B57A1D7F1724009F9C8C /* BitCarrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7B5791D7F1724009F9C8C /* BitCarrierViewController.swift */; };
 		F8C7B5821D8049BA009F9C8C /* PolyLineAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7B5811D8049BA009F9C8C /* PolyLineAnnotation.swift */; };
 		F8C7B5891D804F1A009F9C8C /* bit_carrier_silverstone_node.tsv in Resources */ = {isa = PBXBuildFile; fileRef = F8C7B5851D804F1A009F9C8C /* bit_carrier_silverstone_node.tsv */; };
@@ -140,8 +138,6 @@
 		F8B6EE1A1D5DE3280047C7A3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F8B6EE1E1D5DE6380047C7A3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		F8B6EE201D5DE6480047C7A3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F8C7B5361D7DA13C009F9C8C /* PotHoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotHoleViewController.swift; sourceTree = "<group>"; };
-		F8C7B5431D7E9A5B009F9C8C /* PotHoleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotHoleListViewController.swift; sourceTree = "<group>"; };
 		F8C7B5791D7F1724009F9C8C /* BitCarrierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitCarrierViewController.swift; sourceTree = "<group>"; };
 		F8C7B5811D8049BA009F9C8C /* PolyLineAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolyLineAnnotation.swift; sourceTree = "<group>"; };
 		F8C7B5851D804F1A009F9C8C /* bit_carrier_silverstone_node.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bit_carrier_silverstone_node.tsv; path = SampleData/bit_carrier_silverstone_node.tsv; sourceTree = SOURCE_ROOT; };
@@ -241,7 +237,6 @@
 				F8B6EE1C1D5DE60A0047C7A3 /* Map */,
 				F8B6EE131D5DBF770047C7A3 /* Filter */,
 				F8CD8FA41D76D9730094F41E /* Favourites */,
-				F8C7B5341D7DA10E009F9C8C /* PotHoles */,
 				F8C7B5781D7F1701009F9C8C /* BitCarrier and ClearView */,
 				F8B6EE1D1D5DE6150047C7A3 /* Settings */,
 				F86AAA131D9936D900D6F330 /* Example */,
@@ -284,15 +279,6 @@
 				F8B6EE1E1D5DE6380047C7A3 /* InfoViewController.swift */,
 			);
 			name = Settings;
-			sourceTree = "<group>";
-		};
-		F8C7B5341D7DA10E009F9C8C /* PotHoles */ = {
-			isa = PBXGroup;
-			children = (
-				F8C7B5361D7DA13C009F9C8C /* PotHoleViewController.swift */,
-				F8C7B5431D7E9A5B009F9C8C /* PotHoleListViewController.swift */,
-			);
-			name = PotHoles;
 			sourceTree = "<group>";
 		};
 		F8C7B5781D7F1701009F9C8C /* BitCarrier and ClearView */ = {
@@ -492,7 +478,6 @@
 				F8B6EE0E1D5DB70E0047C7A3 /* FilterTableViewCell.swift in Sources */,
 				F85C4A531D8FF01000D659D0 /* ClearViewReportView.swift in Sources */,
 				F8C7B5971D816BD6009F9C8C /* MapImageView.swift in Sources */,
-				F8C7B5441D7E9A5B009F9C8C /* PotHoleListViewController.swift in Sources */,
 				F8CD8F9F1D75CC050094F41E /* TickerTapeViewController.swift in Sources */,
 				F8CD8FA71D76D98F0094F41E /* FavouritesViewController.swift in Sources */,
 				F86AAA181D99370000D6F330 /* ExampleViewController.swift in Sources */,
@@ -509,7 +494,6 @@
 				F85C4A4E1D8FCF8800D659D0 /* BitCarrierTsvViewController.swift in Sources */,
 				F8B6EE171D5DC1170047C7A3 /* ActivityView.swift in Sources */,
 				F8B6EE1B1D5DE3280047C7A3 /* BaseViewController.swift in Sources */,
-				F8C7B5371D7DA13C009F9C8C /* PotHoleViewController.swift in Sources */,
 				F8CD8FA91D76DBC90094F41E /* FavouritesTableViewCell.swift in Sources */,
 				F8C7B57A1D7F1724009F9C8C /* BitCarrierViewController.swift in Sources */,
 				F8B6EDDF1D5DB3A50047C7A3 /* AppDelegate.swift in Sources */,

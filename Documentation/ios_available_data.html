@@ -327,16 +327,13 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">What data is available?</h1>
-
-<h2 id="toc_1">Near-real-time local authority feeds</h2>
+<h1 id="toc_0">Near-real-time local authority feeds</h1>
 
 <p>Data sources are provided by county and by data type, but note that there
 is a fair amount of overlap between the regions and councils may control
 items outside their boundaries.  For example, Northamptonshire has variable
 message signs near Luton and Leicester.  We suggest consuming all the feeds
-for the items in which you are interested and then filtering with a geonet
-if needed.</p>
+for the items in which you are interested and then filtering with a Map Rectangle Filter if needed.</p>
 
 <p>Also, not every local authority provides every type of data.  These feeds are
 available:</p>
@@ -434,16 +431,16 @@ available:</p>
 <p>Here are some examples to show the structure for data classes:</p>
 
 <blockquote>
-<h3 id="toc_2"><code>Common</code></h3>
+<h2 id="toc_1"><code>Common</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
-<p><strong><code>NSNumber *latitude</code></strong> double latitude of object</p>
+<p><strong><code>NSNumber *latitude</code></strong> <strong><code>double</code></strong> latitude of object</p>
 
-<p><strong><code>NSNumber *longitude</code></strong> double longitude of object</p>
+<p><strong><code>NSNumber *longitude</code></strong> <strong><code>double</code></strong> longitude of object</p>
 
 <p><strong><code>NSString *type</code></strong> iOS specific string type for the object</p>
 
@@ -483,9 +480,9 @@ available:</p>
 
 <p><strong><code>NSNumber *favourite</code></strong> Bool favourited in the app</p>
 
-<p><strong><code>NSNumber *latitudeTo</code></strong> double latitude of 2nd traffic location if available</p>
+<p><strong><code>NSNumber *latitudeTo</code></strong> <strong><code>double</code></strong> latitude of 2nd traffic location if available</p>
 
-<p><strong><code>NSNumber *longitudeTo</code></strong> double longitude of 2nd traffic location if available</p>
+<p><strong><code>NSNumber *longitudeTo</code></strong> <strong><code>double</code></strong> longitude of 2nd traffic location if available</p>
 
 <p><strong><code>NSString *typeSubFrom</code></strong> fromType for traffic</p>
 
@@ -495,37 +492,37 @@ available:</p>
 
 <p><strong><code>NSString *tpegDirection</code></strong> tpegDirection for traffic</p>
 
-<p><strong><code>NSNumber *counter1</code></strong> NSInteger primary value to show on maps</p>
+<p><strong><code>NSNumber *counter1</code></strong> <strong><code>NSInteger</code></strong> primary value to show on maps</p>
 
-<p><strong><code>NSNumber *counter2</code></strong> NSInteger secondary value to show on maps</p>
+<p><strong><code>NSNumber *counter2</code></strong> <strong><code>NSInteger</code></strong> secondary value to show on maps</p>
 
-<p><strong><code>NSNumber *angle</code></strong> float calculated angle between from and to coordinates</p>
+<p><strong><code>NSNumber *angle</code></strong> <strong><code>float</code></strong> calculated angle between from and to coordinates</p>
 </blockquote>
 
-<h3 id="toc_3"><code>CarParks</code></h3>
+<h2 id="toc_2"><code>CarParks</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
-<p><strong><code>NSNumber *capacity</code></strong> total capacity</p>
+<p><strong><code>NSNumber *capacity</code></strong> <strong><code>NSInteger</code></strong> total capacity</p>
 
-<p><strong><code>NSNumber *spacesAvailable</code></strong> available spaces</p>
+<p><strong><code>NSNumber *spacesAvailable</code></strong> <strong><code>NSInteger</code></strong> available spaces</p>
 
-<p><strong><code>NSNumber *rateExit</code></strong> cars leaving per hour</p>
+<p><strong><code>NSNumber *rateExit</code></strong> <strong><code>NSInteger</code></strong> cars leaving per hour</p>
 
-<p><strong><code>NSNumber *rateFill</code></strong> cars entering per hour</p>
+<p><strong><code>NSNumber *rateFill</code></strong> <strong><code>NSInteger</code></strong> cars entering per hour</p>
 
-<p><strong><code>NSNumber *almostFullDec</code></strong> number of spaces below which &#39;almost full&#39; becomes &#39;spaces available&#39; as cars leave</p>
+<p><strong><code>NSNumber *almostFullDec</code></strong> <strong><code>NSInteger</code></strong> number of spaces below which &#39;almost full&#39; becomes &#39;spaces available&#39; as cars leave</p>
 
-<p><strong><code>NSNumber *almostFullInc</code></strong> number of spaces above which &#39;spaces available&#39; becomes &#39;almost full&#39; as cars enter</p>
+<p><strong><code>NSNumber *almostFullInc</code></strong> <strong><code>NSInteger</code></strong> number of spaces above which &#39;spaces available&#39; becomes &#39;almost full&#39; as cars enter</p>
 
-<p><strong><code>NSNumber *fullDec</code></strong> number of spaces below which &#39;full&#39; becomes &#39;almost full&#39; as cars leave</p>
+<p><strong><code>NSNumber *fullDec</code></strong> <strong><code>NSInteger</code></strong> number of spaces below which &#39;full&#39; becomes &#39;almost full&#39; as cars leave</p>
 
-<p><strong><code>NSNumber *fullInc</code></strong> number of spaces below which &#39;full&#39; becomes &#39;almost full&#39; as cars enter</p>
+<p><strong><code>NSNumber *fullInc</code></strong> <strong><code>NSInteger</code></strong> number of spaces below which &#39;full&#39; becomes &#39;almost full&#39; as cars enter</p>
 
-<p><strong><code>NSNumber *full</code></strong> number of spaces above which the car park is considered full (so the entrance sign lights up &#39;FULL&#39;)</p>
+<p><strong><code>NSNumber *full</code></strong> <strong><code>NSInteger</code></strong> number of spaces above which the car park is considered full (so the entrance sign lights up &#39;FULL&#39;)</p>
 
 <p><strong><code>NSNumber *occupancy</code></strong></p>
 
@@ -536,7 +533,7 @@ available:</p>
 <p><strong><code>NSNumber *queuingTime</code></strong> current queuing time for car park entry</p>
 </blockquote>
 
-<h3 id="toc_4"><code>Event</code></h3>
+<h2 id="toc_3"><code>Event</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -556,7 +553,7 @@ available:</p>
 <p><strong><code>NSString *validityStatus</code></strong> </p>
 </blockquote>
 
-<h3 id="toc_5"><code>Roadworks</code></h3>
+<h2 id="toc_4"><code>Roadworks</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -582,7 +579,7 @@ available:</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 </blockquote>
 
-<h3 id="toc_6"><code>TrafficFlow</code></h3>
+<h2 id="toc_5"><code>TrafficFlow</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -592,59 +589,59 @@ available:</p>
 <p><strong><code>NSNumber *vehicleFlow</code></strong> number of vehicles along the link per hour</p>
 </blockquote>
 
-<h3 id="toc_7"><code>TrafficQueue</code></h3>
+<h2 id="toc_6"><code>TrafficQueue</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
-<p><strong><code>NSNumber *severity</code></strong> NSInteger severity</p>
+<p><strong><code>NSNumber *severity</code></strong> <strong><code>NSInteger</code></strong> severity</p>
 
 <p><strong><code>NSString *present</code></strong> &#39;Y&#39; if a queue exists, &#39;N&#39; otherwise</p>
 </blockquote>
 
-<h3 id="toc_8"><code>TrafficScoot</code></h3>
+<h2 id="toc_7"><code>TrafficScoot</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
-<p><strong><code>NSNumber *averageSpeed</code></strong> NSInteger average speed of vehicles</p>
+<p><strong><code>NSNumber *averageSpeed</code></strong> <strong><code>NSInteger</code></strong> average speed of vehicles</p>
 
-<p><strong><code>NSNumber *congestionPercent</code></strong> float level of congestion on this link</p>
+<p><strong><code>NSNumber *congestionPercent</code></strong> <strong><code>float</code></strong> level of congestion on this link</p>
 
-<p><strong><code>NSNumber *currentFlow</code></strong> NSInteger vehicles per hour travelling along this link</p>
+<p><strong><code>NSNumber *currentFlow</code></strong> <strong><code>NSInteger</code></strong> vehicles per hour travelling along this link</p>
 
 <p><strong><code>NSNumber *linkTravelTime</code></strong></p>
 </blockquote>
 
-<h3 id="toc_9"><code>TrafficSpeed</code></h3>
+<h2 id="toc_8"><code>TrafficSpeed</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
-<p><strong><code>NSNumber *averageVehicleSpeed</code></strong> NSInteger average speed along this link in km/h</p>
+<p><strong><code>NSNumber *averageVehicleSpeed</code></strong> <strong><code>NSInteger</code></strong> average speed along this link in km/h</p>
 </blockquote>
 
-<h3 id="toc_10"><code>TrafficTravelTime</code></h3>
+<h2 id="toc_9"><code>TrafficTravelTime</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
-<p><strong><code>NSNumber *travelTime</code></strong> float actual time taken to traverse this link</p>
+<p><strong><code>NSNumber *travelTime</code></strong> <strong><code>float</code></strong> actual time taken to traverse this link</p>
 
-<p><strong><code>NSNumber *freeFlowSpeed</code></strong> NSInteger best possible time given minimal congestion </p>
+<p><strong><code>NSNumber *freeFlowSpeed</code></strong> <strong><code>NSInteger</code></strong> best possible time given minimal congestion </p>
 
-<p><strong><code>NSNumber *freeFlowTravelTime</code></strong> NSInteger best possible speed given minimal congestion</p>
+<p><strong><code>NSNumber *freeFlowTravelTime</code></strong> <strong><code>NSInteger</code></strong> best possible speed given minimal congestion</p>
 </blockquote>
 
-<h3 id="toc_11"><code>VariableMessageSign</code></h3>
+<h2 id="toc_10"><code>VariableMessageSign</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier that matches that of the Common record</p>
@@ -657,7 +654,7 @@ available:</p>
 </blockquote>
 </blockquote>
 
-<h2 id="toc_12">Silverstone near-real-time and historical data</h2>
+<h2 id="toc_11">Silverstone near-real-time and historical data</h2>
 
 <p>We have two groups of feeds supplied by Clearview and BitCarrier, for the
 car parks and roads at Silverstone circuit.</p>
@@ -677,7 +674,7 @@ You can add import this data into your app and continue to add to it with curren
 feed data if you like.</p>
 
 <blockquote>
-<h3 id="toc_13"><code>Device</code></h3>
+<h2 id="toc_12"><code>Device</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -690,9 +687,9 @@ feed data if you like.</p>
 
 <p><strong><code>NSString *type</code></strong> sensor part code</p>
 
-<p><strong><code>NSNumber *latitude</code></strong> double latitude of object</p>
+<p><strong><code>NSNumber *latitude</code></strong> <strong><code>double</code></strong> latitude of object</p>
 
-<p><strong><code>NSNumber *longitude</code></strong> double longitude of object</p>
+<p><strong><code>NSNumber *longitude</code></strong> <strong><code>double</code></strong> longitude of object</p>
 
 <p><strong><code>NSDate *changed</code></strong> timestamp the object was last changed</p>
 
@@ -701,7 +698,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong></p>
 </blockquote>
 
-<h3 id="toc_14"><code>Traffic</code></h3>
+<h2 id="toc_13"><code>Traffic</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -712,14 +709,14 @@ feed data if you like.</p>
 
 <p><strong><code>NSDate *creationtime</code></strong> timestamp the object was created</p>
 
-<p><strong><code>NSNumber *lane</code></strong> NSInteger lane in which the vehicle was detected</p>
+<p><strong><code>NSNumber *lane</code></strong> <strong><code>NSInteger</code></strong> lane in which the vehicle was detected</p>
 
-<p><strong><code>NSNumber *direction</code></strong> NSInteger 0 for entering, 1 for leaving</p>
+<p><strong><code>NSNumber *direction</code></strong> <strong><code>NSInteger</code></strong> 0 for entering, 1 for leaving</p>
 
 <p><strong><code>NSString *cin_id</code></strong></p>
 </blockquote>
 
-<h3 id="toc_15"><code>Node</code></h3>
+<h2 id="toc_14"><code>Node</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -730,16 +727,16 @@ feed data if you like.</p>
 
 <p><strong><code>NSString *customer_name</code></strong> unique identifier assigned by the implementer, usually containing a description of the location</p>
 
-<p><strong><code>NSNumber *latitude</code></strong> double latitude of this sensor</p>
+<p><strong><code>NSNumber *latitude</code></strong> <strong><code>double</code></strong> latitude of this sensor</p>
 
-<p><strong><code>NSNumber *longitude</code></strong> double longitude of this sensor</p>
+<p><strong><code>NSNumber *longitude</code></strong> <strong><code>double</code></strong> longitude of this sensor</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 
 <p><strong><code>NSString *cin_id</code></strong></p>
 </blockquote>
 
-<h3 id="toc_16"><code>Sketch</code></h3>
+<h2 id="toc_15"><code>Sketch</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -757,7 +754,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>
 
-<h3 id="toc_17"><code>Vector</code></h3>
+<h2 id="toc_16"><code>Vector</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -766,16 +763,16 @@ feed data if you like.</p>
 
 <p><strong><code>NSString *levelOfService</code></strong> red, yellow or green, with red being the most congested and green being the least</p>
 
-<p><strong><code>NSNumber *speed</code></strong> NSInteger speed</p>
+<p><strong><code>NSNumber *speed</code></strong> <strong><code>NSInteger</code></strong> speed</p>
 
-<p><strong><code>NSNumber *elapsedTime</code></strong> NSInteger elapsed time</p>
+<p><strong><code>NSNumber *elapsedTime</code></strong> <strong><code>NSInteger</code></strong> elapsed time</p>
 
 <p><strong><code>NSString *cin_id</code></strong></p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>
 
-<h3 id="toc_18"><code>Config Vector</code></h3>
+<h2 id="toc_17"><code>Config Vector</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -799,7 +796,7 @@ feed data if you like.</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>
 
-<h3 id="toc_19"><code>Travel</code></h3>
+<h2 id="toc_18"><code>Travel</code></h2>
 
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
@@ -808,11 +805,11 @@ feed data if you like.</p>
 
 <p><strong><code>NSDate *clock_time</code></strong></p>
 
-<p><strong><code>NSNumber *score</code></strong> float</p>
+<p><strong><code>NSNumber *score</code></strong> <strong><code>float</code></strong></p>
 
-<p><strong><code>NSNumber *speed</code></strong> float average speed in km/h along a link</p>
+<p><strong><code>NSNumber *speed</code></strong> <strong><code>float</code></strong> average speed in km/h along a link</p>
 
-<p><strong><code>NSNumber *elapsed</code></strong> float time taken to traverse this link</p>
+<p><strong><code>NSNumber *elapsed</code></strong> <strong><code>float</code></strong> time taken to traverse this link</p>
 
 <p><strong><code>NSString *from_location</code></strong> a node customer id</p>
 
@@ -820,7 +817,7 @@ feed data if you like.</p>
 
 <p><strong><code>NSString *cin_id</code></strong></p>
 
-<p><strong><code>NSNumber *trend</code></strong> float</p>
+<p><strong><code>NSNumber *trend</code></strong> <strong><code>float</code></strong></p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 </blockquote>

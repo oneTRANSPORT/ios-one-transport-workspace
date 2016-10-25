@@ -1,14 +1,10 @@
-What data is available?
-=======================
-
-## Near-real-time local authority feeds
+# Near-real-time local authority feeds
 
 Data sources are provided by county and by data type, but note that there
 is a fair amount of overlap between the regions and councils may control
 items outside their boundaries.  For example, Northamptonshire has variable
 message signs near Luton and Leicester.  We suggest consuming all the feeds
-for the items in which you are interested and then filtering with a geonet
-if needed.
+for the items in which you are interested and then filtering with a Map Rectangle Filter if needed.
 
 Also, not every local authority provides every type of data.  These feeds are
 available:
@@ -29,14 +25,14 @@ The data types in each feed are common across counties, so a car park object fro
 
 Here are some examples to show the structure for data classes:
 
-> ### `Common`
+> ## `Common`
 > > **`NSString *reference`** unique identifier
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
-> > **`NSNumber *latitude`** double latitude of object
+> > **`NSNumber *latitude`** **`double`** latitude of object
 > > 
-> > **`NSNumber *longitude`** double longitude of object
+> > **`NSNumber *longitude`** **`double`** longitude of object
 > > 
 > > **`NSString *type`** iOS specific string type for the object
 > > 
@@ -76,9 +72,9 @@ Here are some examples to show the structure for data classes:
 > > 
 > > **`NSNumber *favourite`** Bool favourited in the app
 > > 
-> > **`NSNumber *latitudeTo`** double latitude of 2nd traffic location if available
+> > **`NSNumber *latitudeTo`** **`double`** latitude of 2nd traffic location if available
 > > 
-> > **`NSNumber *longitudeTo`** double longitude of 2nd traffic location if available
+> > **`NSNumber *longitudeTo`** **`double`** longitude of 2nd traffic location if available
 > > 
 > > **`NSString *typeSubFrom`** fromType for traffic
 > > 
@@ -88,36 +84,36 @@ Here are some examples to show the structure for data classes:
 > > 
 > > **`NSString *tpegDirection`** tpegDirection for traffic
 > > 
-> > **`NSNumber *counter1`** NSInteger primary value to show on maps
+> > **`NSNumber *counter1`** **`NSInteger`** primary value to show on maps
 > > 
-> > **`NSNumber *counter2`** NSInteger secondary value to show on maps
+> > **`NSNumber *counter2`** **`NSInteger`** secondary value to show on maps
 > > 
-> > **`NSNumber *angle`** float calculated angle between from and to coordinates
+> > **`NSNumber *angle`** **`float`** calculated angle between from and to coordinates
 
 
-> ### `CarParks`
+> ## `CarParks`
 
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
-> > **`NSNumber *capacity`** total capacity
+> > **`NSNumber *capacity`** **`NSInteger`** total capacity
 > > 
-> > **`NSNumber *spacesAvailable`** available spaces
+> > **`NSNumber *spacesAvailable`** **`NSInteger`** available spaces
 > > 
-> > **`NSNumber *rateExit`** cars leaving per hour
+> > **`NSNumber *rateExit`** **`NSInteger`** cars leaving per hour
 > > 
-> > **`NSNumber *rateFill`** cars entering per hour
+> > **`NSNumber *rateFill`** **`NSInteger`** cars entering per hour
 > > 
-> > **`NSNumber *almostFullDec`** number of spaces below which 'almost full' becomes 'spaces available' as cars leave
+> > **`NSNumber *almostFullDec`** **`NSInteger`** number of spaces below which 'almost full' becomes 'spaces available' as cars leave
 > > 
-> > **`NSNumber *almostFullInc`** number of spaces above which 'spaces available' becomes 'almost full' as cars enter
+> > **`NSNumber *almostFullInc`** **`NSInteger`** number of spaces above which 'spaces available' becomes 'almost full' as cars enter
 > > 
-> > **`NSNumber *fullDec`** number of spaces below which 'full' becomes 'almost full' as cars leave
+> > **`NSNumber *fullDec`** **`NSInteger`** number of spaces below which 'full' becomes 'almost full' as cars leave
 > > 
-> > **`NSNumber *fullInc`** number of spaces below which 'full' becomes 'almost full' as cars enter
+> > **`NSNumber *fullInc`** **`NSInteger`** number of spaces below which 'full' becomes 'almost full' as cars enter
 > > 
-> > **`NSNumber *full`** number of spaces above which the car park is considered full (so the entrance sign lights up 'FULL')
+> > **`NSNumber *full`** **`NSInteger`** number of spaces above which the car park is considered full (so the entrance sign lights up 'FULL')
 > > 
 > > **`NSNumber *occupancy`**
 > > 
@@ -128,7 +124,7 @@ Here are some examples to show the structure for data classes:
 > > **`NSNumber *queuingTime`** current queuing time for car park entry
 
 
-> ### `Event`
+> ## `Event`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
@@ -146,7 +142,7 @@ Here are some examples to show the structure for data classes:
 > > **`NSString *validityStatus`** 
 
 
-> ### `Roadworks`
+> ## `Roadworks`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSString *comment`** description of the works to be carried out
@@ -169,54 +165,54 @@ Here are some examples to show the structure for data classes:
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 
-> ### `TrafficFlow` 
+> ## `TrafficFlow` 
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
 > > **`NSNumber *vehicleFlow`** number of vehicles along the link per hour
 
-> ### `TrafficQueue`
+> ## `TrafficQueue`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
-> > **`NSNumber *severity`** NSInteger severity
+> > **`NSNumber *severity`** **`NSInteger`** severity
 > > 
 > > **`NSString *present`** 'Y' if a queue exists, 'N' otherwise
 
-> ### `TrafficScoot`
+> ## `TrafficScoot`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
-> > **`NSNumber *averageSpeed`** NSInteger average speed of vehicles
+> > **`NSNumber *averageSpeed`** **`NSInteger`** average speed of vehicles
 > > 
-> > **`NSNumber *congestionPercent`** float level of congestion on this link
+> > **`NSNumber *congestionPercent`** **`float`** level of congestion on this link
 > > 
-> > **`NSNumber *currentFlow`** NSInteger vehicles per hour travelling along this link
+> > **`NSNumber *currentFlow`** **`NSInteger`** vehicles per hour travelling along this link
 > > 
 > > **`NSNumber *linkTravelTime`**
 
-> ### `TrafficSpeed`
+> ## `TrafficSpeed`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
-> > **`NSNumber *averageVehicleSpeed`** NSInteger average speed along this link in km/h
+> > **`NSNumber *averageVehicleSpeed`** **`NSInteger`** average speed along this link in km/h
 
-> ### `TrafficTravelTime`
+> ## `TrafficTravelTime`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
 > > 
-> > **`NSNumber *travelTime`** float actual time taken to traverse this link
+> > **`NSNumber *travelTime`** **`float`** actual time taken to traverse this link
 > > 
-> > **`NSNumber *freeFlowSpeed`** NSInteger best possible time given minimal congestion 
+> > **`NSNumber *freeFlowSpeed`** **`NSInteger`** best possible time given minimal congestion 
 > > 
-> > **`NSNumber *freeFlowTravelTime`** NSInteger best possible speed given minimal congestion
+> > **`NSNumber *freeFlowTravelTime`** **`NSInteger`** best possible speed given minimal congestion
 
-> ### `VariableMessageSign`
+> ## `VariableMessageSign`
 > > **`NSString *reference`** unique identifier that matches that of the Common record
 > > 
 > > **`NSDate *timestamp`** timestamp from CSE of last update to the record
@@ -244,7 +240,7 @@ for the weekends of the Formula One Grand Prix and Moto GP races in 2016.
 You can add import this data into your app and continue to add to it with current
 feed data if you like.
 
-> ### `Device`
+> ## `Device`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *reference`** unique identifier for this car park sensor
@@ -255,9 +251,9 @@ feed data if you like.
 > > 
 > > **`NSString *type`** sensor part code
 > > 
-> > **`NSNumber *latitude`** double latitude of object
+> > **`NSNumber *latitude`** **`double`** latitude of object
 > > 
-> > **`NSNumber *longitude`** double longitude of object
+> > **`NSNumber *longitude`** **`double`** longitude of object
 > > 
 > > **`NSDate *changed`** timestamp the object was last changed
 > > 
@@ -266,7 +262,7 @@ feed data if you like.
 > > **`NSDate *timestamp`**
 > > 
 
-> ### `Traffic`
+> ## `Traffic`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *reference`** sensor id
@@ -275,14 +271,14 @@ feed data if you like.
 > > 
 > > **`NSDate *creationtime`** timestamp the object was created
 > > 
-> > **`NSNumber *lane`** NSInteger lane in which the vehicle was detected
+> > **`NSNumber *lane`** **`NSInteger`** lane in which the vehicle was detected
 > > 
-> > **`NSNumber *direction`** NSInteger 0 for entering, 1 for leaving
+> > **`NSNumber *direction`** **`NSInteger`** 0 for entering, 1 for leaving
 > > 
 > > **`NSString *cin_id`**
 
 
-> ### `Node`
+> ## `Node`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *reference`** node id
@@ -291,15 +287,15 @@ feed data if you like.
 > > 
 > > **`NSString *customer_name`** unique identifier assigned by the implementer, usually containing a description of the location
 > > 
-> > **`NSNumber *latitude`** double latitude of this sensor
+> > **`NSNumber *latitude`** **`double`** latitude of this sensor
 > > 
-> > **`NSNumber *longitude`** double longitude of this sensor
+> > **`NSNumber *longitude`** **`double`** longitude of this sensor
 > > 
 > > **`NSDate *timestamp`** timestamp the object was last changed
 > > 
 > > **`NSString *cin_id`**
 
-> ### `Sketch`
+> ## `Sketch`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *lat_lon_array`**
@@ -315,22 +311,22 @@ feed data if you like.
 > > **`NSDate *timestamp`** timestamp the object was last changed
 > >
 
-> ### `Vector`
+> ## `Vector`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *reference`** vector id
 > > 
 > > **`NSString *levelOfService`** red, yellow or green, with red being the most congested and green being the least
 > > 
-> > **`NSNumber *speed`** NSInteger speed
+> > **`NSNumber *speed`** **`NSInteger`** speed
 > > 
-> > **`NSNumber *elapsedTime`** NSInteger elapsed time
+> > **`NSNumber *elapsedTime`** **`NSInteger`** elapsed time
 > > 
 > > **`NSString *cin_id`**
 > > 
 > > **`NSDate *timestamp`** timestamp the object was last changed
 
-> ### `Config Vector`
+> ## `Config Vector`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *reference`** vector id
@@ -351,18 +347,18 @@ feed data if you like.
 > > 
 > > **`NSDate *timestamp`** timestamp the object was last changed
 
-> ### `Travel`
+> ## `Travel`
 > > **`NSString *primary_id`** TSV line id
 > > 
 > > **`NSString *travel_summary_id`**
 > > 
 > > **`NSDate *clock_time`**
 > > 
-> > **`NSNumber *score`** float
+> > **`NSNumber *score`** **`float`**
 > > 
-> > **`NSNumber *speed`** float average speed in km/h along a link
+> > **`NSNumber *speed`** **`float`** average speed in km/h along a link
 > > 
-> > **`NSNumber *elapsed`** float time taken to traverse this link
+> > **`NSNumber *elapsed`** **`float`** time taken to traverse this link
 > > 
 > > **`NSString *from_location`** a node customer id
 > > 
@@ -370,7 +366,7 @@ feed data if you like.
 > > 
 > > **`NSString *cin_id`**
 > > 
-> > **`NSNumber *trend`** float
+> > **`NSNumber *trend`** **`float`**
 > > 
 > > **`NSDate *timestamp`** timestamp the object was last changed
 
