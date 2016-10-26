@@ -16,23 +16,23 @@
 
 - (void)setUp {
     [super setUp];
-
+    
     NSString *APP_ID       = @"<Your App Name>";
     NSString *ACCCESS_KEY  = @"<Your Access Key>";
     NSString *ORIGIN       = @"<Your AEID>";
     
-    [[NSUserDefaults standardUserDefaults] setInteger:CommsTestLive forKey:kUserDefaultsCommsMode];
-    
     [self.singleton deleteCse];
     [self.singleton configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
-
+    [self.singleton setTrace:false];
+    [[NSUserDefaults standardUserDefaults] setInteger:CommsTestLive forKey:kUserDefaultsCommsMode];
+    
     [self clearAllData];
 }
 
 - (void)tearDown {
-
+    
     [self clearAllData];
-
+    
     [super tearDown];
 }
 
@@ -52,14 +52,18 @@
 - (void)execute:(LocalAuthority)la cnt:(ContainerType)cnt count:(NSInteger)count {
     
     XCTestExpectation *exp = [self expectationWithDescription:@"Wait"];
-
+    
     CompletionType completionBlock = ^(NSDictionary *response, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             
-            XCTAssertNil(error);
-            if (error == nil) {
-                NSArray *array = [[self.singleton getCntObject:cnt] retrieveAll:false];
-                XCTAssertTrue(array.count >= count);
+            if (count < 0) {
+                XCTAssertNotNil(error);
+            } else {
+                XCTAssertNil(error);
+                if (error == nil) {
+                    NSArray *array = [[self.singleton getCntObject:cnt] retrieveAll:false];
+                    XCTAssertTrue(array.count >= count);
+                }
             }
             
             [exp fulfill];
@@ -67,9 +71,9 @@
     };
     
     [self.singleton requestData:la container:cnt completion:completionBlock];
-
-    [self waitForExpectationsWithTimeout:60 handler:^(NSError * _Nullable error) {
-
+    
+    [self waitForExpectationsWithTimeout:120 handler:^(NSError * _Nullable error) {
+        
     }];
 }
 
@@ -81,9 +85,9 @@
     [self execute:LocalAuthorityBirmingham cnt:ContainerTypeTrafficFlow count:1];
 }
 
-//- (void)testBirminghamTQueue {
-//    [self execute:LocalAuthorityBirmingham cnt:ContainerTypeTrafficQueue count:0];
-//}
+- (void)testBirminghamTQueue404 {
+    [self execute:LocalAuthorityBirmingham cnt:ContainerTypeTrafficQueue count:-1];
+}
 
 - (void)testBirminghamTScoot {
     [self execute:LocalAuthorityBirmingham cnt:ContainerTypeTrafficScoot count:1];
@@ -105,12 +109,12 @@
     [self execute:LocalAuthorityBirmingham cnt:ContainerTypeRoadWorks count:1];
 }
 
-//- (void)testBirminghanEvents {
-//    [self execute:LocalAuthorityBirmingham cnt:ContainerTypeEvents count:0];
-//}
+- (void)testBirminghanEvents404 {
+    [self execute:LocalAuthorityBirmingham cnt:ContainerTypeEvents count:-1];
+}
 
 - (void)testBucksVMS {
-    [self execute:LocalAuthorityBucks cnt:ContainerTypeVariableMessageSigns count:1];
+    [self execute:LocalAuthorityBucks cnt:ContainerTypeVariableMessageSigns count:0];
 }
 
 - (void)testBucksTFlow {
@@ -126,15 +130,15 @@
 }
 
 - (void)testBucksTSpeed {
-    [self execute:LocalAuthorityBucks cnt:ContainerTypeTrafficSpeed count:1];
+    [self execute:LocalAuthorityBucks cnt:ContainerTypeTrafficSpeed count:0];
 }
 
 - (void)testBucksTTime {
-    [self execute:LocalAuthorityBucks cnt:ContainerTypeTrafficTime count:1];
+    [self execute:LocalAuthorityBucks cnt:ContainerTypeTrafficTime count:0];
 }
 
 - (void)testBucksCarParks {
-    [self execute:LocalAuthorityBucks cnt:ContainerTypeCarParks count:1];
+    [self execute:LocalAuthorityBucks cnt:ContainerTypeCarParks count:0];
 }
 
 - (void)testBucksRoadworks {
@@ -158,7 +162,7 @@
 }
 
 - (void)testOxonTScoot {
-    [self execute:LocalAuthorityOxon cnt:ContainerTypeTrafficScoot count:1];
+    [self execute:LocalAuthorityOxon cnt:ContainerTypeTrafficScoot count:0];
 }
 
 - (void)testOxonTSpeed {
@@ -170,7 +174,7 @@
 }
 
 - (void)testOxonCarParks {
-    [self execute:LocalAuthorityOxon cnt:ContainerTypeCarParks count:1];
+    [self execute:LocalAuthorityOxon cnt:ContainerTypeCarParks count:0];
 }
 
 - (void)testOxonRoadworks {
@@ -189,16 +193,16 @@
     [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficFlow count:1];
 }
 
-- (void)testNorthantsTQueue {
-    [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficQueue count:0];
+- (void)testNorthantsTQueue404 {
+    [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficQueue count:-1];
 }
 
-- (void)testNorthantsTScoot {
-    [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficScoot count:1];
+- (void)testNorthantsTScoot404 {
+    [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficScoot count:-1];
 }
 
-- (void)testNorthantsTSpeed {
-    [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficSpeed count:1];
+- (void)testNorthantsTSpeed404 {
+    [self execute:LocalAuthorityNorthants cnt:ContainerTypeTrafficSpeed count:-1];
 }
 
 - (void)testNorthantsTTime {
@@ -206,11 +210,11 @@
 }
 
 - (void)testNorthantsCarParks {
-    [self execute:LocalAuthorityNorthants cnt:ContainerTypeCarParks count:1];
+    [self execute:LocalAuthorityNorthants cnt:ContainerTypeCarParks count:0];
 }
 
 - (void)testNorthantsRoadworks {
-    [self execute:LocalAuthorityNorthants cnt:ContainerTypeRoadWorks count:1];
+    [self execute:LocalAuthorityNorthants cnt:ContainerTypeRoadWorks count:0];
 }
 
 - (void)testNorthantsEvents {
@@ -225,8 +229,8 @@
     [self execute:LocalAuthorityHerts cnt:ContainerTypeTrafficFlow count:1];
 }
 
-- (void)testHertsTQueue {
-    [self execute:LocalAuthorityHerts cnt:ContainerTypeTrafficQueue count:0];
+- (void)testHertsTQueue404 {
+    [self execute:LocalAuthorityHerts cnt:ContainerTypeTrafficQueue count:-1];
 }
 
 - (void)testHertsTScoot {
@@ -242,7 +246,7 @@
 }
 
 - (void)testHertsCarParks {
-    [self execute:LocalAuthorityHerts cnt:ContainerTypeCarParks count:1];
+    [self execute:LocalAuthorityHerts cnt:ContainerTypeCarParks count:0];
 }
 
 - (void)testHertsRoadworks {
