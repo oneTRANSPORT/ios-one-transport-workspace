@@ -110,6 +110,8 @@ enum CellRequest {
         switch self {
         case .la_Bucks, .la_Northants, .la_Oxon, .la_Herts, .la_Birmingham:
             key = UIColor.lightGray
+        case .bitCarrier, .clearView:
+            key = UIColor.yellow
         default:
             key = UIColor.white
         }

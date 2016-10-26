@@ -1,6 +1,6 @@
 Custom queries are possible using standard NSPredicate objects and the helper retrieval methods in the oneTRANSPORT framework.
 
-For example, to extract ClearView traffic sensor 1747 data for yesterday:
+Example 1 - to extract ClearView traffic sensor 1747 data for yesterday:
 
 	let calendar = Calendar(identifier: .gregorian)
 
@@ -10,6 +10,13 @@ For example, to extract ClearView traffic sensor 1747 data for yesterday:
 
 	let predicate = NSPredicate.init(format:"reference == %@ && timestamp >= %@ && timestamp < %@",	ref, dateFrom as CVarArg, dateTo as CVarArg)
 	let array = OTSingleton.sharedInstance().clearViewTraffic.retrieveSummary(predicate)
+
+Example 2 - to extract newly started roadworks
+
+	let Date = calendar.startOfDay(for: calendar.date(byAdding: .day, value: -1, to: Date())!)
+	let predicate = NSPredicate.init(format: "overallStartTime > %@", date as CVarArg)
+	let array = OTSingleton.sharedInstance().roadworks.retrieveAll(predicate)
+	print ("Current roadworks \(array)")
 
 
 Predicates can also be applied directly to the data set using your own CoreData methods. Initialise the managed object context and create a simple fetch request as follows:

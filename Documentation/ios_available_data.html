@@ -428,10 +428,10 @@ available:</p>
 
 <p>The data types in each feed are common across counties, so a car park object from Bucks will be the same format as one from Northants.  Objects retrieved from a feed are generally indicative of the current situation, so if an average speed reading across a link is 40kph, then that was true when the last reading was observed a few minutes ago.  If an event occurs in a feed, then that event is happening now.</p>
 
-<p>Here are some examples to show the structure for data classes:</p>
+<p>Here are the structures for the Core Data classes:</p>
 
 <blockquote>
-<h2 id="toc_1"><code>Common</code></h2>
+<h2 id="toc_1"><code>Common</code> - Generic data</h2>
 
 <blockquote>
 <p><strong><code>NSString *reference</code></strong> unique identifier</p>
@@ -497,6 +497,24 @@ available:</p>
 <p><strong><code>NSNumber *counter2</code></strong> <strong><code>NSInteger</code></strong> secondary value to show on maps</p>
 
 <p><strong><code>NSNumber *angle</code></strong> <strong><code>float</code></strong> calculated angle between from and to coordinates</p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;GUIDGLOU-BC005-WP00100500223610100&quot;;
+    angle = 0;
+    counter1 = 0;
+    counter2 = 0;
+    favourite = 0;
+    latitude = &quot;51.7619324&quot;;
+    latitudeTo = 0;
+    longitude = &quot;-2.53026152&quot;;
+    longitudeTo = 0;
+    timestamp = &quot;2016-10-26 08:36:32 +0000&quot;;
+    title = &quot;GUIDGLOU-BC005-WP00100500223610100&quot;;
+    titleTo = nil;
+    tpegDirection = nil;
+    type = RW;
+    typeSubFrom = &quot;&quot;;
+    typeSubTo = &quot;&quot;;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_2"><code>CarParks</code></h2>
@@ -531,6 +549,23 @@ available:</p>
 <p><strong><code>NSString *status</code></strong></p>
 
 <p><strong><code>NSNumber *queuingTime</code></strong> current queuing time for car park entry</p>
+
+<div><pre><code class="language-none">Example data
+    reference = BHMNCPPLS01;
+    almostFullDec = 0;
+    almostFullInc = 0;
+    capacity = 450;
+    full = 0;
+    fullDec = 0;
+    fullInc = 0;
+    occupancy = 109;
+    occupancyTrend = Filling;
+    queuingTime = 0;
+    rateExit = 0;
+    rateFill = 1;
+    spacesAvailable = 0;
+    status = OPEN;
+    timestamp = &quot;2016-10-26 12:09:30 +0000&quot;;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_3"><code>Event</code></h2>
@@ -551,6 +586,16 @@ available:</p>
 <p><strong><code>NSDate *overEnd</code></strong> same as PeriodEnd</p>
 
 <p><strong><code>NSString *validityStatus</code></strong> </p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;GUIDBUCK-1786358096&quot;;
+    impactOnTraffic = heavy;
+    overEnd = &quot;2016-12-22 21:30:00 +0000&quot;;
+    overallStart = &quot;2016-12-22 16:30:00 +0000&quot;;
+    periodEnd = &quot;2016-12-22 21:30:00 +0000&quot;;
+    periodStart = &quot;2016-12-22 16:30:00 +0000&quot;;
+    timestamp = &quot;2016-10-26 12:05:56 +0000&quot;;
+    validityStatus = active;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_4"><code>Roadworks</code></h2>
@@ -577,6 +622,19 @@ available:</p>
 <p><strong><code>NSString *periods</code></strong></p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;GUIDBUCK-01184645&quot;;
+    comment = &quot;HIGHWAYS ACT PERMITS WORKS ON MANDEVILLE ROAD, AYLESBURY. NO C/W INCURSION&quot;;
+    effectOnRoadLayout = roadLayoutUnchanged;
+    impactOnTraffic = freeFlow;
+    overallEndTime = &quot;2023-03-16 00:00:00 +0000&quot;;
+    overallStartTime = &quot;2014-03-17 00:00:00 +0000&quot;;
+    periods = &quot;2014-03-17T00:00:00&quot;;
+    roadMaintenanceType = other;
+    status = active;
+    timestamp = &quot;2016-10-26 12:15:25 +0000&quot;;
+    type = other;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_5"><code>TrafficFlow</code></h2>
@@ -587,6 +645,11 @@ available:</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
 <p><strong><code>NSNumber *vehicleFlow</code></strong> number of vehicles along the link per hour</p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;LINKBUCK-43:706:103&quot;;
+    timestamp = &quot;2016-10-26 12:11:00 +0000&quot;;
+    vehicleFlow = 52;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_6"><code>TrafficQueue</code></h2>
@@ -599,6 +662,12 @@ available:</p>
 <p><strong><code>NSNumber *severity</code></strong> <strong><code>NSInteger</code></strong> severity</p>
 
 <p><strong><code>NSString *present</code></strong> &#39;Y&#39; if a queue exists, &#39;N&#39; otherwise</p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;LINKBUCK-43:706:103&quot;;
+    timestamp = &quot;2016-10-26 12:11:00 +0000&quot;;
+    severity = 1;
+    present = Y;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_7"><code>TrafficScoot</code></h2>
@@ -615,6 +684,14 @@ available:</p>
 <p><strong><code>NSNumber *currentFlow</code></strong> <strong><code>NSInteger</code></strong> vehicles per hour travelling along this link</p>
 
 <p><strong><code>NSNumber *linkTravelTime</code></strong></p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;SECTIONBUCK-N01111A&quot;;
+    averageSpeed = 80;
+    congestionPercent = 0;
+    currentFlow = 0;
+    linkTravelTime = 0;
+    timestamp = &quot;2016-10-26 11:55:08 +0000&quot;;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_8"><code>TrafficSpeed</code></h2>
@@ -625,6 +702,11 @@ available:</p>
 <p><strong><code>NSDate *timestamp</code></strong> timestamp from CSE of last update to the record</p>
 
 <p><strong><code>NSNumber *averageVehicleSpeed</code></strong> <strong><code>NSInteger</code></strong> average speed along this link in km/h</p>
+
+<div><pre><code class="language-none">Example data
+    reference = N33121J;
+    averageVehicleSpeed = 0;
+    timestamp = nil;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_9"><code>TrafficTravelTime</code></h2>
@@ -639,6 +721,13 @@ available:</p>
 <p><strong><code>NSNumber *freeFlowSpeed</code></strong> <strong><code>NSInteger</code></strong> best possible time given minimal congestion </p>
 
 <p><strong><code>NSNumber *freeFlowTravelTime</code></strong> <strong><code>NSInteger</code></strong> best possible speed given minimal congestion</p>
+
+<div><pre><code class="language-none">Example data
+    reference = &quot;SECTIONNHAM-010&quot;;
+    freeFlowSpeed = 0;
+    freeFlowTravelTime = 0;
+    timestamp = &quot;2016-10-26 10:50:00 +0000&quot;;
+    travelTime = 39;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_10"><code>VariableMessageSign</code></h2>
@@ -651,6 +740,12 @@ available:</p>
 <p><strong><code>NSString *legends</code></strong> lines of text currently displayed by this sign</p>
 
 <p><strong><code>NSString *type</code></strong></p>
+
+<div><pre><code class="language-none">Example data
+    reference = VMSCFB613DE807D3254E0433CC411ACFD01;
+    legends = &quot;M6 J3A-J4A\n30 MIN DELAY&quot;;
+    timestamp = &quot;2016-10-26 12:21:07 +0000&quot;;
+    type = other;</code></pre></div>
 </blockquote>
 </blockquote>
 
@@ -693,9 +788,21 @@ feed data if you like.</p>
 
 <p><strong><code>NSDate *changed</code></strong> timestamp the object was last changed</p>
 
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
 
 <p><strong><code>NSDate *timestamp</code></strong></p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 5;
+    reference = 1749;
+    changed = nil;
+    cin_id = cin19700513T15314311460703139872857749248;
+    comment = &quot;Site 5, Car Park Area 44&quot;;
+    latitude = &quot;52.070038&quot;;
+    longitude = &quot;-1.026317&quot;;
+    timestamp = &quot;2016-07-05 09:57:44 +0000&quot;;
+    title = Silverstone05;
+    type = M680;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_13"><code>Traffic</code></h2>
@@ -713,7 +820,16 @@ feed data if you like.</p>
 
 <p><strong><code>NSNumber *direction</code></strong> <strong><code>NSInteger</code></strong> 0 for entering, 1 for leaving</p>
 
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 38561;
+    reference = 1748;
+    cin_id = cin19721119T08034291008222140234941646592;
+    creationtime = &quot;2016-09-04 08:48:19 +0000&quot;;
+    direction = 1;
+    lane = 0;
+    timestamp = &quot;2016-09-04 09:49:47 +0000&quot;;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_14"><code>Node</code></h2>
@@ -733,7 +849,17 @@ feed data if you like.</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
 
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 14;
+    reference = 1172;
+    cin_id = cin20010219T154146982597306139987234436864;
+    customer_id = 27;
+    customer_name = &quot;27-Dadford Road (Silverstone Southern Roundabout)&quot;;
+    latitude = &quot;52.068155&quot;;
+    longitude = &quot;-1.025687&quot;;
+    timestamp = &quot;2016-08-17 00:00:11 +0000&quot;;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_15"><code>Sketch</code></h2>
@@ -741,17 +867,26 @@ feed data if you like.</p>
 <blockquote>
 <p><strong><code>NSString *primary_id</code></strong> TSV line id</p>
 
-<p><strong><code>NSString *lat_lon_array</code></strong></p>
+<p><strong><code>NSString *sketch_id</code></strong></p>
+
+<p><strong><code>NSString *lat_lon_array</code></strong> JSON encoded array or latitude/longitude coordinates</p>
 
 <p><strong><code>NSString *level_of_service</code></strong> red, yellow or green, with red being the most congested and green being the least</p>
 
-<p><strong><code>NSString *vector_id</code></strong></p>
+<p><strong><code>NSString *vector_id</code></strong> vector id</p>
 
-<p><strong><code>NSString *sketch_id</code></strong></p>
-
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 43;
+    sketch_id = 48;
+    cin_id = cin19710905T19103852945838140490192189184;
+    lat_lon_array = &quot;[{\&quot;lat\&quot;:51.99990999999999, \&quot;lon\&quot;:-0.98785},{\&quot;lat\&quot;:51.99992, \&quot;lon\&quot;:-0.9877499999999999},{\&quot;lat\&quot;:51.999799999999986, \&quot;lon\&quot;:-0.98773},{\&quot;lat\&quot;:51.99974999999999, \&quot;lon\&quot;:-0.98773},{\&quot;lat\&quot;:51.99965999999999, \&quot;l&quot;;
+    level_of_service = 1;
+    timestamp = &quot;2016-08-25 11:03:56 +0000&quot;;
+    vector_id = 364;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_16"><code>Vector</code></h2>
@@ -767,9 +902,18 @@ feed data if you like.</p>
 
 <p><strong><code>NSNumber *elapsedTime</code></strong> <strong><code>NSInteger</code></strong> elapsed time</p>
 
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 75255;
+    reference = 278;
+    cin_id = cin19990401T062150922947710139982983395072;
+    elapsedTime = 0;
+    levelOfService = green;
+    speed = 0;
+    timestamp = nil;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_17"><code>Config Vector</code></h2>
@@ -791,9 +935,21 @@ feed data if you like.</p>
 
 <p><strong><code>NSString *sketch_id</code></strong> identifier of the sketch pertaining to this vector</p>
 
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 8;
+    reference = 277;
+    cin_id = cin19760214T205051193179051140490192189184;
+    customer_name = &quot;Link_14-&gt;2&quot;;
+    distance = 6224;
+    from_location = 1165;
+    name = 277;
+    sketch_id = 2;
+    timestamp = &quot;2016-08-25 08:34:34 +0000&quot;;
+    to_location = 1159;</code></pre></div>
 </blockquote>
 
 <h2 id="toc_18"><code>Travel</code></h2>
@@ -815,11 +971,24 @@ feed data if you like.</p>
 
 <p><strong><code>NSString *to_location</code></strong> a node customer id</p>
 
-<p><strong><code>NSString *cin_id</code></strong></p>
+<p><strong><code>NSString *cin_id</code></strong> Content Instance id</p>
 
 <p><strong><code>NSNumber *trend</code></strong> <strong><code>float</code></strong></p>
 
 <p><strong><code>NSDate *timestamp</code></strong> timestamp the object was last changed</p>
+
+<div><pre><code class="language-none">Example data
+    primary_id = 225851;
+    travel_summary_id = 10;
+    cin_id = cin19861128T141131533571091139983576987392;
+    clock_time = &quot;2016-07-08 19:44:00 +0000&quot;;
+    elapsed = 788;
+    from_location = 10;
+    score = 100;
+    speed = &quot;56.84163&quot;;
+    timestamp = &quot;2016-07-08 19:46:29 +0000&quot;;
+    to_location = 27;
+    trend = &quot;-68.97638&quot;;</code></pre></div>
 </blockquote>
 </blockquote>
 
