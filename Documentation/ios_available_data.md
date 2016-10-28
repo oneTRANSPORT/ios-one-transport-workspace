@@ -1,3 +1,13 @@
+# What data is available?
+This SDK gives your app access to:
+
+1. real-time road transport data from four counties in England: Buckinghamshire, Hertfordshire, Northamptonshire and Oxfordshire.
+
+2. real-time road transport data for Birmingham
+
+3. Historical data sets from race weekends at Silverstone
+circuit during the Formula One Grand Prix and Moto GP races in 2016.
+
 # Near-real-time local authority feeds
 
 Data sources are provided by county and by data type, but note that there
@@ -6,20 +16,25 @@ items outside their boundaries.  For example, Northamptonshire has variable
 message signs near Luton and Leicester.  We suggest consuming all the feeds
 for the items in which you are interested and then filtering with a Map Rectangle Filter if needed.
 
-Also, not every local authority provides every type of data.  These feeds are
-available:
+Also, not every local authority provides every type of data.  This is the status of the current feeds:
+
+- Y = Available
+
+- n = Not Available At Present
+
+- . = Does Not Exist
 
 |                        | Bucks   | Herts   |Northants| Oxon    |Birmingham|
 |------------------------|:-------:|:-------:|:-------:|:-------:|:--------:|
-| Variable Message Signs |    X    |    X    |    X    |    X    |    X     |
-| Car Parks              |    X    |    X    |    X    |    X    |    X     |
-| Traffic Flow           |    X    |    X    |    X    |    X    |    X     |
-| Traffic Queue          |    X    |    -    |    -    |    X    |    -     |
-| Traffic Speed          |    X    |    X    |    -    |    X    |    X     |
-| Traffic Scoot          |    X    |    X    |    -    |    X    |    X     |
-| Traffic Time           |    X    |    X    |    X    |    X    |    X     |
-| Roadworks              |    X    |    X    |    X    |    X    |    X     |
-| Events                 |    X    |    X    |    -    |    X    |    -     |
+| Variable Message Signs |    n    |    Y    |    Y    |    Y    |    Y     |
+| Car Parks              |    n    |    n    |    n    |    n    |    Y     |
+| Traffic Flow           |    Y    |    Y    |    Y    |    Y    |    Y     |
+| Traffic Queue          |    n    |    .    |    .    |    n    |    .     |
+| Traffic Speed          |    n    |    Y    |    .    |    Y    |    Y     |
+| Traffic Scoot          |    Y    |    Y    |    .    |    n    |    Y     |
+| Traffic Time           |    n    |    Y    |    Y    |    Y    |    Y     |
+| Roadworks              |    Y    |    Y    |    Y    |    Y    |    Y     |
+| Events                 |    Y    |    n    |    Y    |    Y    |    .     |
 
 The data types in each feed are common across counties, so a car park object from Bucks will be the same format as one from Northants.  Objects retrieved from a feed are generally indicative of the current situation, so if an average speed reading across a link is 40kph, then that was true when the last reading was observed a few minutes ago.  If an event occurs in a feed, then that event is happening now.
 

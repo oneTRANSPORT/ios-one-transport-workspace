@@ -1,4 +1,5 @@
-The oneTRANSPORT SDK for iOS is currently distributed as a set of two Frameworks.
+# Adding the SDK to your app
+There are two frameworks to add to your project and some configuration work to be done in the AppDelegate.
 
 Add both of the following to your XCode project:
 

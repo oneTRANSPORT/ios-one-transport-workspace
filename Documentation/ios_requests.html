@@ -327,6 +327,10 @@ kbd {
 
 <body>
 
+<h1 id="toc_0">Request API</h1>
+
+<p>For the latest road traffic data we provide a simple API that returns oneTRANSPORT resources as arrays of objects.</p>
+
 <p>Current feed data from oneTRANSPORT is made available through requests that wrap HTTPS requests to the CSE.  These are asynchronous, working on background threads and returning results in completion blocks.</p>
 
 <p>A typical request is made to a local authority AE, requesting a particular container type.</p>
@@ -433,7 +437,7 @@ OTSingleton.sharedInstance().requestData(.bucks, container: .carParks) {response
     }
 }</code></pre></div>
 
-<h1 id="toc_0">Thread safe</h1>
+<h1 id="toc_1">Thread safe</h1>
 
 <p>All completion blocks return on a background thread hences the need to dispatch UI changes to the main thread.</p>
 
@@ -441,7 +445,7 @@ OTSingleton.sharedInstance().requestData(.bucks, container: .carParks) {response
 
 <p>Since oneTRANSPORT Core Data is thread safe it is acceptable to query objects on the main or background threads.</p>
 
-<h1 id="toc_1">Purge old data</h1>
+<h1 id="toc_2">Purge old data</h1>
 
 <p>New requests for data from the CSE forces an age check of the historical data in the entity. Any data older than the specified number of hours is purged. To override the default of 4 hours of data to retain can be overridden with:</p>
 

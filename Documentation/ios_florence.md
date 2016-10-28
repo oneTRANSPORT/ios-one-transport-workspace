@@ -1,4 +1,8 @@
-Please refer to the [oneM2M documentation] (http://onem2m.org/technical/latest-drafts) for details of the oneM2M standard.
+# FlorenceSDK - the iOS oneM2M SDK
+
+oneTRANSPORT is based on an implementation of the oneM2M standard called Florence.  Lower level routines to access individual containers and content instances are available through this SDK.
+
+Please refer to the [oneM2M documentation](http://onem2m.org/technical/latest-drafts) for details of the oneM2M standard.
 
 Requests to the CSE are made available through requests that wrap HTTPS requests.  These are asynchronous, working on background threads and returning results in completion blocks.
 

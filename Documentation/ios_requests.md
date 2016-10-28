@@ -1,3 +1,6 @@
+# Request API
+For the latest road traffic data we provide a simple API that returns oneTRANSPORT resources as arrays of objects.
+
 Current feed data from oneTRANSPORT is made available through requests that wrap HTTPS requests to the CSE.  These are asynchronous, working on background threads and returning results in completion blocks.
 
 A typical request is made to a local authority AE, requesting a particular container type.

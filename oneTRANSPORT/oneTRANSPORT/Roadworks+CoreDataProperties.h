@@ -31,11 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *effectOnRoadLayout;
 @property (nullable, nonatomic, retain) NSString *roadMaintenanceType;
 @property (nullable, nonatomic, retain) NSString *impactOnTraffic;
-@property (nullable, nonatomic, retain) NSString *type;             //TODO - remove?
-@property (nullable, nonatomic, retain) NSString *status;           //TODO - remove?
-@property (nullable, nonatomic, retain) NSDate *overallStartTime;   //TODO - remove?
-@property (nullable, nonatomic, retain) NSDate *overallEndTime;     //TODO - remove?
-@property (nullable, nonatomic, retain) NSString *periods;          //TODO - remove?
+@property (nullable, nonatomic, retain) NSString *type;             
+@property (nullable, nonatomic, retain) NSString *status;           
+@property (nullable, nonatomic, retain) NSDate *overallStartTime;   
+@property (nullable, nonatomic, retain) NSDate *overallEndTime;     
+@property (nullable, nonatomic, retain) NSString *periods;          
 @property (nullable, nonatomic, retain) NSDate *timestamp;
 
 @end

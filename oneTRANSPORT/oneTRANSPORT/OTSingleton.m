@@ -728,6 +728,9 @@
         NSLog(@">>>>>>>>>>>>>>>");
 
         completion(dict, error);
+
+        NSLog(@"Completion %.2f", [[NSDate date] timeIntervalSinceDate:self.timeStart]);
+        NSLog(@">>>>>>>>>>>>>>>");
     }
 }
 

@@ -22,7 +22,55 @@
 #import "OTCoreDataClearViewTraffic.h"
 #import "NSObject+Collection.h"
 
+@interface OTOperationFinishedDownload()
+
+@property (nonatomic, strong) OTContainer *container;
+@property (nonatomic, strong) OTCoreDataBase *object;
+@property (nonatomic, copy) NSString *reference;
+@property (nonatomic, copy) NSDictionary *response;
+@property (nonatomic, strong) NSError *error;
+@property (nonatomic, strong) CompletionType completion;
+
+@end
+
 @implementation OTOperationFinishedDownload
+
+- (void)main {
+    
+    if (self.cancelled) {
+        [[OTSingleton sharedInstance] decrementRequestCount:self.error completion:self.completion];
+        return;
+    }
+    
+    NSArray *array = [self processResponse:self.response error:self.error];
+    if (array) {
+        [self.container updateCommonResources:self.response[@"m2m:cin"]];
+        
+        NSArray *arrayCommon;
+        if (self.reference) {
+            arrayCommon = [(OTCoreDataClearViewTraffic *)self.object populateTableWithReference:self.reference data:array timestamp:self.container.resourceLastUpdated];
+        } else {
+            arrayCommon = [self.object populateTableWith:array timestamp:self.container.resourceLastUpdated];
+        }
+        [[OTSingleton sharedInstance].common populateTableWith:arrayCommon type:self.object.dataType];
+        [[OTSingleton sharedInstance].arrayChanges addObjectsFromArray:[self.object checkForChanges:arrayCommon]];
+    }
+    if (!self.reference) {
+        [self.object removeOld];
+    }
+    
+    [[OTSingleton sharedInstance] decrementRequestCount:self.error completion:self.completion];
+}
+
+- (void)dealloc {
+    
+    self.container = nil;
+    self.object = nil;
+    self.reference = nil;
+    self.response = nil;
+    self.error = nil;
+    self.completion = nil;
+}
 
 - (void)configure:(OTContainer *)container
            object:(OTCoreDataBase *)object
@@ -30,22 +78,13 @@
          response:(NSDictionary *)response
             error:(NSError *)error
        completion:(CompletionType)completion {
-
-    NSArray *array = [self processResponse:response error:error];
-    if (array) {
-        [container updateCommonResources:response[@"m2m:cin"]];
-        
-        NSArray *arrayCommon;
-        if (reference) {
-            arrayCommon = [(OTCoreDataClearViewTraffic *)object populateTableWithReference:reference data:array timestamp:container.resourceLastUpdated];
-        } else {
-            arrayCommon = [object populateTableWith:array timestamp:container.resourceLastUpdated];
-        }
-        [[OTSingleton sharedInstance].common populateTableWith:arrayCommon type:object.dataType];
-        [[OTSingleton sharedInstance].arrayChanges addObjectsFromArray:[object checkForChanges:arrayCommon]];
-    }
     
-    [[OTSingleton sharedInstance] decrementRequestCount:error completion:completion];
+    self.container = container;
+    self.object = object;
+    self.reference = reference;
+    self.response = response;
+    self.error = error;
+    self.completion = completion;
 }
 
 - (NSArray *)processResponse:(NSDictionary *)response error:(NSError *)error {

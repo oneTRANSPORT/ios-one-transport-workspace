@@ -101,7 +101,9 @@
         } else if (arrayColumns.count >= 7) {
             NSNumber *latitude = @([arrayColumns[4] doubleValue]);
             NSNumber *longitude = @([arrayColumns[5] doubleValue]);
-            if ([self validForImport:latitude lon:longitude]) {
+            if (![self validForImport:latitude lon:longitude]) {
+                NSLog(@"Failed lat/lon for %@, %@", row, self);
+            } else {
                 object = [NSEntityDescription insertNewObjectForEntityForName:self.entityName inManagedObjectContext:moc];
                 object.primary_id     = arrayColumns[0];
                 object.reference      = arrayColumns[1];

@@ -327,6 +327,10 @@ kbd {
 
 <body>
 
+<h1 id="toc_0">CoreData queries</h1>
+
+<p>If you run requests, it is then possible to apply CoreData queries to the data sets</p>
+
 <p>Custom queries are possible using standard NSPredicate objects and the helper retrieval methods in the oneTRANSPORT framework.</p>
 
 <p>Example 1 - to extract ClearView traffic sensor 1747 data for yesterday:</p>
@@ -338,14 +342,36 @@ let DateFrom = calendar.startOfDay(for: calendar.date(byAdding: .day, value: -1,
 let dateTo = calendar.startOfDay(for: Date())
 
 let predicate = NSPredicate.init(format:&quot;reference == %@ &amp;&amp; timestamp &gt;= %@ &amp;&amp; timestamp &lt; %@&quot;, ref, dateFrom as CVarArg, dateTo as CVarArg)
-let array = OTSingleton.sharedInstance().clearViewTraffic.retrieveSummary(predicate)</code></pre></div>
+let array = OTSingleton.sharedInstance().clearViewTraffic.retrieveSummary(predicate)
+
+Exmaple record:
+    cin_id = cin19790616T082638298369598139983551809280;
+    creationtime = &quot;2016-07-09 07:09:50 +0000&quot;;
+    direction = 0;
+    lane = 1;
+    primary_id = 118895;
+    reference = 1753;
+    timestamp = &quot;2016-07-09 08:08:14 +0000&quot;;</code></pre></div>
 
 <p>Example 2 - to extract newly started roadworks</p>
 
 <div><pre><code class="language-none">let Date = calendar.startOfDay(for: calendar.date(byAdding: .day, value: -1, to: Date())!)
 let predicate = NSPredicate.init(format: &quot;overallStartTime &gt; %@&quot;, date as CVarArg)
 let array = OTSingleton.sharedInstance().roadworks.retrieveAll(predicate)
-print (&quot;Current roadworks \(array)&quot;)</code></pre></div>
+print (&quot;Current roadworks \(array)&quot;)
+
+Example record:
+    comment = &quot;Dig out Setts and remove soil, , WOODSTOCK ROAD, YARNTON,&quot;;
+    effectOnRoadLayout = roadLayoutUnchanged;
+    impactOnTraffic = heavy;
+    overallEndTime = &quot;2016-10-28 23:59:59 +0000&quot;;
+    overallStartTime = &quot;2016-10-26 00:00:00 +0000&quot;;
+    periods = &quot;2016-10-26T00:00:00&quot;;
+    reference = &quot;GUIDOXFO-north-20121395&quot;;
+    roadMaintenanceType = other;
+    status = active;
+    timestamp = &quot;2016-10-26 08:36:32 +0000&quot;;
+    type = other;</code></pre></div>
 
 <p>Predicates can also be applied directly to the data set using your own CoreData methods. Initialise the managed object context and create a simple fetch request as follows:</p>
 

@@ -229,8 +229,8 @@
     [self execute:LocalAuthorityHerts cnt:ContainerTypeTrafficFlow count:1];
 }
 
-- (void)testHertsTQueue404 {
-    [self execute:LocalAuthorityHerts cnt:ContainerTypeTrafficQueue count:-1];
+- (void)testHertsTQueue {
+    [self execute:LocalAuthorityHerts cnt:ContainerTypeTrafficQueue count:0];
 }
 
 - (void)testHertsTScoot {

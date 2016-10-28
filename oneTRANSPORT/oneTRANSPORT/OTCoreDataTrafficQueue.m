@@ -66,7 +66,9 @@
         NSNumber *latitude;
         NSNumber *longitude;
         [self setupLat:&latitude lon:&longitude from:item];
-        if ([self validForImport:latitude lon:longitude]) {
+        if (![self validForImport:latitude lon:longitude]) {
+            NSLog(@"Failed lat/lon for %@, %@", reference, self);
+        } else {
             NSDate *timestamp = [self dateFromString:item[@"time"]];
             
             predicate = [NSPredicate predicateWithFormat:@"reference == %@ && timestamp == %@", reference, timestamp];

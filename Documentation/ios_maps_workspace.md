@@ -1,10 +1,12 @@
-The oneTRANSPORTMaps workspace can be downloaded from [GitHub]
-(https://github.com/oneTRANSPORT/ios-one-transport-workspace)
+# Using the OneTransportMaps workspace
+Our demo workspace contains Objective-C and Swift examples of the oneM2M and oneTRANSPORT frameworks.
+
+The oneTRANSPORTMaps workspace can be downloaded from [GitHub](https://github.com/oneTRANSPORT/ios-one-transport-workspace)
 
 
 #Credentials
 
-Before you can run the applications you will need to create an App in the oneTRANSPORT [Developer Portal] (https://cse-01.onetransport.uk.net/portal/login) and replace the existing source code credentials with the following.
+Before you can run the applications you will need to create an App in the oneTRANSPORT [Developer Portal](https://cse-01.onetransport.uk.net/portal/login) and replace the existing source code credentials with the following.
 
 For Swift:
 

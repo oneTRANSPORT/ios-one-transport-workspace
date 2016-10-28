@@ -1,3 +1,6 @@
+# Troubleshooting
+Is your app not working? Here is a check list of things to do.
+
 # No data received
 1. Check the [available data](ios_available_data.html) to make sure that what you are requesting is available, i.e. only Buckinghamshire and Oxfordshire have complete data sets.
 
