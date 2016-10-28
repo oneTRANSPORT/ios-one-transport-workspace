@@ -58,6 +58,11 @@
         }
         return _mainContext;
     } else {
+        if (!_mainContext) {    //ensure that there is a parent context before continuing
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                [self managedObjectContext];
+            });
+        }
         NSManagedObjectContext *newMoc = [[[NSThread currentThread] threadDictionary] objectForKey:kThreadMoc];
         if (!newMoc) {
             newMoc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
@@ -108,6 +113,7 @@
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
+        [NSThread sleepForTimeInterval:0.001];
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
             ok = false;
         }
