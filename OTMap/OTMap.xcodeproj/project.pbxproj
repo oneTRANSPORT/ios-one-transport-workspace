@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8041F821DC9D13E0072CCD7 /* FlorenceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC9FED1DB9F26800D2E509 /* FlorenceSDK.framework */; };
+		F8041F831DC9D13E0072CCD7 /* FlorenceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC9FED1DB9F26800D2E509 /* FlorenceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8082C6B1D61A6F500C0586E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8082C6A1D61A6F500C0586E /* MapView.swift */; };
 		F8082C6F1D61AA5000C0586E /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8082C6E1D61AA5000C0586E /* AnnotationView.swift */; };
 		F8082C711D61AB7500C0586E /* PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8082C701D61AB7500C0586E /* PointAnnotation.swift */; };
@@ -58,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F8041F841DC9D13E0072CCD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8EC9FE61DB9F26800D2E509 /* FlorenceSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8210F0F1D2A7A0200399B4A;
+			remoteInfo = FlorenceSDK;
+		};
 		F84B9F3C1DB7C993000975FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F84B9F351DB7C993000975FD /* oneTRANSPORT.xcodeproj */;
@@ -96,6 +105,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F8953A8C1DB89D290069C117 /* oneTRANSPORT.framework in Embed Frameworks */,
+				F8041F831DC9D13E0072CCD7 /* FlorenceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8041F821DC9D13E0072CCD7 /* FlorenceSDK.framework in Frameworks */,
 				F8B6749D1D8963780004CDB5 /* CoreData.framework in Frameworks */,
 				F8B6EE0A1D5DB5420047C7A3 /* MapKit.framework in Frameworks */,
 			);
@@ -355,6 +366,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F8041F851DC9D13E0072CCD7 /* PBXTargetDependency */,
 			);
 			name = OTMap;
 			productName = OTMap;
@@ -505,6 +517,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8041F851DC9D13E0072CCD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlorenceSDK;
+			targetProxy = F8041F841DC9D13E0072CCD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F8B6EDE21D5DB3A50047C7A3 /* Main.storyboard */ = {
