@@ -17,10 +17,10 @@
 - (void)setUp {
     [super setUp];
     
-    NSString *APP_ID       = @"<Your App Name>";
-    NSString *ACCCESS_KEY  = @"<Your Access Key>";
-    NSString *ORIGIN       = @"<Your AEID>";
-    
+    NSString *APP_ID       = @"DominicApp";
+    NSString *ACCCESS_KEY  = @"014ud3mYLjgGjIF3";
+    NSString *ORIGIN       = @"C-Y249RG9taW5pY0FwcCxvdT1yb290";
+
     [self.singleton deleteCse];
     [self.singleton configureOneTransport:APP_ID auth:ACCCESS_KEY origin:ORIGIN];
     [self.singleton setTrace:false];

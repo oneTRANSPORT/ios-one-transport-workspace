@@ -80,7 +80,8 @@
 
 - (NSArray <CV_Traffic *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
     
-    return nil;
+    NSMutableArray <CV_Traffic *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (void)populateTSV:(NSString *)stringData completion:(PopulateBlock)completionBlock {

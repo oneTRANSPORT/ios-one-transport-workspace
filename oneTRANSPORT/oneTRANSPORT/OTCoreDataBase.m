@@ -200,8 +200,14 @@
 
 #pragma mark - Empty methods that need instances in child classes
 
-- (NSArray *)populateTableWith:(id)data timestamp:(NSDate *)date { return nil; }
+- (NSArray *)populateTableWith:(id)data timestamp:(NSDate *)date {
+    NSMutableArray <NSDictionary *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
+}
 
-- (NSArray *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon { return nil; }
+- (NSArray *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
+    NSMutableArray <NSDictionary *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
+}
 
 @end

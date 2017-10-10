@@ -62,7 +62,7 @@ class PotHoleViewController: BaseViewController {
         }
     }
 
-    func locationChanged(_ notification: Notification) {
+    @objc func locationChanged(_ notification: Notification) {
         
         self.activityIndicator.stop()
         if let locationObj = notification.object as? CLLocation {
@@ -103,11 +103,11 @@ class PotHoleViewController: BaseViewController {
         }
     }
 
-    func didPressClear() {
+    @objc func didPressClear() {
         self.textFieldComment.text = ""
     }
     
-    func didPressDone() {
+    @objc func didPressDone() {
         self.textFieldComment.resignFirstResponder()
     }
 

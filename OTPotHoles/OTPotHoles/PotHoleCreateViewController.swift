@@ -28,7 +28,7 @@ class PotHoleCreateViewController: BaseViewController {
         let cnt = ae?.createContainer(withName: kPotHoleCNT)
         cnt!.remoteRequest(.create, subMethod: .none, session: OTSingleton.sharedInstance().sessionTask) {response, error in
             if error == nil {
-                self.textView.text = "\(response)"
+                self.textView.text = "\(String(describing: response))"
                 self.showMessage("One time creation of Pot Hole Container completed", completionHandler: {})
             } else {
                 self.showMessage(error!.localizedDescription, completionHandler: {})

@@ -438,9 +438,8 @@
         case ContainerTypeEvents:
             return self.events;
         default:
-            break;
+            return self.roadworks; //non null value
     }
-    return nil;
 }
 
 #pragma mark - User Defaults
@@ -634,8 +633,10 @@
 
     [self buildAeWithResourceId:k_AE_ID_BitCarrier resourceName:k_AE_ID_BitCarrier];
     __block OTContainer *container = [[_cse aeWithId:k_AE_ID_BitCarrier] createContainerWithName:@"BitCarrier/v1.0/InterdigitalDemo/silverstone/data/traveltimes"];
+    CompletionType __block completion;
+    __block __weak typeof(CompletionType) weakCompletion = completion;
     
-    CompletionType completion = ^(NSDictionary *response, NSError *error) {
+    completion = ^(NSDictionary *response, NSError *error) {
         NSDictionary *dictCnt = [NSObject validateDictionary:response[@"m2m:cnt"]];
         if (dictCnt) {
             NSArray *arrayCh = dictCnt[@"ch"];
@@ -647,7 +648,9 @@
                 }
             }
         }
-        [self decrementRequestCount:error completion:completion];
+        if (weakCompletion != nil) {
+            [self decrementRequestCount:error completion:weakCompletion];
+        }
     };
     [container remoteRequest:CommandTypeDiscoverViaRcn subMethod:SubCommandTypeNone session:_sessionTask completionBlock:completion];
 }
@@ -727,8 +730,10 @@
         NSLog(@"Time %.2f", [[NSDate date] timeIntervalSinceDate:self.timeStart]);
         NSLog(@">>>>>>>>>>>>>>>");
 
-        completion(dict, error);
-
+        if (completion != nil) {
+            completion(dict, error);
+        }
+        
         NSLog(@"Completion %.2f", [[NSDate date] timeIntervalSinceDate:self.timeStart]);
         NSLog(@">>>>>>>>>>>>>>>");
     }

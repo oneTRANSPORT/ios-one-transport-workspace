@@ -91,8 +91,9 @@
 }
 
 - (NSArray <BC_Travel *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
-    
-    return nil;
+
+    NSMutableArray <BC_Travel *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (void)populateTSV:(NSString *)stringData completion:(PopulateBlock)completionBlock {

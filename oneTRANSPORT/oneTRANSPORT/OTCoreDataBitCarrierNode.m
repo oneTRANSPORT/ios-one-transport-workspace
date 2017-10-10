@@ -41,12 +41,14 @@
 
 - (NSArray <BC_Node *> *)populateTableWith:(id)data timestamp:(NSDate *)date {
     
-    return nil;
+    NSMutableArray <BC_Node *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (NSArray <BC_Node *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
     
-    return nil;
+    NSMutableArray <BC_Node *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (NSArray <NSDictionary *> *)returnNodesForCommon {

@@ -79,7 +79,8 @@
 
 - (NSArray <BC_Vector *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
     
-    return nil;
+    NSMutableArray <BC_Vector *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (NSArray <BC_Vector *> *)retrieveVectors:(NSString *)reference from:(NSDate *)fromDate to:(NSDate *)toDate {

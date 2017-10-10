@@ -116,7 +116,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         case .denied:
             locationStatus = "User denied access to location"
         case .notDetermined:
-            locationStatus = "Status not determined"
+            locationStatus = "Location status not determined"
         default:
             self.allowed = true
         }

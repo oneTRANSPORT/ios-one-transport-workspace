@@ -41,12 +41,14 @@
 
 - (NSArray <CV_Device *> *)populateTableWith:(id)data timestamp:(NSDate *)date {
     
-    return nil;
+    NSMutableArray <CV_Device *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (NSArray <CV_Device *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
     
-    return nil;
+    NSMutableArray <CV_Device *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (void)populateTSV:(NSString *)stringData completion:(PopulateBlock)completionBlock {

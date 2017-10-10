@@ -22,10 +22,12 @@
 #ifndef BaseTest_h
 #define BaseTest_h
 
-#define k_APP_ID        @"C-IOS-APPID"
-
-#define k_APP_USERNAME  @"username"
-#define k_APP_PASSWORD  @"password"
+#define k_APP_ID        @"DominicApp"
+#define k_APP_USERNAME  @"014ud3mYLjgGjIF3"
+#define k_APP_PASSWORD  @"C-Y249RG9taW5pY0FwcCxvdT1yb290"
+//#define k_APP_ID        @"C-IOS-APPID"
+//#define k_APP_USERNAME  @"username"
+//#define k_APP_PASSWORD  @"password"
 
 #define k_CSE_BASEURL_DEV   @"http://13.90.209.19:9011"
 #define k_CSE_ID        @"ONE-CSE-01"

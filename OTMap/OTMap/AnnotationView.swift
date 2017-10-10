@@ -162,7 +162,7 @@ class AnnotationView: MKAnnotationView {
         view.backgroundColor = UIColor.clear
         view.tag = kDirectionTag
         self.addSubview(view)
-        view.transform = CGAffineTransform(rotationAngle: CGFloat(self.angleForArrow) + CGFloat(M_PI))
+        view.transform = CGAffineTransform(rotationAngle: CGFloat(self.angleForArrow) + CGFloat(Double.pi))
         
     }
     

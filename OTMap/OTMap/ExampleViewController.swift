@@ -83,7 +83,7 @@ class ExampleViewController: BaseViewController {
                     let arrayCommon = OTSingleton.sharedInstance().common.retrieveType(.roadworks)
                     self.textViewLog.text = String.init(format: "%@\n\n============================\nCoreData Common contains %zd events records\n", self.textViewLog.text, arrayCommon.count)
                     
-                    self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.characters.count - 1, 1))
+                    self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.count - 1, 1))
                 }
             }
         }
@@ -108,7 +108,7 @@ class ExampleViewController: BaseViewController {
                     let arrayCommon = OTSingleton.sharedInstance().common.retrieveType(.events)
                     self.textViewLog.text = String.init(format: "%@\n\n============================\nCoreData Common contains %zd events records\n", self.textViewLog.text, arrayCommon.count)
                     
-                    self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.characters.count - 1, 1))
+                    self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.count - 1, 1))
                 }
             }
         }
@@ -133,7 +133,7 @@ class ExampleViewController: BaseViewController {
                     let arrayCommon = OTSingleton.sharedInstance().common.retrieveType(.carParks)
                     self.textViewLog.text = String.init(format: "%@\n\n============================\nCoreData Common contains %zd car park records\n", self.textViewLog.text, arrayCommon.count)
 
-                    self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.characters.count - 1, 1))
+                    self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.count - 1, 1))
                 }
             }
         }        

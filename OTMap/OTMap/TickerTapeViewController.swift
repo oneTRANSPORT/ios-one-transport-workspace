@@ -79,7 +79,7 @@ class TickerTapeViewController: UIViewController {
         self.checkTicker()
     }
     
-    func checkTicker() {
+    @objc func checkTicker() {
 
         if !arrayMessage.isEmpty {
             self.previousLabel = self.currentLabel
@@ -109,7 +109,7 @@ class TickerTapeViewController: UIViewController {
         }
     }
 
-    func messageReceived(_ notification: Notification) {
+    @objc func messageReceived(_ notification: Notification) {
 
         if let array = notification.object as? [Common] {
             var message = ""

@@ -29,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let APP_ID       = "<Your App Name>"
-        let ACCCESS_KEY  = "<Your Access Key>"
-        let ORIGIN       = "<Your AEID>"
+        let APP_ID       = "C-Y249V2hpdGVMYWJlbENsaWVudCxvdT1yb290"
+        let ACCCESS_KEY  = "01rccVdqtnS1Ayss"
+        let ORIGIN       = "C-Y249V2hpdGVMYWJlbENsaWVudCxvdT1yb290"
         OTSingleton.sharedInstance().configureOneTransport(APP_ID, auth: ACCCESS_KEY, origin: ORIGIN)
         UserDefaults.standard.set(CommsTest.live.rawValue, forKey: kUserDefaultsCommsMode)
         

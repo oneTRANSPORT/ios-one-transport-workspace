@@ -66,14 +66,14 @@ class MapDataSource: NSObject {
         
         let array = OTSingleton.sharedInstance().common.retrieveType(typeAnnotation)//, topLeft : min, bottomRight : max)
         for object in array {
-            if Double(min.latitude) >= Double(object.latitude!) && Double(min.longitude) <= Double(object.longitude!) &&
-                Double(max.latitude) <= Double(object.latitude!) && Double(max.longitude) >= Double(object.longitude!) {
+            if Double(min.latitude) >= object.latitude!.doubleValue && Double(min.longitude) <= object.longitude!.doubleValue &&
+                Double(max.latitude) <= object.latitude!.doubleValue && Double(max.longitude) >= object.longitude!.doubleValue {
 
                 if let point = self.createPoint(object) {
                     point.annotationType = typeAnnotation
-                    point.counter = Int(object.counter1!)
-                    point.counterSub = Int(object.counter2!)
-                    point.angleForArrow = Float(object.angle!)
+                    point.counter = object.counter1!.intValue
+                    point.counterSub = object.counter2!.intValue
+                    point.angleForArrow = object.angle!.floatValue
                     self.addObjectToArray(point)
                 }
                 
@@ -138,7 +138,7 @@ class MapDataSource: NSObject {
     func sketch(_ object : BC_Sketch) -> PolyLineAnnotation? {
         
         if let contentsJson = object.lat_lon_array {
-            if contentsJson.characters.count > 0 {
+            if contentsJson.count > 0 {
                 do {
                     let array = try JSONSerialization.jsonObject(with: contentsJson.data(using: String.Encoding.utf8)!, options: []) as! [AnyObject]
                     if !array.isEmpty {

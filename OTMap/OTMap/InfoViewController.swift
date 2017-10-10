@@ -83,7 +83,7 @@ class InfoViewController: BaseViewController {
         self.appendText("Roadworks records = \(singleton.roadworks.retrieveRecordCount())", nslog: nslog)
         self.appendText("Events records = \(singleton.events.retrieveRecordCount())", nslog: nslog)
     
-        self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.characters.count - 1, 1))
+        self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.count - 1, 1))
     }
     
     func appendText(_ string: String, nslog: Bool) {

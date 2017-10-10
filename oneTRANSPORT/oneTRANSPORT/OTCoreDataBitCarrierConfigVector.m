@@ -40,12 +40,14 @@
 
 - (NSArray <BC_ConfigVector *> *)populateTableWith:(id)data timestamp:(NSDate *)date {
     
-    return nil;
+    NSMutableArray <BC_ConfigVector *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (NSArray <BC_ConfigVector *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
 
-    return nil;
+    NSMutableArray <BC_ConfigVector *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (void)populateTSV:(NSString *)stringData completion:(PopulateBlock)completionBlock {

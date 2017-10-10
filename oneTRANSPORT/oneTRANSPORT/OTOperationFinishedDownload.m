@@ -43,11 +43,11 @@
     }
     
     NSArray *array = [self processResponse:self.response error:self.error];
-    if (array) {
+    if (array != nil) {
         [self.container updateCommonResources:self.response[@"m2m:cin"]];
         
         NSArray *arrayCommon;
-        if (self.reference) {
+        if (self.reference != nil) {
             arrayCommon = [(OTCoreDataClearViewTraffic *)self.object populateTableWithReference:self.reference data:array timestamp:self.container.resourceLastUpdated];
         } else {
             arrayCommon = [self.object populateTableWith:array timestamp:self.container.resourceLastUpdated];

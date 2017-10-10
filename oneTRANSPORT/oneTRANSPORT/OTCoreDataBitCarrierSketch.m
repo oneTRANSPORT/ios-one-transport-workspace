@@ -40,12 +40,14 @@
 
 - (NSArray <BC_Sketch *> *)populateTableWith:(id)data timestamp:(NSDate *)date {
     
-    return nil;
+    NSMutableArray <BC_Sketch *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (NSArray <BC_Sketch *> *)checkForChanges:(NSArray <NSDictionary *> *)arrayCommon {
     
-    return nil;
+    NSMutableArray <BC_Sketch *> *arrayChanges = [NSMutableArray new];
+    return arrayChanges;
 }
 
 - (void)populateTSV:(NSString *)stringData completion:(PopulateBlock)completionBlock {

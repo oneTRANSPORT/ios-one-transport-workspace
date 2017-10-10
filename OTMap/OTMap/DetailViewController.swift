@@ -37,7 +37,7 @@ class DetailViewController: BaseViewController {
             let objectClass = OTSingleton.sharedInstance().getObjectClass(self.point!.annotationType)
             array = objectClass.retrieveHistory(reference) as AnyObject?
         
-            self.textView.text = "\(common)\n\n\n\n\(array)"
+            self.textView.text = "\(String(describing: common))\n\n\n\n\(String(describing: array))"
         }
     }
 }

@@ -113,6 +113,7 @@ class MapViewController: BaseViewController {
         if !self.firstTime {
             self.refreshData()
         } else {
+            self.mapView.refreshMapPins()
             self.firstTime = false
         }
         
@@ -126,13 +127,15 @@ class MapViewController: BaseViewController {
         self.timer.invalidate()
     }
     
-    func locationChanged(_ notification: Notification) {
+    @objc func locationChanged(_ notification: Notification) {
         
         self.activityIndicator.stop()
         if let locationObj = notification.object as? CLLocation {
-            let viewRegion = MKCoordinateRegionMake(locationObj.coordinate, MKCoordinateSpanMake(0.01, 0.01))
-            let adjustedRegion = self.mapView.regionThatFits(viewRegion)
-            self.mapView.setRegion(adjustedRegion, animated: true)
+            DispatchQueue.main.async {
+                let viewRegion = MKCoordinateRegionMake(locationObj.coordinate, MKCoordinateSpanMake(0.01, 0.01))
+                let adjustedRegion = self.mapView.regionThatFits(viewRegion)
+                self.mapView.setRegion(adjustedRegion, animated: true)
+            }
         } else {
             if LocationManager.sharedInstance.currentStatus != .good {
                 self.showBackgroundError(LocationManager.sharedInstance.currentStatus)
@@ -156,7 +159,6 @@ class MapViewController: BaseViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if segue.identifier == "Detail" {
-            
             if let vc = segue.destination as? DetailViewController {
                 vc.point = sender as? PointAnnotation
             }
@@ -224,14 +226,12 @@ class MapViewController: BaseViewController {
     
     func refreshData() {
         
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+        DispatchQueue.main.async {
             self.mapView.refreshDataSource()
-            DispatchQueue.main.async {
-                self.mapView.refreshMapPins()
+            self.mapView.refreshMapPins()
 
-                self.view.isUserInteractionEnabled = true
-                self.activityIndicator.stop()
-            }
+            self.view.isUserInteractionEnabled = true
+            self.activityIndicator.stop()
         }
     }
     
@@ -277,7 +277,7 @@ class MapViewController: BaseViewController {
     
         self.textViewLog.text = String(format: "%@%@\n", arguments: [self.textViewLog.text, object])
         DispatchQueue.main.async {
-            self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.characters.count-2, 1))
+            self.textViewLog.scrollRangeToVisible(NSMakeRange(self.textViewLog.text.count-2, 1))
         }
     }
 

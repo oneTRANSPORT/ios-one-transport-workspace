@@ -150,6 +150,7 @@
             break;
             
         default:
+            typeString = k_CommonType_CarParks;
             break;
     }
     return typeString;
@@ -178,7 +179,7 @@
         type = ObjectTypeEvents;
     } else if ([typeString isEqualToString:k_CommonType_BitCarrierNode]) {
         type = ObjectTypeBitCarrier;
-    } else if ([typeString isEqualToString:k_CommonType_ClearViewDevice]) {
+    } else { //if ([typeString isEqualToString:k_CommonType_ClearViewDevice]) {
         type = ObjectTypeClearView;
     }
     return type;
